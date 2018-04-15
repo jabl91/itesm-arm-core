@@ -1,0 +1,1081 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.52 secs
+ 
+--> Reading design: Procesador_4_bits.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Procesador_4_bits.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Procesador_4_bits"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : Procesador_4_bits
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" in Library work.
+Architecture behavioral of Entity sub is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" in Library work.
+Architecture behavioral of Entity sub_deco is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" in Library work.
+Architecture arith_plus of Entity arith_plus is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" in Library work.
+Architecture behavioral of Entity and_8 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" in Library work.
+Architecture behavioral of Entity or_8 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" in Library work.
+Architecture behavioral of Entity xor_8 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" in Library work.
+Architecture behavioral of Entity not_8 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" in Library work.
+Architecture behavioral of Entity sum is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" in Library work.
+Architecture behavioral of Entity shift_l is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" in Library work.
+Architecture behavioral of Entity shift_r is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" in Library work.
+Architecture behavioral of Entity swap is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" in Library work.
+Architecture behavioral of Entity mul is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" in Library work.
+Architecture behavioral of Entity div is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" in Library work.
+Architecture behavioral of Entity restador is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" in Library work.
+Architecture behavioral of Entity rom_mod is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" in Library work.
+Architecture behavioral of Entity inst_reg is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" in Library work.
+Architecture behavioral of Entity dir_reg is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" in Library work.
+Architecture behavioral of Entity oc_reg is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" in Library work.
+Architecture behavioral of Entity ram_mod is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" in Library work.
+Architecture behavioral of Entity mbr_mod is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" in Library work.
+Architecture behavioral of Entity mux_mbr is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" in Library work.
+Architecture behavioral of Entity mar_mod is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" in Library work.
+Architecture behavioral of Entity mux_mar is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
+Architecture behavioral of Entity program_counter is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
+Architecture behavioral of Entity uinst is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
+Architecture behavioral of Entity spw is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" in Library work.
+Architecture behavioral of Entity phase_gen is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd" in Library work.
+Architecture behavioral of Entity port_4 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd" in Library work.
+Architecture behavioral of Entity portb_4 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd" in Library work.
+Architecture behavioral of Entity port_8 is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" in Library work.
+Architecture behavioral of Entity pc_module is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" in Library work.
+Architecture behavioral of Entity ram_memory is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" in Library work.
+Architecture behavioral of Entity stkptr is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" in Library work.
+Architecture behavioral of Entity program_memory is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" in Library work.
+Architecture behavioral of Entity reg_a is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
+Architecture behavioral of Entity reg_b is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
+Architecture behavioral of Entity data_bus is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd" in Library work.
+Architecture behavioral of Entity procesador_4_bits is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Procesador_4_bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <uInst> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SPW> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <phase_gen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <port_4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <portb_4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <port_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC_MODULE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RAM_Memory> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <stkptr> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Program_Memory> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_a> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_b> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <data_bus> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <program_counter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ram_mod> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MBR_mod> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_MBR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MAR_mod> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_MAR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom_mod> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inst_reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <dir_reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <oc_reg> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <and_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <or_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <xor_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <not_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SUM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shift_l> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <shift_r> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <swap> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUL> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DIV> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <restador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sub> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <sub_deco> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Procesador_4_bits> in library <work> (Architecture <behavioral>).
+Entity <Procesador_4_bits> analyzed. Unit <Procesador_4_bits> generated.
+
+Analyzing Entity <uInst> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" line 73: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Inst>, <DATA_PM>, <PSW>
+INFO:Xst:2679 - Register <PM_BUS> in unit <uInst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <B_BUS> in unit <uInst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <A_BUS> in unit <uInst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <PORT_SELECT> in unit <uInst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <SEL_PORT_OR_BUS> in unit <uInst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <uInst> analyzed. Unit <uInst> generated.
+
+Analyzing Entity <SPW> in library <work> (Architecture <behavioral>).
+Entity <SPW> analyzed. Unit <SPW> generated.
+
+Analyzing Entity <phase_gen> in library <work> (Architecture <behavioral>).
+Entity <phase_gen> analyzed. Unit <phase_gen> generated.
+
+Analyzing Entity <port_4> in library <work> (Architecture <behavioral>).
+Entity <port_4> analyzed. Unit <port_4> generated.
+
+Analyzing Entity <portb_4> in library <work> (Architecture <behavioral>).
+Entity <portb_4> analyzed. Unit <portb_4> generated.
+
+Analyzing Entity <port_8> in library <work> (Architecture <behavioral>).
+Entity <port_8> analyzed. Unit <port_8> generated.
+
+Analyzing Entity <PC_MODULE> in library <work> (Architecture <behavioral>).
+Entity <PC_MODULE> analyzed. Unit <PC_MODULE> generated.
+
+Analyzing Entity <program_counter> in library <work> (Architecture <behavioral>).
+Entity <program_counter> analyzed. Unit <program_counter> generated.
+
+Analyzing Entity <RAM_Memory> in library <work> (Architecture <behavioral>).
+Entity <RAM_Memory> analyzed. Unit <RAM_Memory> generated.
+
+Analyzing Entity <ram_mod> in library <work> (Architecture <behavioral>).
+Entity <ram_mod> analyzed. Unit <ram_mod> generated.
+
+Analyzing Entity <MBR_mod> in library <work> (Architecture <behavioral>).
+Entity <MBR_mod> analyzed. Unit <MBR_mod> generated.
+
+Analyzing Entity <Mux_MBR> in library <work> (Architecture <behavioral>).
+Entity <Mux_MBR> analyzed. Unit <Mux_MBR> generated.
+
+Analyzing Entity <MAR_mod> in library <work> (Architecture <behavioral>).
+Entity <MAR_mod> analyzed. Unit <MAR_mod> generated.
+
+Analyzing Entity <Mux_MAR> in library <work> (Architecture <behavioral>).
+Entity <Mux_MAR> analyzed. Unit <Mux_MAR> generated.
+
+Analyzing Entity <stkptr> in library <work> (Architecture <behavioral>).
+Entity <stkptr> analyzed. Unit <stkptr> generated.
+
+Analyzing Entity <Program_Memory> in library <work> (Architecture <behavioral>).
+Entity <Program_Memory> analyzed. Unit <Program_Memory> generated.
+
+Analyzing Entity <rom_mod> in library <work> (Architecture <behavioral>).
+Entity <rom_mod> analyzed. Unit <rom_mod> generated.
+
+Analyzing Entity <inst_reg> in library <work> (Architecture <behavioral>).
+Entity <inst_reg> analyzed. Unit <inst_reg> generated.
+
+Analyzing Entity <dir_reg> in library <work> (Architecture <behavioral>).
+Entity <dir_reg> analyzed. Unit <dir_reg> generated.
+
+Analyzing Entity <oc_reg> in library <work> (Architecture <behavioral>).
+Entity <oc_reg> analyzed. Unit <oc_reg> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <and_8> in library <work> (Architecture <behavioral>).
+Entity <and_8> analyzed. Unit <and_8> generated.
+
+Analyzing Entity <or_8> in library <work> (Architecture <behavioral>).
+Entity <or_8> analyzed. Unit <or_8> generated.
+
+Analyzing Entity <xor_8> in library <work> (Architecture <behavioral>).
+Entity <xor_8> analyzed. Unit <xor_8> generated.
+
+Analyzing Entity <not_8> in library <work> (Architecture <behavioral>).
+Entity <not_8> analyzed. Unit <not_8> generated.
+
+Analyzing Entity <SUM> in library <work> (Architecture <behavioral>).
+Entity <SUM> analyzed. Unit <SUM> generated.
+
+Analyzing Entity <shift_l> in library <work> (Architecture <behavioral>).
+Entity <shift_l> analyzed. Unit <shift_l> generated.
+
+Analyzing Entity <shift_r> in library <work> (Architecture <behavioral>).
+Entity <shift_r> analyzed. Unit <shift_r> generated.
+
+Analyzing Entity <swap> in library <work> (Architecture <behavioral>).
+Entity <swap> analyzed. Unit <swap> generated.
+
+Analyzing Entity <MUL> in library <work> (Architecture <behavioral>).
+Entity <MUL> analyzed. Unit <MUL> generated.
+
+Analyzing Entity <DIV> in library <work> (Architecture <behavioral>).
+Entity <DIV> analyzed. Unit <DIV> generated.
+
+Analyzing Entity <restador> in library <work> (Architecture <behavioral>).
+Entity <restador> analyzed. Unit <restador> generated.
+
+Analyzing Entity <sub> in library <work> (Architecture <behavioral>).
+Entity <sub> analyzed. Unit <sub> generated.
+
+Analyzing Entity <sub_deco> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c>, <in_deco>
+Entity <sub_deco> analyzed. Unit <sub_deco> generated.
+
+Analyzing Entity <reg_a> in library <work> (Architecture <behavioral>).
+Entity <reg_a> analyzed. Unit <reg_a> generated.
+
+Analyzing Entity <reg_b> in library <work> (Architecture <behavioral>).
+Entity <reg_b> analyzed. Unit <reg_b> generated.
+
+Analyzing Entity <data_bus> in library <work> (Architecture <behavioral>).
+Entity <data_bus> analyzed. Unit <data_bus> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <uInst>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_MS_MUX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_A>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_B>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MBR_MUX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_CJNE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_PC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Load_Instr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <A_SRC_MUX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <WR_PORT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <ALU_SIGNAL>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <LOAD_SPW>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <WR_RAM>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <SPTR_INC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <ENABLE_PORT>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PORT_BUS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <SPTR_DEC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 3-bit latch for signal <SEL_BUS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC_INC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <PC_SRC_MUX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALU_BUS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MAR_MUX>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <uInst> synthesized.
+
+
+Synthesizing Unit <SPW>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd".
+    Found 5-bit register for signal <out_SPW>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <SPW> synthesized.
+
+
+Synthesizing Unit <phase_gen>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd".
+    Found 4-bit register for signal <phase_out>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <phase_gen> synthesized.
+
+
+Synthesizing Unit <port_4>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd".
+    Found 4-bit register for signal <a>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <port_4> synthesized.
+
+
+Synthesizing Unit <portb_4>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd".
+    Found 4-bit register for signal <a>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <portb_4> synthesized.
+
+
+Synthesizing Unit <port_8>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd".
+    Found 8-bit register for signal <a>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <port_8> synthesized.
+
+
+Synthesizing Unit <stkptr>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd".
+    Found 5-bit updown counter for signal <stack_dir>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <stkptr> synthesized.
+
+
+Synthesizing Unit <reg_a>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd".
+    Found 8-bit register for signal <a>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_a> synthesized.
+
+
+Synthesizing Unit <reg_b>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd".
+    Found 8-bit register for signal <out_bus>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg_b> synthesized.
+
+
+Synthesizing Unit <data_bus>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd".
+    Found 8-bit 8-to-1 multiplexer for signal <out_q>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <data_bus> synthesized.
+
+
+Synthesizing Unit <program_counter>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd".
+    Found 7-bit up counter for signal <addr_out1>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <program_counter> synthesized.
+
+
+Synthesizing Unit <ram_mod>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd".
+WARNING:Xst:647 - Input <CE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x8-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <ram_mod> synthesized.
+
+
+Synthesizing Unit <MBR_mod>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd".
+    Found 8-bit register for signal <out_data>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <MBR_mod> synthesized.
+
+
+Synthesizing Unit <Mux_MBR>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd".
+Unit <Mux_MBR> synthesized.
+
+
+Synthesizing Unit <MAR_mod>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd".
+    Found 5-bit register for signal <out_addr>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <MAR_mod> synthesized.
+
+
+Synthesizing Unit <Mux_MAR>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd".
+Unit <Mux_MAR> synthesized.
+
+
+Synthesizing Unit <rom_mod>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd".
+    Found 128x16-bit ROM for signal <rom_data$rom0000> created at line 112.
+    Summary:
+	inferred   1 ROM(s).
+Unit <rom_mod> synthesized.
+
+
+Synthesizing Unit <inst_reg>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd".
+    Found 4-bit register for signal <out_bus>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <inst_reg> synthesized.
+
+
+Synthesizing Unit <dir_reg>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd".
+    Found 7-bit register for signal <out_pc>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <dir_reg> synthesized.
+
+
+Synthesizing Unit <oc_reg>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd".
+    Found 5-bit register for signal <out_uc>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <oc_reg> synthesized.
+
+
+Synthesizing Unit <and_8>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd".
+Unit <and_8> synthesized.
+
+
+Synthesizing Unit <or_8>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd".
+Unit <or_8> synthesized.
+
+
+Synthesizing Unit <xor_8>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd".
+    Found 8-bit xor2 for signal <out_q>.
+Unit <xor_8> synthesized.
+
+
+Synthesizing Unit <not_8>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd".
+Unit <not_8> synthesized.
+
+
+Synthesizing Unit <SUM>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd".
+    Found 9-bit adder for signal <q1>.
+    Found 9-bit adder for signal <q1$addsub0000> created at line 55.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <SUM> synthesized.
+
+
+Synthesizing Unit <shift_l>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd".
+Unit <shift_l> synthesized.
+
+
+Synthesizing Unit <shift_r>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd".
+Unit <shift_r> synthesized.
+
+
+Synthesizing Unit <swap>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd".
+Unit <swap> synthesized.
+
+
+Synthesizing Unit <MUL>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd".
+    Found 4x4-bit multiplier for signal <Q1>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <MUL> synthesized.
+
+
+Synthesizing Unit <DIV>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd".
+    Found 5-bit adder for signal <p1$addsub0000> created at line 38.
+    Found 5-bit adder for signal <p1$addsub0001> created at line 38.
+    Found 5-bit adder for signal <p1$addsub0002> created at line 38.
+    Found 5-bit subtractor for signal <p1$sub0000> created at line 35.
+    Found 5-bit subtractor for signal <p1$sub0001> created at line 35.
+    Found 5-bit subtractor for signal <p1$sub0002> created at line 35.
+    Found 5-bit subtractor for signal <p1$sub0003> created at line 35.
+    Found 4-bit comparator less for signal <Q1_0$cmp_lt0000> created at line 61.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <DIV> synthesized.
+
+
+Synthesizing Unit <sub>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd".
+    Found 9-bit adder for signal <q1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <sub> synthesized.
+
+
+Synthesizing Unit <sub_deco>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd".
+WARNING:Xst:653 - Signal <c> is used but never assigned. This sourceless signal will be automatically connected to value 00000001.
+    Found 8-bit adder for signal <q$addsub0000> created at line 53.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <sub_deco> synthesized.
+
+
+Synthesizing Unit <PC_MODULE>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd".
+Unit <PC_MODULE> synthesized.
+
+
+Synthesizing Unit <RAM_Memory>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd".
+Unit <RAM_Memory> synthesized.
+
+
+Synthesizing Unit <Program_Memory>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd".
+Unit <Program_Memory> synthesized.
+
+
+Synthesizing Unit <restador>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd".
+Unit <restador> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd".
+WARNING:Xst:647 - Input <spw_in<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <spw_in<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_c>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <Procesador_4_bits>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd".
+WARNING:Xst:646 - Signal <WR_PORT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PORT_SELECT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PORT_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PM_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Load_Instr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <B_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <A_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ALU_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Procesador_4_bits> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x8-bit single-port RAM                              : 1
+# ROMs                                                 : 1
+ 128x16-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 11
+ 5-bit adder                                           : 3
+ 5-bit subtractor                                      : 4
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 3
+# Counters                                             : 2
+ 5-bit updown counter                                  : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 5
+ 4-bit register                                        : 4
+ 5-bit register                                        : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 4
+# Latches                                              : 22
+ 1-bit latch                                           : 19
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Procesador_4_bits>.
+	Found pipelined multiplier on signal <ALU_F/q_MUL>:
+		- 1 pipeline level(s) found in a register on signal <A_OUT>.
+		Pushing register(s) into the multiplier macro.
+
+		- 1 pipeline level(s) found in a register on signal <B_OUT>.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier ALU_F/G9/Mmult_Q1 by adding 1 register level(s).
+Unit <Procesador_4_bits> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_mod>.
+INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <adrr>          |          |
+    |     diA            | connected to signal <datain_ram>    |          |
+    |     doA            | connected to signal <dataout_ram>   |          |
+    -----------------------------------------------------------------------
+Unit <ram_mod> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x8-bit single-port distributed RAM                  : 1
+# ROMs                                                 : 1
+ 128x16-bit ROM                                        : 1
+# Multipliers                                          : 1
+ 4x4-bit registered multiplier                         : 1
+# Adders/Subtractors                                   : 10
+ 3-bit adder                                           : 1
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+ 9-bit adder carry in                                  : 1
+# Counters                                             : 2
+ 5-bit updown counter                                  : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+# Latches                                              : 22
+ 1-bit latch                                           : 19
+ 2-bit latch                                           : 1
+ 3-bit latch                                           : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_4> of sequential type is unconnected in block <Procesador_4_bits>.
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_3> of sequential type is unconnected in block <Procesador_4_bits>.
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_0> of sequential type is unconnected in block <Procesador_4_bits>.
+INFO:Xst:2261 - The FF/Latch <PM_F/DIR/out_pc_1> in Unit <Procesador_4_bits> is equivalent to the following 2 FFs/Latches, which will be removed : <PM_F/DIR/out_pc_2> <PM_F/DIR/out_pc_3> 
+INFO:Xst:2261 - The FF/Latch <PM_F/DIR/out_pc_0> in Unit <Procesador_4_bits> is equivalent to the following 5 FFs/Latches, which will be removed : <PM_F/DIR/out_pc_4> <PM_F/DIR/out_pc_5> <PM_F/DIR/out_pc_6> <PM_F/INST/out_bus_1> <PM_F/INST/out_bus_3> 
+
+Optimizing unit <Procesador_4_bits> ...
+
+Optimizing unit <phase_gen> ...
+
+Optimizing unit <port_4> ...
+
+Optimizing unit <portb_4> ...
+
+Optimizing unit <port_8> ...
+
+Optimizing unit <MBR_mod> ...
+
+Optimizing unit <DIV> ...
+
+Optimizing unit <sub> ...
+
+Optimizing unit <sub_deco> ...
+
+Optimizing unit <uInst> ...
+
+Optimizing unit <PC_MODULE> ...
+WARNING:Xst:2677 - Node <uInst_F/WR_PORT> of sequential type is unconnected in block <Procesador_4_bits>.
+WARNING:Xst:2677 - Node <uInst_F/PORT_BUS> of sequential type is unconnected in block <Procesador_4_bits>.
+WARNING:Xst:2677 - Node <uInst_F/ALU_BUS> of sequential type is unconnected in block <Procesador_4_bits>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Procesador_4_bits, actual ratio is 4.
+FlipFlop reg_a_F/a_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Procesador_4_bits.ngr
+Top Level Output File Name         : Procesador_4_bits
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 533
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 1
+#      LUT2                        : 48
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 105
+#      LUT3_D                      : 2
+#      LUT3_L                      : 1
+#      LUT4                        : 226
+#      LUT4_D                      : 4
+#      LUT4_L                      : 18
+#      MUXCY                       : 23
+#      MUXF5                       : 60
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 98
+#      FD_1                        : 3
+#      FDE                         : 56
+#      FDE_1                       : 13
+#      FDS_1                       : 1
+#      LD                          : 25
+# RAMS                             : 8
+#      RAM32X1S                    : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      OBUF                        : 16
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg484-4 
+
+ Number of Slices:                      233  out of   5888     3%  
+ Number of Slice Flip Flops:             98  out of  11776     0%  
+ Number of 4 input LUTs:                433  out of  11776     3%  
+    Number used as logic:               417
+    Number used as RAMs:                 16
+ Number of IOs:                          33
+ Number of bonded IOBs:                  17  out of    372     4%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------+-------------------------------+-------+
+Clock Signal                                                 | Clock buffer(FF name)         | Load  |
+-------------------------------------------------------------+-------------------------------+-------+
+clk                                                          | BUFGP                         | 82    |
+ALU_F/out_c_not0001(ALU_F/out_c_not00011:O)                  | NONE(*)(ALU_F/out_c)          | 1     |
+uInst_F/ALU_SIGNAL_not0001(uInst_F/ALU_SIGNAL_not000157:O)   | NONE(*)(uInst_F/ALU_SIGNAL_3) | 4     |
+uInst_F/ENABLE_PORT_not0001(uInst_F/ENABLE_PORT_not0001:O)   | NONE(*)(uInst_F/ENABLE_PORT_1)| 2     |
+uInst_F/SEL_BUS_not0001(uInst_F/SEL_BUS_not0001143:O)        | NONE(*)(uInst_F/SEL_BUS_2)    | 3     |
+uInst_F/LOAD_MS_MUX_not0001(uInst_F/LOAD_MS_MUX_not0001:O)   | NONE(*)(uInst_F/LOAD_MS_MUX)  | 1     |
+uInst_F/LOAD_A_not0001(uInst_F/LOAD_A_not0001105:O)          | NONE(*)(uInst_F/LOAD_A)       | 1     |
+uInst_F/LOAD_B_not0001(uInst_F/LOAD_B_not0001105:O)          | NONE(*)(uInst_F/LOAD_B)       | 1     |
+uInst_F/MBR_MUX_not0001(uInst_F/MBR_MUX_not0001:O)           | NONE(*)(uInst_F/MBR_MUX)      | 1     |
+uInst_F/LOAD_CJNE_not0001(uInst_F/LOAD_CJNE_not0001_f5:O)    | NONE(*)(uInst_F/LOAD_CJNE)    | 1     |
+uInst_F/LOAD_PC_not0001(uInst_F/LOAD_PC_not000191_f5:O)      | NONE(*)(uInst_F/LOAD_PC)      | 1     |
+uInst_F/Load_Instr_not0001(uInst_F/Load_Instr_not0001:O)     | NONE(*)(uInst_F/Load_Instr)   | 1     |
+uInst_F/A_SRC_MUX_not0001(uInst_F/A_SRC_MUX_not0001:O)       | NONE(*)(uInst_F/A_SRC_MUX)    | 1     |
+uInst_F/LOAD_SPW_not0001(uInst_F/LOAD_SPW_not000140:O)       | NONE(*)(uInst_F/LOAD_SPW)     | 1     |
+uInst_F/WR_RAM_not0001(uInst_F/WR_RAM_not0001:O)             | NONE(*)(uInst_F/WR_RAM)       | 1     |
+uInst_F/SPTR_INC_not0001(uInst_F/SPTR_INC_not00011:O)        | NONE(*)(uInst_F/SPTR_INC)     | 1     |
+uInst_F/SPTR_DEC_not0001(uInst_F/SPTR_DEC_not00011:O)        | NONE(*)(uInst_F/SPTR_DEC)     | 1     |
+uInst_F/PC_INC_not0001(uInst_F/PC_INC_not0001:O)             | NONE(*)(uInst_F/PC_INC)       | 1     |
+uInst_F/PC_SRC_MUX_not0001(uInst_F/PC_SRC_MUX_not000154_f5:O)| NONE(*)(uInst_F/PC_SRC_MUX)   | 1     |
+uInst_F/MAR_MUX_not0001(uInst_F/MAR_MUX_not0001:O)           | NONE(*)(uInst_F/MAR_MUX)      | 1     |
+-------------------------------------------------------------+-------------------------------+-------+
+(*) These 19 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.789ns (Maximum Frequency: 67.618MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.558ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.789ns (frequency: 67.618MHz)
+  Total number of paths / destination ports: 13539 / 129
+-------------------------------------------------------------------------
+Delay:               14.789ns (Levels of Logic = 14)
+  Source:            reg_b_F/out_bus_0 (FF)
+  Destination:       reg_b_F/out_bus_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: reg_b_F/out_bus_0 to reg_b_F/out_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             24   0.591   1.284  reg_b_F/out_bus_0 (reg_b_F/out_bus_0)
+     LUT3_D:I2->LO         1   0.648   0.132  ALU_F/G10/Msub_p1_sub0000_cy<1>11 (N258)
+     LUT3:I2->O            5   0.648   0.636  ALU_F/G10/Msub_p1_sub0000_xor<3>11 (ALU_F/G10/p1_sub0000<3>)
+     LUT4:I3->O            1   0.648   0.000  ALU_F/G10/Msub_p1_sub0001_lut<1> (ALU_F/G10/Msub_p1_sub0001_lut<1>)
+     XORCY:LI->O           5   0.720   0.713  ALU_F/G10/Msub_p1_sub0001_xor<1> (ALU_F/G10/p1_sub0001<1>)
+     LUT2:I1->O            1   0.643   0.000  ALU_F/G10/Madd_p1_addsub0001_lut<1> (ALU_F/G10/Madd_p1_addsub0001_lut<1>)
+     XORCY:LI->O           4   0.720   0.590  ALU_F/G10/Madd_p1_addsub0001_xor<1> (ALU_F/G10/p1_addsub0001<1>)
+     LUT4:I3->O            1   0.648   0.000  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1_SW0_G (N136)
+     MUXF5:I1->O           1   0.276   0.423  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1_SW0 (N104)
+     LUT4:I3->O            2   0.648   0.447  ALU_F/G10/Msub_p1_sub0002_Madd_xor<3>11 (ALU_F/G10/p1_sub0002<3>)
+     MUXF5:S->O            1   0.756   0.423  ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>1 (ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>)
+     LUT4:I3->O            1   0.648   0.000  BUS_F/Mmux_out_q_4 (BUS_F/Mmux_out_q_4)
+     MUXF5:I1->O           1   0.276   0.000  BUS_F/Mmux_out_q_3_f5 (BUS_F/Mmux_out_q_3_f5)
+     MUXF6:I1->O           2   0.291   0.447  BUS_F/Mmux_out_q_2_f6 (BUS_OUT<0>1)
+     INV:I->O              5   0.648   0.633  Port_C/a_mux0001<0>1_INV_0 (BUS_OUT<0>)
+     FDE:D                     0.252          reg_b_F/out_bus_0
+    ----------------------------------------
+    Total                     14.789ns (9.061ns logic, 5.728ns route)
+                                       (61.3% logic, 38.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              5.558ns (Levels of Logic = 1)
+  Source:            Port_A/a_3 (FF)
+  Destination:       PORT_A_OUT<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Port_A/a_3 to PORT_A_OUT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  Port_A/a_3 (Port_A/a_3)
+     OBUF:I->O                 4.520          PORT_A_OUT_3_OBUF (PORT_A_OUT<3>)
+    ----------------------------------------
+    Total                      5.558ns (5.111ns logic, 0.447ns route)
+                                       (92.0% logic, 8.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.18 secs
+ 
+--> 
+
+Total memory usage is 298964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :   32 (   0 filtered)
+

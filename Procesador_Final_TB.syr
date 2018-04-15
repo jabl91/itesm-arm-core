@@ -1,0 +1,237 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: Procesador_Final_TB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Procesador_Final_TB.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Procesador_Final_TB"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : Procesador_Final_TB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" in Library work.
+Entity <sub> compiled.
+Entity <sub> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" in Library work.
+Entity <sub_deco> compiled.
+Entity <sub_deco> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" in Library work.
+Package <ARITH_PLUS> compiled.
+Package body <ARITH_PLUS> compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" in Library work.
+Entity <and_8> compiled.
+Entity <and_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" in Library work.
+Entity <or_8> compiled.
+Entity <or_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" in Library work.
+Entity <xor_8> compiled.
+Entity <xor_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" in Library work.
+Entity <not_8> compiled.
+Entity <not_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" in Library work.
+Entity <SUM> compiled.
+Entity <SUM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" in Library work.
+Entity <shift_l> compiled.
+Entity <shift_l> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" in Library work.
+Entity <shift_r> compiled.
+Entity <shift_r> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" in Library work.
+Entity <swap> compiled.
+Entity <swap> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" in Library work.
+Entity <MUL> compiled.
+Entity <MUL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" in Library work.
+Entity <DIV> compiled.
+Entity <DIV> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" in Library work.
+Entity <restador> compiled.
+Entity <restador> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" in Library work.
+Entity <rom_mod> compiled.
+Entity <rom_mod> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" in Library work.
+Entity <inst_reg> compiled.
+Entity <inst_reg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" in Library work.
+Entity <dir_reg> compiled.
+Entity <dir_reg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" in Library work.
+Entity <oc_reg> compiled.
+Entity <oc_reg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" in Library work.
+Entity <ram_mod> compiled.
+Entity <ram_mod> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" in Library work.
+Entity <MBR_mod> compiled.
+Entity <MBR_mod> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" in Library work.
+Entity <Mux_MBR> compiled.
+Entity <Mux_MBR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" in Library work.
+Entity <MAR_mod> compiled.
+Entity <MAR_mod> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" in Library work.
+Entity <Mux_MAR> compiled.
+Entity <Mux_MAR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
+Entity <program_counter> compiled.
+Entity <program_counter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
+Entity <uInst> compiled.
+Entity <uInst> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
+Entity <SPW> compiled.
+Entity <SPW> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" in Library work.
+Entity <phase_gen> compiled.
+Entity <phase_gen> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd" in Library work.
+Entity <port_4> compiled.
+Entity <port_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd" in Library work.
+Entity <portb_4> compiled.
+Entity <portb_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd" in Library work.
+Entity <port_8> compiled.
+Entity <port_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" in Library work.
+Entity <PC_MODULE> compiled.
+Entity <PC_MODULE> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" in Library work.
+Entity <RAM_Memory> compiled.
+Entity <RAM_Memory> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" in Library work.
+Entity <stkptr> compiled.
+Entity <stkptr> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" in Library work.
+Entity <Program_Memory> compiled.
+Entity <Program_Memory> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" in Library work.
+Entity <reg_a> compiled.
+Entity <reg_a> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
+Entity <reg_b> compiled.
+Entity <reg_b> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
+Entity <data_bus> compiled.
+Entity <data_bus> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd" in Library work.
+Entity <Procesador_4_bits> compiled.
+Entity <Procesador_4_bits> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" in Library work.
+Entity <Procesador_Final_TB> compiled.
+ERROR:HDLParsers:1015 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" Line 86. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" Line 88. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" Line 96. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" Line 98. Wait for statement unsupported.
+--> 
+
+Total memory usage is 257136 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "Procesador_4_bits.ngc" Procesador_4_bits.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o Procesador_4_bits_map.ncd Procesador_4_bits.ngd Procesador_4_bits.pcf 
+par -w -intstyle ise -ol high -t 1 Procesador_4_bits_map.ncd Procesador_4_bits.ncd Procesador_4_bits.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Procesador_4_bits.twx Procesador_4_bits.ncd -o Procesador_4_bits.twr Procesador_4_bits.pcf 
