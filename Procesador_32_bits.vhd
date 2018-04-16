@@ -62,7 +62,7 @@ component reg_a
             in_ram         : in  STD_LOGIC_VECTOR (7 downto 0);
             load_a         : in  STD_LOGIC;
             sel            : in  STD_LOGIC;                       -- '1' ram   '0' bus
-            a_out          : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+            a_out          : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             clk            :     STD_LOGIC
          );
 end component;
@@ -427,7 +427,7 @@ port map(
             in_ram               =>    RAM_OUT(7 DOWNTO 0),
             load_a               =>    LOAD_A,
             sel                  =>    A_SRC_MUX,
-            a_out                =>    A_OUT(7 DOWNTO 0) ,
+            a_out                =>    A_OUT,
             clk                  =>    clk
 );
 

@@ -30,34 +30,39 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity reg_a is
-    Port ( in_bus : in  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
-			  in_ram : in STD_LOGIC_VECTOR (7 downto 0);
-           load_a : in  STD_LOGIC;
-			  sel : in STD_LOGIC;  -- '1' ram   '0' bus
-           a_out : out  STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
-			  clk	:	STD_LOGIC);
+   Port ( 
+            in_bus   : in     STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
+            in_ram   : in     STD_LOGIC_VECTOR (7 downto 0);
+            load_a   : in     STD_LOGIC;
+            sel      : in     STD_LOGIC;  -- '1' ram   '0' bus
+            a_out    : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+            clk      :        STD_LOGIC
+         );
 end reg_a;
 
 architecture Behavioral of reg_a is
 
-signal a : STD_LOGIC_VECTOR(7 DOWNTO 0) :=(others => '0');
+signal a : STD_LOGIC_VECTOR(31 DOWNTO 0) :=(others => '0');
 
 begin
 
-	process(clk)
-	
-		begin
-			if (rising_edge(clk)) then
-				if load_a = '1' then
-					if sel = '1' then
-						a <= in_ram;
-					elsif sel = '0' then
-						a <= in_bus;
-					end if;
-				end if;
-			end if;
-	end process;
-	
+process(clk)
+begin
+
+   if (rising_edge(clk)) then
+      if load_a = '1' then
+      
+         if sel = '1' then
+            a <= ("00000000" & "00000000" & "00000000" & in_ram);
+         elsif sel = '0' then
+            a <= ("00000000" & "00000000" & "00000000" & in_bus);
+         end if;
+         
+      end if;
+   end if;
+      
+end process;
+
 a_out <= a;
 
 end Behavioral;

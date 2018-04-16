@@ -1,7 +1,7 @@
 Release 13.4 par O.87xd (nt64)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-GA543C3A::  Mon Apr 16 11:59:59 2018
+GA543C3A::  Mon Apr 16 12:05:06 2018
 
 par -w -intstyle ise -ol high -t 1 Procesador_32_bits_map.ncd
 Procesador_32_bits.ncd Procesador_32_bits.pcf 
@@ -126,9 +126,9 @@ Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Updating file: Procesador_32_bits.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
 Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
 
