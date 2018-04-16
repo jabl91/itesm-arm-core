@@ -45,22 +45,22 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-PORT_A_OUT<0>|    7.683(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<1>|    7.769(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<2>|    7.325(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<3>|    7.268(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<0>|    8.044(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<1>|    7.997(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<2>|    7.806(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<3>|    7.838(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<0>|    7.727(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<1>|    7.727(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<2>|    8.129(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<3>|    8.136(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<4>|    7.795(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<5>|    7.723(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<6>|    7.859(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<7>|    7.918(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<0>|    7.752(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<1>|    7.916(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<2>|    7.513(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<3>|    8.100(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<0>|    8.443(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<1>|    8.172(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<2>|    7.896(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<3>|    7.834(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<0>|    7.879(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<1>|    8.596(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<2>|    7.809(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<3>|    7.507(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<4>|    7.189(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<5>|    7.203(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<6>|    7.223(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<7>|    7.785(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -68,11 +68,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.700|    6.130|    4.653|    2.877|
+clk            |   12.615|    6.336|    5.912|    3.735|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Apr 16 10:55:25 2018 
+Analysis completed Mon Apr 16 11:23:20 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

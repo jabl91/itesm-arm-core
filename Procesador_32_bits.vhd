@@ -76,7 +76,7 @@ component data_bus
             port_a         : in  STD_LOGIC_VECTOR (3 downto 0);
             port_b         : in  STD_LOGIC_VECTOR (3 downto 0);
             port_c         : in  STD_LOGIC_VECTOR (7 downto 0);
-            sel            : in  STD_LOGIC_VECTOR (2 downto 0);
+            sel            : in  STD_LOGIC_VECTOR (4 downto 0);
             q              : out STD_LOGIC_VECTOR (7 downto 0)
          );
 end component;
@@ -225,7 +225,7 @@ component uInst
                WR_PORT           : out    STD_LOGIC;
                SEL_PORT_OR_BUS   : out    STD_LOGIC;
                ENABLE_PORT       : out    STD_LOGIC_VECTOR (1 DOWNTO 0);
-               SEL_BUS           : out    STD_LOGIC_VECTOR (2 DOWNTO 0)
+               SEL_BUS           : out    STD_LOGIC_VECTOR (4 DOWNTO 0)
          );
 end component;
 
@@ -277,7 +277,7 @@ SIGNAL SPW_OUT       : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');      --
                   SIGNAL WR_PORT                : STD_LOGIC;
                   SIGNAL SEL_PORT_OR_BUS        : STD_LOGIC;                     
                   SIGNAL ENABLE_PORT            : STD_LOGIC_VECTOR (1 DOWNTO 0);  
-                  SIGNAL SEL_BUS                : STD_LOGIC_VECTOR (2 DOWNTO 0) := "000";                  
+                  SIGNAL SEL_BUS                : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');                  
  
 begin
 

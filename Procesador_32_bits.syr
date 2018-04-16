@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.59 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.59 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -153,7 +153,8 @@ Architecture behavioral of Entity mux_mar is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
 Architecture behavioral of Entity program_counter is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
-Architecture behavioral of Entity uinst is up to date.
+Entity <uinst> compiled.
+Entity <uinst> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
 Architecture behavioral of Entity spw is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" in Library work.
@@ -179,7 +180,8 @@ Architecture behavioral of Entity reg_a is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
 Architecture behavioral of Entity reg_b is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
-Architecture behavioral of Entity data_bus is up to date.
+Entity <data_bus> compiled.
+Entity <data_bus> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" in Library work.
 Entity <procesador_32_bits> compiled.
 Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
@@ -431,7 +433,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <PORT_BUS>. Latches may be genera
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 1-bit latch for signal <SPTR_DEC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-WARNING:Xst:737 - Found 3-bit latch for signal <SEL_BUS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 5-bit latch for signal <SEL_BUS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 1-bit latch for signal <PC_INC>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
@@ -510,9 +512,6 @@ Unit <reg_b> synthesized.
 
 Synthesizing Unit <data_bus>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd".
-    Found 8-bit 8-to-1 multiplexer for signal <out_q>.
-    Summary:
-	inferred   8 Multiplexer(s).
 Unit <data_bus> synthesized.
 
 
@@ -759,12 +758,10 @@ Macro Statistics
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
- 3-bit latch                                           : 1
  4-bit latch                                           : 1
+ 5-bit latch                                           : 1
 # Comparators                                          : 1
  4-bit comparator less                                 : 1
-# Multiplexers                                         : 1
- 8-bit 8-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  8-bit xor2                                            : 1
 
@@ -774,6 +771,8 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Procesador_32_bits>.
 	Found pipelined multiplier on signal <ALU_F/q_MUL>:
@@ -826,12 +825,10 @@ Macro Statistics
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
- 3-bit latch                                           : 1
  4-bit latch                                           : 1
+ 5-bit latch                                           : 1
 # Comparators                                          : 1
  4-bit comparator less                                 : 1
-# Multiplexers                                         : 1
- 8-bit 8-to-1 multiplexer                              : 1
 # Xors                                                 : 1
  8-bit xor2                                            : 1
 
@@ -840,6 +837,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <SEL_BUS_3> in Unit <uInst> is equivalent to the following FF/Latch, which will be removed : <SEL_BUS_4> 
+WARNING:Xst:1710 - FF/Latch <SEL_BUS_3> (without init value) has a constant value of 0 in block <uInst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <SPW_F/out_SPW_4> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <SPW_F/out_SPW_3> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <SPW_F/out_SPW_0> of sequential type is unconnected in block <Procesador_32_bits>.
@@ -874,7 +873,12 @@ WARNING:Xst:2677 - Node <uInst_F/ALU_BUS> of sequential type is unconnected in b
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Procesador_32_bits, actual ratio is 4.
-FlipFlop reg_a_F/a_3 has been replicated 1 time(s)
+FlipFlop RAM_Memory_F/MAR/out_addr_0 has been replicated 1 time(s)
+FlipFlop RAM_Memory_F/MAR/out_addr_1 has been replicated 1 time(s)
+FlipFlop RAM_Memory_F/MAR/out_addr_2 has been replicated 1 time(s)
+FlipFlop RAM_Memory_F/MAR/out_addr_3 has been replicated 1 time(s)
+FlipFlop reg_b_F/out_bus_0 has been replicated 1 time(s)
+FlipFlop reg_b_F/out_bus_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -882,8 +886,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 73
- Flip-Flops                                            : 73
+# Registers                                            : 78
+ Flip-Flops                                            : 78
 
 =========================================================================
 
@@ -912,28 +916,27 @@ Design Statistics
 # IOs                              : 49
 
 Cell Usage :
-# BELS                             : 533
+# BELS                             : 554
 #      GND                         : 1
-#      INV                         : 10
+#      INV                         : 2
 #      LUT1                        : 1
-#      LUT2                        : 48
+#      LUT2                        : 54
 #      LUT2_D                      : 1
 #      LUT2_L                      : 1
-#      LUT3                        : 105
-#      LUT3_D                      : 2
-#      LUT3_L                      : 1
-#      LUT4                        : 226
-#      LUT4_D                      : 4
-#      LUT4_L                      : 18
+#      LUT3                        : 103
+#      LUT3_D                      : 3
+#      LUT3_L                      : 4
+#      LUT4                        : 241
+#      LUT4_D                      : 10
+#      LUT4_L                      : 26
 #      MUXCY                       : 23
-#      MUXF5                       : 60
-#      MUXF6                       : 4
+#      MUXF5                       : 56
 #      VCC                         : 1
 #      XORCY                       : 27
-# FlipFlops/Latches                : 98
+# FlipFlops/Latches                : 103
 #      FD_1                        : 3
-#      FDE                         : 56
-#      FDE_1                       : 13
+#      FDE                         : 57
+#      FDE_1                       : 17
 #      FDS_1                       : 1
 #      LD                          : 25
 # RAMS                             : 8
@@ -951,10 +954,10 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      233  out of   5888     3%  
- Number of Slice Flip Flops:             98  out of  11776     0%  
- Number of 4 input LUTs:                433  out of  11776     3%  
-    Number used as logic:               417
+ Number of Slices:                      253  out of   5888     4%  
+ Number of Slice Flip Flops:            103  out of  11776     0%  
+ Number of 4 input LUTs:                462  out of  11776     3%  
+    Number used as logic:               446
     Number used as RAMs:                 16
  Number of IOs:                          49
  Number of bonded IOBs:                  17  out of    372     4%  
@@ -982,7 +985,7 @@ Clock Information:
 -------------------------------------------------------------+-------------------------------+-------+
 Clock Signal                                                 | Clock buffer(FF name)         | Load  |
 -------------------------------------------------------------+-------------------------------+-------+
-clk                                                          | BUFGP                         | 82    |
+clk                                                          | BUFGP                         | 87    |
 ALU_F/out_c_not0001(ALU_F/out_c_not00011:O)                  | NONE(*)(ALU_F/out_c)          | 1     |
 uInst_F/ALU_SIGNAL_not0001(uInst_F/ALU_SIGNAL_not000157:O)   | NONE(*)(uInst_F/ALU_SIGNAL_3) | 4     |
 uInst_F/ENABLE_PORT_not0001(uInst_F/ENABLE_PORT_not0001:O)   | NONE(*)(uInst_F/ENABLE_PORT_1)| 2     |
@@ -992,7 +995,7 @@ uInst_F/LOAD_A_not0001(uInst_F/LOAD_A_not0001105:O)          | NONE(*)(uInst_F/L
 uInst_F/LOAD_B_not0001(uInst_F/LOAD_B_not0001105:O)          | NONE(*)(uInst_F/LOAD_B)       | 1     |
 uInst_F/MBR_MUX_not0001(uInst_F/MBR_MUX_not0001:O)           | NONE(*)(uInst_F/MBR_MUX)      | 1     |
 uInst_F/LOAD_CJNE_not0001(uInst_F/LOAD_CJNE_not0001_f5:O)    | NONE(*)(uInst_F/LOAD_CJNE)    | 1     |
-uInst_F/LOAD_PC_not0001(uInst_F/LOAD_PC_not000191_f5:O)      | NONE(*)(uInst_F/LOAD_PC)      | 1     |
+uInst_F/LOAD_PC_not0001(uInst_F/LOAD_PC_not000189_f5:O)      | NONE(*)(uInst_F/LOAD_PC)      | 1     |
 uInst_F/Load_Instr_not0001(uInst_F/Load_Instr_not0001:O)     | NONE(*)(uInst_F/Load_Instr)   | 1     |
 uInst_F/A_SRC_MUX_not0001(uInst_F/A_SRC_MUX_not0001:O)       | NONE(*)(uInst_F/A_SRC_MUX)    | 1     |
 uInst_F/LOAD_SPW_not0001(uInst_F/LOAD_SPW_not000140:O)       | NONE(*)(uInst_F/LOAD_SPW)     | 1     |
@@ -1016,7 +1019,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 14.789ns (Maximum Frequency: 67.618MHz)
+   Minimum period: 12.931ns (Maximum Frequency: 77.334MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 5.558ns
    Maximum combinational path delay: No path found
@@ -1027,38 +1030,35 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 14.789ns (frequency: 67.618MHz)
-  Total number of paths / destination ports: 13539 / 129
+  Clock period: 12.931ns (frequency: 77.334MHz)
+  Total number of paths / destination ports: 16773 / 134
 -------------------------------------------------------------------------
-Delay:               14.789ns (Levels of Logic = 14)
-  Source:            reg_b_F/out_bus_0 (FF)
-  Destination:       reg_b_F/out_bus_0 (FF)
+Delay:               12.931ns (Levels of Logic = 11)
+  Source:            reg_a_F/a_3 (FF)
+  Destination:       ALU_F/G9/Mmult_Q1 (MULT)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: reg_b_F/out_bus_0 to reg_b_F/out_bus_0
+  Data Path: reg_a_F/a_3 to ALU_F/G9/Mmult_Q1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             24   0.591   1.284  reg_b_F/out_bus_0 (reg_b_F/out_bus_0)
-     LUT3_D:I2->LO         1   0.648   0.132  ALU_F/G10/Msub_p1_sub0000_cy<1>11 (N258)
-     LUT3:I2->O            5   0.648   0.636  ALU_F/G10/Msub_p1_sub0000_xor<3>11 (ALU_F/G10/p1_sub0000<3>)
-     LUT4:I3->O            1   0.648   0.000  ALU_F/G10/Msub_p1_sub0001_lut<1> (ALU_F/G10/Msub_p1_sub0001_lut<1>)
-     XORCY:LI->O           5   0.720   0.713  ALU_F/G10/Msub_p1_sub0001_xor<1> (ALU_F/G10/p1_sub0001<1>)
-     LUT2:I1->O            1   0.643   0.000  ALU_F/G10/Madd_p1_addsub0001_lut<1> (ALU_F/G10/Madd_p1_addsub0001_lut<1>)
-     XORCY:LI->O           4   0.720   0.590  ALU_F/G10/Madd_p1_addsub0001_xor<1> (ALU_F/G10/p1_addsub0001<1>)
-     LUT4:I3->O            1   0.648   0.000  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1_SW0_G (N136)
-     MUXF5:I1->O           1   0.276   0.423  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1_SW0 (N104)
-     LUT4:I3->O            2   0.648   0.447  ALU_F/G10/Msub_p1_sub0002_Madd_xor<3>11 (ALU_F/G10/p1_sub0002<3>)
-     MUXF5:S->O            1   0.756   0.423  ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>1 (ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>)
-     LUT4:I3->O            1   0.648   0.000  BUS_F/Mmux_out_q_4 (BUS_F/Mmux_out_q_4)
-     MUXF5:I1->O           1   0.276   0.000  BUS_F/Mmux_out_q_3_f5 (BUS_F/Mmux_out_q_3_f5)
-     MUXF6:I1->O           2   0.291   0.447  BUS_F/Mmux_out_q_2_f6 (BUS_OUT<0>1)
-     INV:I->O              5   0.648   0.633  Port_C/a_mux0001<0>1_INV_0 (BUS_OUT<0>)
-     FDE:D                     0.252          reg_b_F/out_bus_0
+     FDE:C->Q             21   0.591   1.271  reg_a_F/a_3 (reg_a_F/a_3)
+     LUT3_L:I0->LO         1   0.648   0.132  ALU_F/G10/Msub_p1_sub0000_cy<1>11 (ALU_F/G10/Msub_p1_sub0000_cy<1>)
+     LUT3:I2->O            6   0.648   0.672  ALU_F/G10/Msub_p1_sub0000_xor<3>11 (ALU_F/G10/p1_sub0000<3>)
+     LUT4:I3->O            0   0.648   0.000  ALU_F/G10/p1_mux0000<0>1 (ALU_F/G10/p1_mux0000<0>)
+     MUXCY:DI->O           1   0.787   0.000  ALU_F/G10/Msub_p1_sub0001_cy<1> (ALU_F/G10/Msub_p1_sub0001_cy<1>)
+     XORCY:CI->O           3   0.844   0.611  ALU_F/G10/Msub_p1_sub0001_xor<2> (ALU_F/G10/p1_sub0001<2>)
+     LUT2:I1->O            0   0.643   0.000  ALU_F/G10/Madd_p1_addsub0001_lut<2> (ALU_F/G10/Madd_p1_addsub0001_lut<2>)
+     XORCY:LI->O           2   0.720   0.450  ALU_F/G10/Madd_p1_addsub0001_xor<2> (ALU_F/G10/p1_addsub0001<2>)
+     LUT4_D:I3->O          1   0.648   0.423  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1 (ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>)
+     LUT4_L:I3->LO         1   0.648   0.132  ALU_F/G10/p1_mux0002<1>1_SW0 (N82)
+     LUT4:I2->O            2   0.648   0.450  ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>1 (ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>)
+     LUT4:I3->O            6   0.648   0.669  BUS_F/out_q<0>296 (BUS_OUT<0>)
+     MULT18X18SIO:B0           0.000          ALU_F/G9/Mmult_Q1
     ----------------------------------------
-    Total                     14.789ns (9.061ns logic, 5.728ns route)
-                                       (61.3% logic, 38.7% route)
+    Total                     12.931ns (8.121ns logic, 4.810ns route)
+                                       (62.8% logic, 37.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1083,13 +1083,13 @@ Offset:              5.558ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.48 secs
+Total CPU time to Xst completion: 9.44 secs
  
 --> 
 
-Total memory usage is 300756 kilobytes
+Total memory usage is 300564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   55 (   0 filtered)
-Number of infos    :   32 (   0 filtered)
+Number of warnings :   58 (   0 filtered)
+Number of infos    :   33 (   0 filtered)
 

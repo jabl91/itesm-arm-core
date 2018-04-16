@@ -61,7 +61,7 @@ entity uInst is
 						PORT_BUS			: out		STD_LOGIC					:= '0';
 						WR_PORT			: out		STD_LOGIC					:= '0';
 						ENABLE_PORT		: out 	STD_LOGIC_VECTOR (1 DOWNTO 0) := (others => '0');
-						SEL_BUS 			: out 	STD_LOGIC_VECTOR (2 DOWNTO 0);
+						SEL_BUS 			: out 	STD_LOGIC_VECTOR (4 DOWNTO 0);
 						SEL_PORT_OR_BUS : out STD_LOGIC				-- 0 para puerto y 1 para bus
 			);			
 			
@@ -132,7 +132,7 @@ begin
 									when "00100" => 		-- CJNE
 									ReadMem 					<= '0';
 									Load_Instr 				<= '0';
-									SEL_BUS<= "010";
+									SEL_BUS<= "00010";
 									LOAD_B	<= '1';
 									ALU_SIGNAL <= "0010";
 									--LOAD_SPW <= '1';
@@ -266,12 +266,12 @@ begin
 									when "01100" => 		-- AND
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0000";
-									SEL_BUS<= "010";
+									SEL_BUS<= "00010";
 									LOAD_B <= '1';
 									when "01101" => 		-- OR
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0001";
-									SEL_BUS<= "010";
+									SEL_BUS<= "00010";
 									LOAD_B <= '1';
 									when "01110" => 		-- NOT A
 									PC_INC	<='0';
@@ -279,28 +279,28 @@ begin
 									when "01111" => 		-- NOT K
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0011";
-									SEL_BUS<= "010";
+									SEL_BUS<= "00010";
 									LOAD_A  <= '1';
 									when "10000" => 		-- XOR
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0010";
-									SEL_BUS<= "010";
+									SEL_BUS<= "00010";
 									when "10001" => 		-- MOV A,B
 									PC_INC	<='0';
 									LOAD_B	<='1';
-									SEL_BUS<= "000";
+									SEL_BUS<= "00000";
 									when "10010" => 		-- MOV A, data addr
 									PC_INC	<='0';
 									LOAD_MS_MUX	<= '1';
 									MBR_MUX		<= '0';
 									when "10011" => 		-- MOV A, Pn
 									PC_INC	<='0';
-									SEL_BUS<= "000";
+									SEL_BUS<= "00000";
 									ENABLE_PORT <= "11";
 									when "10100" => 		-- MOV B,A
 									PC_INC	<='0';
 									LOAD_A	<='1';
-									SEL_BUS<= "001";
+									SEL_BUS<= "00001";
 									when "10101" => 		-- MOV data addr, A
 									PC_INC	<='0';
 									MBR_MUX <= '1';
@@ -312,18 +312,18 @@ begin
 									SEL_PORT_OR_BUS <= '0';
 									case DATA_PM is 
 									
-										when "00" => 	SEL_BUS <= "011";
+										when "00" => 	SEL_BUS <= "00011";
 															ENABLE_PORT <= "11";
-										when "01" => SEL_BUS <= "100";
+										when "01" => SEL_BUS <= "00100";
 															ENABLE_PORT <= "11";
-										when "10" => SEL_BUS <= "101";
+										when "10" => SEL_BUS <= "00101";
 															ENABLE_PORT <= "11";
 										when others =>
 															ENABLE_PORT <= "11";
 									end case;
 									when "10111" => 		-- MOV A,k
 									PC_INC	<='0';
-									SEL_BUS 	<="010";
+									SEL_BUS 	<="00010";
 									LOAD_B   <='1';
 									when others  => 		--?
 								end case;
@@ -360,60 +360,60 @@ begin
 										PC_SRC_MUX <= '1';
 										end if;
 									when "00101" => 		-- ROTL
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_SPW <= '1';
 									when "00110" => 		-- ROTR
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_SPW <= '1';
 									when "00111" => 		-- SWAP
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_SPW <= '1';
 									when "01000" => 		-- SUM
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_SPW <= '1';
 									ALU_BUS	<= '1';
 									when "01001" => 		-- SUB
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									ALU_BUS	<= '1';
 									LOAD_SPW <= '1';
 									when "01010" => 		-- MULT
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									ALU_BUS	<= '1';
 									LOAD_SPW <= '1';
 									when "01011" => 		-- DIV
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									ALU_BUS	<= '1';
 									LOAD_SPW <= '1';
 									when "01100" => 		-- AND
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_B <= '0';
 									LOAD_SPW <= '1';
 									when "01101" => 		-- OR
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_B <= '0';
 									LOAD_SPW <= '1';
 									when "01110" => 		-- NOT A
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									ALU_BUS	<= '1';
 									LOAD_SPW <= '1';
 									when "01111" => 		-- NOT K
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									PM_BUS <= '0';
 									ALU_BUS	<= '1';
 									LOAD_SPW <= '1';
 									when "10000" => 		-- XOR
-									SEL_BUS<= "110";
+									SEL_BUS<= "00110";
 									LOAD_A  <= '1';
 									LOAD_SPW <= '1';
 									LOAD_B <= '0';
@@ -430,11 +430,11 @@ begin
 									SEL_PORT_OR_BUS <= '0';
 									case DATA_PM is 
 									
-										when "00" => 	SEL_BUS <= "000";
+										when "00" => 	SEL_BUS <= "00000";
 															ENABLE_PORT <= "00";
-										when "01" => SEL_BUS <= "000";
+										when "01" => SEL_BUS <= "00000";
 															ENABLE_PORT <= "01";
-										when "10" => SEL_BUS <= "000";
+										when "10" => SEL_BUS <= "00000";
 															ENABLE_PORT <= "10";
 										when others =>
 															ENABLE_PORT <= "11";

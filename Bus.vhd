@@ -37,7 +37,7 @@ entity data_bus is
            port_a : in  STD_LOGIC_VECTOR (3 downto 0);
            port_b : in  STD_LOGIC_VECTOR (3 downto 0);
            port_c : in  STD_LOGIC_VECTOR (7 downto 0);
-			  sel : in STD_LOGIC_VECTOR (2 downto 0);
+			  sel : in STD_LOGIC_VECTOR (4 downto 0);
            q : out  STD_LOGIC_VECTOR (7 downto 0));
 end data_Bus;
 
@@ -50,13 +50,13 @@ begin
 	process (pm,alu,a,b,port_a,port_b,port_c,sel)
 	begin
 		case sel is
-			when "000" => out_q <= a;
-			when "001" => out_q <= b;
-			when "010" => out_q <= ("0000" & pm);
-			when "011" => out_q <= ("0000" & port_a);
-			when "100" => out_q <= ("0000" & port_b);
-			when "101" => out_q <= port_c;
-			when "110" => out_q <= alu;
+			when "00000" => out_q <= a;
+			when "00001" => out_q <= b;
+			when "00010" => out_q <= ("0000" & pm);
+			when "00011" => out_q <= ("0000" & port_a);
+			when "00100" => out_q <= ("0000" & port_b);
+			when "00101" => out_q <= port_c;
+			when "00110" => out_q <= alu;
 			when others => out_q <= "00000000";
 		end case;
 	end process;

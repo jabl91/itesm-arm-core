@@ -10,24 +10,24 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Mon Apr 16 10:55:01 2018
+Mapped Date    : Mon Apr 16 11:22:58 2018
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   19
 Logic Utilization:
-  Total Number Slice Registers:          98 out of  11,776    1%
-    Number used as Flip Flops:           73
+  Total Number Slice Registers:         103 out of  11,776    1%
+    Number used as Flip Flops:           78
     Number used as Latches:              25
-  Number of 4 input LUTs:               436 out of  11,776    3%
+  Number of 4 input LUTs:               469 out of  11,776    3%
 Logic Distribution:
-  Number of occupied Slices:            238 out of   5,888    4%
-    Number of Slices containing only related logic:     238 out of     238 100%
-    Number of Slices containing unrelated logic:          0 out of     238   0%
+  Number of occupied Slices:            259 out of   5,888    4%
+    Number of Slices containing only related logic:     259 out of     259 100%
+    Number of Slices containing unrelated logic:          0 out of     259   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         437 out of  11,776    3%
-    Number used as logic:               420
+  Total Number of 4 input LUTs:         470 out of  11,776    3%
+    Number used as logic:               453
     Number used as a route-thru:          1
     Number used for 32x1 RAMs:           16
       (Two LUTs used per 32x1 RAM)
@@ -39,7 +39,7 @@ Logic Distribution:
   Number of BUFGMUXs:                     1 out of      24    4%
   Number of MULT18X18SIOs:                1 out of      20    5%
 
-Average Fanout of Non-Clock Nets:                4.18
+Average Fanout of Non-Clock Nets:                4.06
 
 Peak Memory Usage:  283 MB
 Total REAL time to MAP completion:  2 secs 
@@ -144,14 +144,14 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_B_not0001 is
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network PORT_C_IN<7> has no load.
-INFO:LIT:395 - The above info message is repeated 15 more times for the
+INFO:LIT:243 - Logical network PORT_A_OUT<7> has no load.
+INFO:LIT:395 - The above info message is repeated 31 more times for the
    following (max. 5 shown):
-   PORT_C_IN<6>,
-   PORT_C_IN<5>,
-   PORT_C_IN<4>,
-   PORT_C_IN<3>,
-   PORT_C_IN<2>
+   PORT_A_OUT<6>,
+   PORT_A_OUT<5>,
+   PORT_A_OUT<4>,
+   PORT_B_OUT<7>,
+   PORT_B_OUT<6>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
