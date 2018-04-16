@@ -51,7 +51,7 @@ component alu
             B_F            : in  STD_LOGIC_VECTOR (7 DOWNTO 0);
             spw_in         : in  STD_LOGIC_VECTOR (4 DOWNTO 0);   -- z,half-carry,carry,igualdad,negativos
             spw_out        : out STD_LOGIC_VECTOR (4 downto 0);
-            q              : out STD_LOGIC_VECTOR (7 DOWNTO 0);
+            q              : out STD_LOGIC_VECTOR (31 DOWNTO 0);
             sel            : in  STD_LOGIC_VECTOR (3 DOWNTO 0)
          );
 end component;
@@ -417,7 +417,7 @@ port map(
          --   spw => (SPW_IN,SPW_OUT),
             spw_in               =>    SPW_OUT,
             spw_out              =>    SPW_IN,
-            q                    =>    ALU_OUT(7 DOWNTO 0),
+            q                    =>    ALU_OUT,
             sel                  =>    ALU_SIGNAL
          );
 

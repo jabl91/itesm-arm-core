@@ -1,0 +1,466 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml alu.twx alu.ncd -o alu.twr alu.pcf
+
+Design file:              alu.ncd
+Physical constraint file: alu.pcf
+Device,package,speed:     xc3s700a,fg484,-4 (PRODUCTION 1.42 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sel<0>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A_F<0>      |    4.893(F)|    0.370(F)|out_c_not0001     |   0.000|
+A_F<1>      |    4.137(F)|   -1.098(F)|out_c_not0001     |   0.000|
+A_F<2>      |    4.601(F)|   -1.471(F)|out_c_not0001     |   0.000|
+A_F<3>      |    3.976(F)|   -0.969(F)|out_c_not0001     |   0.000|
+A_F<4>      |    4.174(F)|   -1.130(F)|out_c_not0001     |   0.000|
+A_F<5>      |    3.813(F)|   -0.883(F)|out_c_not0001     |   0.000|
+A_F<6>      |    4.000(F)|   -0.991(F)|out_c_not0001     |   0.000|
+A_F<7>      |    4.345(F)|    0.676(F)|out_c_not0001     |   0.000|
+B_F<0>      |    4.886(F)|   -2.010(F)|out_c_not0001     |   0.000|
+B_F<1>      |    4.418(F)|   -1.635(F)|out_c_not0001     |   0.000|
+B_F<2>      |    4.460(F)|   -1.668(F)|out_c_not0001     |   0.000|
+B_F<3>      |    4.509(F)|   -1.707(F)|out_c_not0001     |   0.000|
+B_F<4>      |    3.767(F)|   -1.114(F)|out_c_not0001     |   0.000|
+B_F<5>      |    3.594(F)|   -0.975(F)|out_c_not0001     |   0.000|
+B_F<6>      |    3.813(F)|   -1.151(F)|out_c_not0001     |   0.000|
+B_F<7>      |    3.614(F)|   -0.991(F)|out_c_not0001     |   0.000|
+spw_in<2>   |    4.478(F)|   -1.683(F)|out_c_not0001     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sel<1>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A_F<0>      |    5.037(F)|    0.190(F)|out_c_not0001     |   0.000|
+A_F<1>      |    4.281(F)|   -1.278(F)|out_c_not0001     |   0.000|
+A_F<2>      |    4.745(F)|   -1.651(F)|out_c_not0001     |   0.000|
+A_F<3>      |    4.120(F)|   -1.149(F)|out_c_not0001     |   0.000|
+A_F<4>      |    4.318(F)|   -1.310(F)|out_c_not0001     |   0.000|
+A_F<5>      |    3.957(F)|   -1.063(F)|out_c_not0001     |   0.000|
+A_F<6>      |    4.144(F)|   -1.171(F)|out_c_not0001     |   0.000|
+A_F<7>      |    4.489(F)|    0.496(F)|out_c_not0001     |   0.000|
+B_F<0>      |    5.030(F)|   -2.190(F)|out_c_not0001     |   0.000|
+B_F<1>      |    4.562(F)|   -1.815(F)|out_c_not0001     |   0.000|
+B_F<2>      |    4.604(F)|   -1.848(F)|out_c_not0001     |   0.000|
+B_F<3>      |    4.653(F)|   -1.887(F)|out_c_not0001     |   0.000|
+B_F<4>      |    3.911(F)|   -1.294(F)|out_c_not0001     |   0.000|
+B_F<5>      |    3.738(F)|   -1.155(F)|out_c_not0001     |   0.000|
+B_F<6>      |    3.957(F)|   -1.331(F)|out_c_not0001     |   0.000|
+B_F<7>      |    3.758(F)|   -1.171(F)|out_c_not0001     |   0.000|
+spw_in<2>   |    4.622(F)|   -1.863(F)|out_c_not0001     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sel<2>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A_F<0>      |    4.749(F)|    0.550(F)|out_c_not0001     |   0.000|
+A_F<1>      |    3.993(F)|   -0.918(F)|out_c_not0001     |   0.000|
+A_F<2>      |    4.457(F)|   -1.291(F)|out_c_not0001     |   0.000|
+A_F<3>      |    3.832(F)|   -0.789(F)|out_c_not0001     |   0.000|
+A_F<4>      |    4.030(F)|   -0.950(F)|out_c_not0001     |   0.000|
+A_F<5>      |    3.669(F)|   -0.703(F)|out_c_not0001     |   0.000|
+A_F<6>      |    3.856(F)|   -0.811(F)|out_c_not0001     |   0.000|
+A_F<7>      |    4.201(F)|    0.856(F)|out_c_not0001     |   0.000|
+B_F<0>      |    4.742(F)|   -1.830(F)|out_c_not0001     |   0.000|
+B_F<1>      |    4.274(F)|   -1.455(F)|out_c_not0001     |   0.000|
+B_F<2>      |    4.316(F)|   -1.488(F)|out_c_not0001     |   0.000|
+B_F<3>      |    4.365(F)|   -1.527(F)|out_c_not0001     |   0.000|
+B_F<4>      |    3.623(F)|   -0.934(F)|out_c_not0001     |   0.000|
+B_F<5>      |    3.450(F)|   -0.795(F)|out_c_not0001     |   0.000|
+B_F<6>      |    3.669(F)|   -0.971(F)|out_c_not0001     |   0.000|
+B_F<7>      |    3.470(F)|   -0.811(F)|out_c_not0001     |   0.000|
+spw_in<2>   |    4.334(F)|   -1.503(F)|out_c_not0001     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sel<3>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+A_F<0>      |    4.718(F)|    0.589(F)|out_c_not0001     |   0.000|
+A_F<1>      |    3.962(F)|   -0.879(F)|out_c_not0001     |   0.000|
+A_F<2>      |    4.426(F)|   -1.252(F)|out_c_not0001     |   0.000|
+A_F<3>      |    3.801(F)|   -0.750(F)|out_c_not0001     |   0.000|
+A_F<4>      |    3.999(F)|   -0.911(F)|out_c_not0001     |   0.000|
+A_F<5>      |    3.638(F)|   -0.664(F)|out_c_not0001     |   0.000|
+A_F<6>      |    3.825(F)|   -0.772(F)|out_c_not0001     |   0.000|
+A_F<7>      |    4.170(F)|    0.895(F)|out_c_not0001     |   0.000|
+B_F<0>      |    4.711(F)|   -1.791(F)|out_c_not0001     |   0.000|
+B_F<1>      |    4.243(F)|   -1.416(F)|out_c_not0001     |   0.000|
+B_F<2>      |    4.285(F)|   -1.449(F)|out_c_not0001     |   0.000|
+B_F<3>      |    4.334(F)|   -1.488(F)|out_c_not0001     |   0.000|
+B_F<4>      |    3.592(F)|   -0.895(F)|out_c_not0001     |   0.000|
+B_F<5>      |    3.419(F)|   -0.756(F)|out_c_not0001     |   0.000|
+B_F<6>      |    3.638(F)|   -0.932(F)|out_c_not0001     |   0.000|
+B_F<7>      |    3.439(F)|   -0.772(F)|out_c_not0001     |   0.000|
+spw_in<2>   |    4.303(F)|   -1.464(F)|out_c_not0001     |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock sel<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+spw_out<2>  |    7.467(F)|out_c_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock sel<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+spw_out<2>  |    7.287(F)|out_c_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock sel<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+spw_out<2>  |    7.647(F)|out_c_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock sel<3> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+spw_out<2>  |    7.686(F)|out_c_not0001     |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sel<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.751|    1.751|
+sel<1>         |         |         |    1.825|    1.825|
+sel<2>         |         |         |    1.109|    1.109|
+sel<3>         |         |         |    0.686|    0.686|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sel<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.895|    1.895|
+sel<1>         |         |         |    1.969|    1.969|
+sel<2>         |         |         |    1.253|    1.253|
+sel<3>         |         |         |    0.830|    0.830|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sel<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.607|    1.607|
+sel<1>         |         |         |    1.681|    1.681|
+sel<2>         |         |         |    0.965|    0.965|
+sel<3>         |         |         |    0.542|    0.542|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sel<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.576|    1.576|
+sel<1>         |         |         |    1.650|    1.650|
+sel<2>         |         |         |    0.934|    0.934|
+sel<3>         |         |         |    0.511|    0.511|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A_F<0>         |q<0>           |   13.866|
+A_F<0>         |q<1>           |   15.002|
+A_F<0>         |q<2>           |   14.899|
+A_F<0>         |q<3>           |   16.429|
+A_F<0>         |q<4>           |   14.232|
+A_F<0>         |q<5>           |   13.444|
+A_F<0>         |q<6>           |   14.346|
+A_F<0>         |q<7>           |   14.262|
+A_F<0>         |spw_out<0>     |    9.215|
+A_F<0>         |spw_out<1>     |    6.821|
+A_F<0>         |spw_out<3>     |   15.929|
+A_F<0>         |spw_out<4>     |   18.693|
+A_F<1>         |q<0>           |   13.447|
+A_F<1>         |q<1>           |   14.009|
+A_F<1>         |q<2>           |   13.906|
+A_F<1>         |q<3>           |   15.436|
+A_F<1>         |q<4>           |   13.239|
+A_F<1>         |q<5>           |   13.071|
+A_F<1>         |q<6>           |   13.973|
+A_F<1>         |q<7>           |   13.792|
+A_F<1>         |spw_out<0>     |    8.857|
+A_F<1>         |spw_out<1>     |    6.927|
+A_F<1>         |spw_out<3>     |   15.459|
+A_F<1>         |spw_out<4>     |   17.700|
+A_F<2>         |q<0>           |   17.951|
+A_F<2>         |q<1>           |   16.833|
+A_F<2>         |q<2>           |   14.991|
+A_F<2>         |q<3>           |   16.521|
+A_F<2>         |q<4>           |   14.324|
+A_F<2>         |q<5>           |   14.009|
+A_F<2>         |q<6>           |   14.911|
+A_F<2>         |q<7>           |   14.730|
+A_F<2>         |spw_out<0>     |    9.871|
+A_F<2>         |spw_out<1>     |   11.964|
+A_F<2>         |spw_out<3>     |   16.397|
+A_F<2>         |spw_out<4>     |   18.984|
+A_F<3>         |q<0>           |   19.547|
+A_F<3>         |q<1>           |   18.429|
+A_F<3>         |q<2>           |   15.115|
+A_F<3>         |q<3>           |   15.909|
+A_F<3>         |q<4>           |   13.712|
+A_F<3>         |q<5>           |   12.652|
+A_F<3>         |q<6>           |   13.739|
+A_F<3>         |q<7>           |   13.742|
+A_F<3>         |spw_out<0>     |    8.675|
+A_F<3>         |spw_out<1>     |   10.586|
+A_F<3>         |spw_out<3>     |   15.409|
+A_F<3>         |spw_out<4>     |   20.580|
+A_F<4>         |q<0>           |    9.769|
+A_F<4>         |q<1>           |   11.586|
+A_F<4>         |q<2>           |   11.519|
+A_F<4>         |q<3>           |   13.262|
+A_F<4>         |q<4>           |   12.798|
+A_F<4>         |q<5>           |   13.128|
+A_F<4>         |q<6>           |   13.793|
+A_F<4>         |q<7>           |   14.050|
+A_F<4>         |spw_out<0>     |    9.646|
+A_F<4>         |spw_out<1>     |    9.011|
+A_F<4>         |spw_out<3>     |   15.717|
+A_F<4>         |spw_out<4>     |   16.198|
+A_F<5>         |q<1>           |   11.083|
+A_F<5>         |q<2>           |   11.016|
+A_F<5>         |q<3>           |   12.759|
+A_F<5>         |q<4>           |   12.295|
+A_F<5>         |q<5>           |   12.615|
+A_F<5>         |q<6>           |   13.097|
+A_F<5>         |q<7>           |   13.126|
+A_F<5>         |spw_out<0>     |    9.143|
+A_F<5>         |spw_out<1>     |    8.811|
+A_F<5>         |spw_out<3>     |   14.793|
+A_F<5>         |spw_out<4>     |   15.367|
+A_F<6>         |q<1>           |   10.955|
+A_F<6>         |q<2>           |   11.043|
+A_F<6>         |q<3>           |   12.631|
+A_F<6>         |q<4>           |   12.167|
+A_F<6>         |q<5>           |   12.487|
+A_F<6>         |q<6>           |   12.969|
+A_F<6>         |q<7>           |   12.998|
+A_F<6>         |spw_out<0>     |    9.015|
+A_F<6>         |spw_out<1>     |    9.521|
+A_F<6>         |spw_out<3>     |   14.665|
+A_F<6>         |spw_out<4>     |   15.239|
+A_F<7>         |q<1>           |   11.561|
+A_F<7>         |q<2>           |   11.494|
+A_F<7>         |q<3>           |   13.237|
+A_F<7>         |q<4>           |   12.773|
+A_F<7>         |q<5>           |   13.093|
+A_F<7>         |q<6>           |   13.575|
+A_F<7>         |q<7>           |   13.604|
+A_F<7>         |spw_out<0>     |    9.621|
+A_F<7>         |spw_out<1>     |   10.406|
+A_F<7>         |spw_out<3>     |   15.271|
+A_F<7>         |spw_out<4>     |   15.845|
+B_F<0>         |q<0>           |   19.466|
+B_F<0>         |q<1>           |   18.348|
+B_F<0>         |q<2>           |   15.034|
+B_F<0>         |q<3>           |   16.449|
+B_F<0>         |q<4>           |   14.252|
+B_F<0>         |q<5>           |   13.831|
+B_F<0>         |q<6>           |   14.733|
+B_F<0>         |q<7>           |   14.552|
+B_F<0>         |spw_out<0>     |    9.602|
+B_F<0>         |spw_out<1>     |    7.063|
+B_F<0>         |spw_out<3>     |   16.219|
+B_F<0>         |spw_out<4>     |   20.499|
+B_F<1>         |q<0>           |   19.028|
+B_F<1>         |q<1>           |   17.910|
+B_F<1>         |q<2>           |   14.596|
+B_F<1>         |q<3>           |   16.014|
+B_F<1>         |q<4>           |   13.817|
+B_F<1>         |q<5>           |   13.631|
+B_F<1>         |q<6>           |   14.533|
+B_F<1>         |q<7>           |   14.352|
+B_F<1>         |spw_out<0>     |    9.417|
+B_F<1>         |spw_out<1>     |    7.010|
+B_F<1>         |spw_out<3>     |   16.019|
+B_F<1>         |spw_out<4>     |   20.061|
+B_F<2>         |q<0>           |   18.348|
+B_F<2>         |q<1>           |   17.230|
+B_F<2>         |q<2>           |   14.515|
+B_F<2>         |q<3>           |   16.045|
+B_F<2>         |q<4>           |   13.848|
+B_F<2>         |q<5>           |   13.881|
+B_F<2>         |q<6>           |   14.783|
+B_F<2>         |q<7>           |   14.602|
+B_F<2>         |spw_out<0>     |    9.743|
+B_F<2>         |spw_out<1>     |   10.812|
+B_F<2>         |spw_out<3>     |   16.269|
+B_F<2>         |spw_out<4>     |   19.381|
+B_F<3>         |q<0>           |   18.415|
+B_F<3>         |q<1>           |   17.297|
+B_F<3>         |q<2>           |   13.983|
+B_F<3>         |q<3>           |   15.957|
+B_F<3>         |q<4>           |   13.760|
+B_F<3>         |q<5>           |   12.700|
+B_F<3>         |q<6>           |   13.787|
+B_F<3>         |q<7>           |   13.790|
+B_F<3>         |spw_out<0>     |    8.902|
+B_F<3>         |spw_out<1>     |   10.827|
+B_F<3>         |spw_out<3>     |   15.457|
+B_F<3>         |spw_out<4>     |   19.448|
+B_F<4>         |q<1>           |   11.000|
+B_F<4>         |q<2>           |   10.933|
+B_F<4>         |q<3>           |   12.676|
+B_F<4>         |q<4>           |   12.212|
+B_F<4>         |q<5>           |   12.542|
+B_F<4>         |q<6>           |   13.207|
+B_F<4>         |q<7>           |   13.464|
+B_F<4>         |spw_out<0>     |    9.060|
+B_F<4>         |spw_out<1>     |    8.775|
+B_F<4>         |spw_out<3>     |   15.131|
+B_F<4>         |spw_out<4>     |   15.612|
+B_F<5>         |q<1>           |   10.719|
+B_F<5>         |q<2>           |   10.652|
+B_F<5>         |q<3>           |   12.395|
+B_F<5>         |q<4>           |   11.931|
+B_F<5>         |q<5>           |   12.251|
+B_F<5>         |q<6>           |   12.733|
+B_F<5>         |q<7>           |   12.762|
+B_F<5>         |spw_out<0>     |    8.779|
+B_F<5>         |spw_out<1>     |    8.136|
+B_F<5>         |spw_out<3>     |   14.429|
+B_F<5>         |spw_out<4>     |   15.003|
+B_F<6>         |q<1>           |   10.580|
+B_F<6>         |q<2>           |   10.513|
+B_F<6>         |q<3>           |   12.256|
+B_F<6>         |q<4>           |   11.792|
+B_F<6>         |q<5>           |   12.112|
+B_F<6>         |q<6>           |   12.594|
+B_F<6>         |q<7>           |   12.623|
+B_F<6>         |spw_out<0>     |    8.640|
+B_F<6>         |spw_out<1>     |    9.856|
+B_F<6>         |spw_out<3>     |   14.290|
+B_F<6>         |spw_out<4>     |   14.864|
+B_F<7>         |q<1>           |   10.425|
+B_F<7>         |q<2>           |   10.358|
+B_F<7>         |q<3>           |   12.101|
+B_F<7>         |q<4>           |   11.637|
+B_F<7>         |q<5>           |   11.957|
+B_F<7>         |q<6>           |   12.439|
+B_F<7>         |q<7>           |   12.468|
+B_F<7>         |spw_out<0>     |    8.485|
+B_F<7>         |spw_out<1>     |    9.334|
+B_F<7>         |spw_out<3>     |   14.135|
+B_F<7>         |spw_out<4>     |   14.709|
+sel<0>         |q<0>           |   12.289|
+sel<0>         |q<1>           |   12.613|
+sel<0>         |q<2>           |   12.764|
+sel<0>         |q<3>           |   12.373|
+sel<0>         |q<4>           |   11.530|
+sel<0>         |q<5>           |   10.653|
+sel<0>         |q<6>           |   11.486|
+sel<0>         |q<7>           |   11.936|
+sel<0>         |spw_out<3>     |   13.603|
+sel<0>         |spw_out<4>     |   14.637|
+sel<1>         |q<0>           |   12.122|
+sel<1>         |q<1>           |   12.075|
+sel<1>         |q<2>           |   11.575|
+sel<1>         |q<3>           |   12.078|
+sel<1>         |q<4>           |   11.570|
+sel<1>         |q<5>           |   10.693|
+sel<1>         |q<6>           |   11.526|
+sel<1>         |q<7>           |   11.976|
+sel<1>         |spw_out<3>     |   13.643|
+sel<1>         |spw_out<4>     |   14.342|
+sel<2>         |q<0>           |   12.271|
+sel<2>         |q<1>           |   12.334|
+sel<2>         |q<2>           |   12.896|
+sel<2>         |q<3>           |   12.551|
+sel<2>         |q<4>           |   11.714|
+sel<2>         |q<5>           |   10.837|
+sel<2>         |q<6>           |   11.670|
+sel<2>         |q<7>           |   12.120|
+sel<2>         |spw_out<3>     |   13.787|
+sel<2>         |spw_out<4>     |   14.815|
+sel<3>         |q<0>           |   12.180|
+sel<3>         |q<1>           |   12.242|
+sel<3>         |q<2>           |   12.805|
+sel<3>         |q<3>           |   12.479|
+sel<3>         |q<4>           |   11.768|
+sel<3>         |q<5>           |   10.891|
+sel<3>         |q<6>           |   11.724|
+sel<3>         |q<7>           |   12.174|
+sel<3>         |spw_out<3>     |   13.841|
+sel<3>         |spw_out<4>     |   14.743|
+spw_in<2>      |q<0>           |   11.783|
+spw_in<2>      |q<1>           |   11.824|
+spw_in<2>      |q<2>           |   12.140|
+spw_in<2>      |q<3>           |   13.247|
+spw_in<2>      |q<4>           |   11.280|
+spw_in<2>      |q<5>           |   11.093|
+spw_in<2>      |q<6>           |   11.410|
+spw_in<2>      |q<7>           |   11.828|
+spw_in<2>      |spw_out<3>     |   13.495|
+spw_in<2>      |spw_out<4>     |   15.511|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 16 12:30:46 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 195 MB
+
+
+

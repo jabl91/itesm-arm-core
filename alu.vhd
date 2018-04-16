@@ -38,7 +38,7 @@ entity alu is
 --			  r_l 	: in STD_LOGIC;
            spw_in : in  STD_LOGIC_VECTOR(4 DOWNTO 0) := "00000"; -- z,half-carry,carry,igualdad,negativos
 			  spw_out : out std_logic_vector (4 downto 0) := "00000";
-           q 		: out  STD_LOGIC_VECTOR(7 DOWNTO 0);
+           q 		: out  STD_LOGIC_VECTOR(31 DOWNTO 0);
 			  sel 	: in STD_LOGIC_VECTOR(3 DOWNTO 0));
 end alu;
 
@@ -188,7 +188,7 @@ else
 end if;
 end process;	
 
-q <= out_q;
+q <= ("00000000" & "00000000" & "00000000" & out_q);
 spw_out(4) <= zero;
 spw_out(3) <= out_q(7) or out_q(6) or out_q(5) or out_q(4);
 spw_out(2) <= out_c;
