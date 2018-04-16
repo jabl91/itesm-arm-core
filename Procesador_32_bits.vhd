@@ -84,7 +84,7 @@ end component;
 component reg_b
    Port  ( 
             in_bus         : in  STD_LOGIC_VECTOR (7 downto 0);
-            out_bus        : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
+            out_bus        : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b         : in  STD_LOGIC;
             clk            :     STD_LOGIC
          );
@@ -434,7 +434,7 @@ port map(
 reg_b_F : reg_b
 port map(
             in_bus              => BUS_OUT(7 DOWNTO 0)  ,
-            out_bus             => B_OUT(7 DOWNTO 0),
+            out_bus             => B_OUT,
             load_b              => LOAD_B,
             clk                 => clk
 );

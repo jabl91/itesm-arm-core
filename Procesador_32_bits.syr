@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.54 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.54 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.56 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -502,9 +502,9 @@ Unit <reg_a> synthesized.
 
 Synthesizing Unit <reg_b>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd".
-    Found 8-bit register for signal <out_bus>.
+    Found 32-bit register for signal <out_bus>.
     Summary:
-	inferred   8 D-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
 Unit <reg_b> synthesized.
 
 
@@ -719,7 +719,7 @@ WARNING:Xst:1780 - Signal <PORT_A_OUT1<31:4>> is never used or assigned. This un
 WARNING:Xst:646 - Signal <PM_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_OUT<31:7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Load_Instr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <B_OUT<31:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <B_OUT<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <B_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <BUS_OUT<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <A_OUT<31:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -749,10 +749,11 @@ Macro Statistics
  7-bit up counter                                      : 1
 # Registers                                            : 16
  1-bit register                                        : 5
+ 32-bit register                                       : 1
  4-bit register                                        : 4
  5-bit register                                        : 2
  7-bit register                                        : 1
- 8-bit register                                        : 4
+ 8-bit register                                        : 3
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
@@ -769,8 +770,10 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+INFO:Xst:2261 - The FF/Latch <out_bus_8> in Unit <reg_b_F> is equivalent to the following 23 FFs/Latches, which will be removed : <out_bus_9> <out_bus_10> <out_bus_11> <out_bus_12> <out_bus_13> <out_bus_14> <out_bus_15> <out_bus_16> <out_bus_17> <out_bus_18> <out_bus_19> <out_bus_20> <out_bus_21> <out_bus_22> <out_bus_23> <out_bus_24> <out_bus_25> <out_bus_26> <out_bus_27> <out_bus_28> <out_bus_29> <out_bus_30> <out_bus_31> 
 WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <out_bus_8> of sequential type is unconnected in block <reg_b_F>.
 
 Synthesizing (advanced) Unit <Procesador_32_bits>.
 	Found pipelined multiplier on signal <ALU_F/q_MUL>:
@@ -796,6 +799,30 @@ INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to
     |     doA            | connected to signal <dataout_ram>   |          |
     -----------------------------------------------------------------------
 Unit <ram_mod> synthesized (advanced).
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_8> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_9> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_10> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_11> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_12> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_13> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_14> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_15> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_16> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_17> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_18> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_19> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_20> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_21> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_22> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_23> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_24> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_25> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_26> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_27> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_28> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_29> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_30> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <reg_b_F/out_bus_31> of sequential type is unconnected in block <Procesador_32_bits>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -1080,14 +1107,14 @@ Offset:              5.558ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.04 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.56 secs
  
 --> 
 
-Total memory usage is 302100 kilobytes
+Total memory usage is 301780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   58 (   0 filtered)
-Number of infos    :   33 (   0 filtered)
+Number of warnings :   83 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
 

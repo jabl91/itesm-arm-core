@@ -30,10 +30,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity reg_b is
-    Port ( in_bus : in  STD_LOGIC_VECTOR (7 downto 0);
-           out_bus : out  STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-           load_b : in  STD_LOGIC;
-			  clk	:	STD_LOGIC);
+   Port (
+            in_bus   : in     STD_LOGIC_VECTOR (7 downto 0);
+            out_bus  : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+            load_b   : in     STD_LOGIC;
+            clk      :        STD_LOGIC
+         );
 end reg_b;
 
 architecture Behavioral of reg_b is
@@ -42,16 +44,16 @@ architecture Behavioral of reg_b is
 
 begin
 
---	clk_b <= clk and load_a;
+--clk_b <= clk and load_a;
 
-	process(clk)
-		begin
-			if (rising_edge(clk)) then
-				if load_b = '1' then
-				out_bus <= in_bus;
-				end if;
-			end if;
-	end process;
+process(clk)
+   begin
+      if (rising_edge(clk)) then
+         if load_b = '1' then
+         out_bus <= ("00000000" & "00000000" & "00000000" & in_bus);
+         end if;
+      end if;
+end process;
 
 
 end Behavioral;

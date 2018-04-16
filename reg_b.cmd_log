@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "reg_b.ngc" reg_b.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o reg_b_map.ncd reg_b.ngd reg_b.pcf 
+par -w -intstyle ise -ol high -t 1 reg_b_map.ncd reg_b.ncd reg_b.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml reg_b.twx reg_b.ncd -o reg_b.twr reg_b.pcf 
