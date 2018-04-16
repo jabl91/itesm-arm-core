@@ -34,12 +34,12 @@ use work.ARITH_PLUS.all;
 entity Procesador_32_bits is
    Port (
             clk            : IN  STD_LOGIC;
-            PORT_A_IN      : IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
-            PORT_B_IN      : IN  STD_LOGIC_VECTOR (3 DOWNTO 0);
+            PORT_A_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
+            PORT_B_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
             PORT_C_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
-            PORT_A_OUT     : OUT STD_LOGIC_VECTOR (3 DOWNTO 0) := "0000";
-            PORT_B_OUT     : OUT STD_LOGIC_VECTOR (3 DOWNTO 0) := "0000";
-            PORT_C_OUT     : OUT STD_LOGIC_VECTOR (7 DOWNTO 0) := "00000000"
+            PORT_A_OUT     : OUT STD_LOGIC_VECTOR (7 DOWNTO 0) := (others => '0');
+            PORT_B_OUT     : OUT STD_LOGIC_VECTOR (7 DOWNTO 0) := (others => '0');
+            PORT_C_OUT     : OUT STD_LOGIC_VECTOR (7 DOWNTO 0) := (others => '0')
          );
 end Procesador_32_bits;
 
@@ -58,11 +58,11 @@ end component;
 
 component reg_a
   Port   ( 
-            in_bus         : in  STD_LOGIC_VECTOR (7 downto 0):= "00000000";
+            in_bus         : in  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
             in_ram         : in  STD_LOGIC_VECTOR (7 downto 0);
             load_a         : in  STD_LOGIC;
             sel            : in  STD_LOGIC;                       -- '1' ram   '0' bus
-            a_out          : out STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+            a_out          : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
             clk            :     STD_LOGIC
          );
 end component;
@@ -84,7 +84,7 @@ end component;
 component reg_b
    Port  ( 
             in_bus         : in  STD_LOGIC_VECTOR (7 downto 0);
-            out_bus        : out STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+            out_bus        : out STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
             load_b         : in  STD_LOGIC;
             clk            :     STD_LOGIC
          );
@@ -336,35 +336,35 @@ port map(
 Port_A : port_4
 port map(
                bus_in            =>    BUS_OUT( 3 DOWNTO 0),
-               port_in           =>    PORT_A_IN,
+               port_in           =>    PORT_A_IN( 3 DOWNTO 0),
                clk               =>    clk,
                sel               =>    SEL_PORT_OR_BUS,         
                bus_out           =>    PORT_A_OUT1(3 DOWNTO 0),
                enable_port       =>    ENABLE_PORT,      
-               port_out          =>    PORT_A_OUT
+               port_out          =>    PORT_A_OUT(3 DOWNTO 0)
          );
 
 Port_B : portb_4
 port map(
                bus_in            =>    BUS_OUT (3 DOWNTO 0),
-               port_in           =>    PORT_B_IN,
+               port_in           =>    PORT_B_IN(3 DOWNTO 0),
                clk               =>    clk,
                sel               =>    SEL_PORT_OR_BUS,         
                bus_out           =>    PORT_B_OUT1(3 DOWNTO 0),
                enable_port       =>    ENABLE_PORT,         
-               port_out          =>    PORT_B_OUT
+               port_out          =>    PORT_B_OUT(3 DOWNTO 0)
          );
 
          
 Port_C : port_8
 port map(
                bus_in            =>    BUS_OUT(7 DOWNTO 0),
-               port_in           =>    PORT_C_IN,
+               port_in           =>    PORT_C_IN(7 DOWNTO 0),
                sel               =>    SEL_PORT_OR_BUS,               
                clk               =>    clk,
                enable_port       =>    ENABLE_PORT,
                bus_out           =>    PORT_C_OUT1(7 DOWNTO 0), 
-               port_out          =>    PORT_C_OUT
+               port_out          =>    PORT_C_OUT(7 DOWNTO 0)
          );
          
 PC_F : PC_MODULE

@@ -1,162 +1,162 @@
 V3 161
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" 2012/05/09.14:46:10 O.87xd
-EN work/alu 1523894154 \
+EN work/alu 1523895243 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/alu/Behavioral 1523894155 \
+AR work/alu/Behavioral 1523895244 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" \
-      EN work/alu 1523894154 CP and_8 CP or_8 CP xor_8 CP not_8 CP SUM CP shift_l \
+      EN work/alu 1523895243 CP and_8 CP or_8 CP xor_8 CP not_8 CP SUM CP shift_l \
       CP shift_r CP swap CP MUL CP DIV CP restador
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" 2012/05/01.17:52:48 O.87xd
-EN work/and_8 1523894092 \
+EN work/and_8 1523895181 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/and_8/Behavioral 1523894093 \
+AR work/and_8/Behavioral 1523895182 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" \
-      EN work/and_8 1523894092
+      EN work/and_8 1523895181
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" 2012/05/04.15:46:34 O.87xd
-PH work/ARITH_PLUS 1523894090 \
+PH work/ARITH_PLUS 1523895179 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-PB work/ARITH_PLUS 1523894091 \
+PB work/ARITH_PLUS 1523895180 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" \
-      PH work/ARITH_PLUS 1523894090
+      PH work/ARITH_PLUS 1523895179
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" 2012/05/09.00:23:04 O.87xd
-EN work/data_bus 1523894160 \
+EN work/data_bus 1523895249 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/data_bus/Behavioral 1523894161 \
+AR work/data_bus/Behavioral 1523895250 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" \
-      EN work/data_bus 1523894160
+      EN work/data_bus 1523895249
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" 2012/05/08.22:47:12 O.87xd
-EN work/dir_reg 1523894118 \
+EN work/dir_reg 1523895207 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/dir_reg/Behavioral 1523894119 \
+AR work/dir_reg/Behavioral 1523895208 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" \
-      EN work/dir_reg 1523894118
+      EN work/dir_reg 1523895207
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" 2012/05/09.04:36:34 O.87xd
-EN work/DIV 1523894110 \
+EN work/DIV 1523895199 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877 \
-      PB work/ARITH_PLUS 1523894091
-AR work/DIV/Behavioral 1523894111 \
+      PB work/ARITH_PLUS 1523895180
+AR work/DIV/Behavioral 1523895200 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" \
-      EN work/DIV 1523894110
+      EN work/DIV 1523895199
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" 2012/05/08.23:10:52 O.87xd
-EN work/inst_reg 1523894116 \
+EN work/inst_reg 1523895205 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/inst_reg/Behavioral 1523894117 \
+AR work/inst_reg/Behavioral 1523895206 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" \
-      EN work/inst_reg 1523894116
+      EN work/inst_reg 1523895205
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" 2012/05/09.20:05:20 O.87xd
-EN work/MAR_mod 1523894128 \
+EN work/MAR_mod 1523895217 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/MAR_mod/Behavioral 1523894129 \
+AR work/MAR_mod/Behavioral 1523895218 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" \
-      EN work/MAR_mod 1523894128
+      EN work/MAR_mod 1523895217
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" 2012/05/09.20:05:20 O.87xd
-EN work/MBR_mod 1523894124 \
+EN work/MBR_mod 1523895213 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/MBR_mod/Behavioral 1523894125 \
+AR work/MBR_mod/Behavioral 1523895214 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" \
-      EN work/MBR_mod 1523894124
+      EN work/MBR_mod 1523895213
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" 2018/04/14.19:54:41 O.87xd
-EN work/MUL 1523894108 \
+EN work/MUL 1523895197 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877 \
-      PB work/ARITH_PLUS 1523894091
-AR work/MUL/Behavioral 1523894109 \
+      PB work/ARITH_PLUS 1523895180
+AR work/MUL/Behavioral 1523895198 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" \
-      EN work/MUL 1523894108
+      EN work/MUL 1523895197
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" 2012/05/08.03:15:32 O.87xd
-EN work/Mux_MAR 1523894130 \
+EN work/Mux_MAR 1523895219 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/Mux_MAR/Behavioral 1523894131 \
+AR work/Mux_MAR/Behavioral 1523895220 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" \
-      EN work/Mux_MAR 1523894130
+      EN work/Mux_MAR 1523895219
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" 2012/05/08.03:15:54 O.87xd
-EN work/Mux_MBR 1523894126 \
+EN work/Mux_MBR 1523895215 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/Mux_MBR/Behavioral 1523894127 \
+AR work/Mux_MBR/Behavioral 1523895216 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" \
-      EN work/Mux_MBR 1523894126
+      EN work/Mux_MBR 1523895215
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" 2012/05/01.20:27:54 O.87xd
-EN work/not_8 1523894098 \
+EN work/not_8 1523895187 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/not_8/Behavioral 1523894099 \
+AR work/not_8/Behavioral 1523895188 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" \
-      EN work/not_8 1523894098
+      EN work/not_8 1523895187
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" 2012/05/08.23:11:04 O.87xd
-EN work/oc_reg 1523894120 \
+EN work/oc_reg 1523895209 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/oc_reg/Behavioral 1523894121 \
+AR work/oc_reg/Behavioral 1523895210 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" \
-      EN work/oc_reg 1523894120
+      EN work/oc_reg 1523895209
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" 2012/05/01.20:16:30 O.87xd
-EN work/or_8 1523894094 \
+EN work/or_8 1523895183 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/or_8/Behavioral 1523894095 \
+AR work/or_8/Behavioral 1523895184 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" \
-      EN work/or_8 1523894094
+      EN work/or_8 1523895183
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" 2012/05/07.23:39:54 O.87xd
-EN work/PC_MODULE 1523894146 \
+EN work/PC_MODULE 1523895235 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/PC_MODULE/Behavioral 1523894147 \
+AR work/PC_MODULE/Behavioral 1523895236 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" \
-      EN work/PC_MODULE 1523894146 CP program_counter
+      EN work/PC_MODULE 1523895235 CP program_counter
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" 2012/05/08.23:38:04 O.87xd
-EN work/phase_gen 1523894138 \
+EN work/phase_gen 1523895227 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/phase_gen/Behavioral 1523894139 \
+AR work/phase_gen/Behavioral 1523895228 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" \
-      EN work/phase_gen 1523894138
+      EN work/phase_gen 1523895227
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd" 2012/05/08.00:16:10 O.87xd
-EN work/portb_4 1523894142 \
+EN work/portb_4 1523895231 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/portb_4/Behavioral 1523894143 \
+AR work/portb_4/Behavioral 1523895232 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd" \
-      EN work/portb_4 1523894142
+      EN work/portb_4 1523895231
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd" 2012/05/08.00:18:10 O.87xd
-EN work/port_4 1523894140 \
+EN work/port_4 1523895229 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/port_4/Behavioral 1523894141 \
+AR work/port_4/Behavioral 1523895230 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd" \
-      EN work/port_4 1523894140
+      EN work/port_4 1523895229
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd" 2012/05/08.00:14:56 O.87xd
-EN work/port_8 1523894144 \
+EN work/port_8 1523895233 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/port_8/Behavioral 1523894145 \
+AR work/port_8/Behavioral 1523895234 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_8.vhd" \
-      EN work/port_8 1523894144
-FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" 2018/04/16.10:54:35 O.87xd
-EN work/Procesador_32_bits 1523894162 \
+      EN work/port_8 1523895233
+FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" 2018/04/16.11:12:49 O.87xd
+EN work/Procesador_32_bits 1523895251 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877 \
-      PB work/ARITH_PLUS 1523894091
-AR work/Procesador_32_bits/Behavioral 1523894163 \
+      PB work/ARITH_PLUS 1523895180
+AR work/Procesador_32_bits/Behavioral 1523895252 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" \
-      EN work/Procesador_32_bits 1523894162 CP uInst CP SPW CP phase_gen CP port_4 \
+      EN work/Procesador_32_bits 1523895251 CP uInst CP SPW CP phase_gen CP port_4 \
       CP portb_4 CP port_8 CP PC_MODULE CP RAM_Memory CP stkptr CP Program_Memory \
       CP alu CP reg_a CP reg_b CP data_bus
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd" 2012/05/17.05:09:44 O.87xd
 EN work/Procesador_4_bits 1523754023 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877 \
-      PB work/ARITH_PLUS 1523894091
+      PB work/ARITH_PLUS 1523895180
 AR work/Procesador_4_bits/Behavioral 1523754024 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_4_bits.vhd" \
       EN work/Procesador_4_bits 1523754023 CP uInst CP SPW CP phase_gen CP port_4 \
@@ -170,129 +170,129 @@ AR work/Procesador_Final_TB/behavior 0 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" \
       EN work/Procesador_Final_TB 0 CP Procesador_4_bits
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" 2012/05/09.20:04:42 O.87xd
-EN work/program_counter 1523894132 \
+EN work/program_counter 1523895221 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/program_counter/Behavioral 1523894133 \
+AR work/program_counter/Behavioral 1523895222 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" \
-      EN work/program_counter 1523894132
+      EN work/program_counter 1523895221
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" 2012/05/08.23:09:28 O.87xd
-EN work/Program_Memory 1523894152 \
+EN work/Program_Memory 1523895241 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/Program_Memory/Behavioral 1523894153 \
+AR work/Program_Memory/Behavioral 1523895242 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" \
-      EN work/Program_Memory 1523894152 CP rom_mod CP inst_reg CP dir_reg CP oc_reg
+      EN work/Program_Memory 1523895241 CP rom_mod CP inst_reg CP dir_reg CP oc_reg
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" 2012/05/09.19:10:04 O.87xd
-EN work/RAM_Memory 1523894148 \
+EN work/RAM_Memory 1523895237 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/RAM_Memory/Behavioral 1523894149 \
+AR work/RAM_Memory/Behavioral 1523895238 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" \
-      EN work/RAM_Memory 1523894148 CP ram_mod CP MBR_mod CP Mux_MBR CP MAR_mod \
+      EN work/RAM_Memory 1523895237 CP ram_mod CP MBR_mod CP Mux_MBR CP MAR_mod \
       CP Mux_MAR
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" 2012/05/07.03:45:38 O.87xd
-EN work/ram_mod 1523894122 \
+EN work/ram_mod 1523895211 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/ram_mod/Behavioral 1523894123 \
+AR work/ram_mod/Behavioral 1523895212 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" \
-      EN work/ram_mod 1523894122
+      EN work/ram_mod 1523895211
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" 2012/05/08.23:55:18 O.87xd
-EN work/reg_a 1523894156 \
+EN work/reg_a 1523895245 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/reg_a/Behavioral 1523894157 \
+AR work/reg_a/Behavioral 1523895246 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" \
-      EN work/reg_a 1523894156
+      EN work/reg_a 1523895245
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" 2012/04/30.03:24:04 O.87xd
-EN work/reg_b 1523894158 \
+EN work/reg_b 1523895247 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/reg_b/Behavioral 1523894159 \
+AR work/reg_b/Behavioral 1523895248 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" \
-      EN work/reg_b 1523894158
+      EN work/reg_b 1523895247
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" 2012/05/04.23:45:28 O.87xd
-EN work/restador 1523894112 \
+EN work/restador 1523895201 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/restador/Behavioral 1523894113 \
+AR work/restador/Behavioral 1523895202 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" \
-      EN work/restador 1523894112 CP sub CP sub_deco
+      EN work/restador 1523895201 CP sub CP sub_deco
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" 2018/04/13.16:08:02 O.87xd
-EN work/rom_mod 1523894114 \
+EN work/rom_mod 1523895203 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/rom_mod/Behavioral 1523894115 \
+AR work/rom_mod/Behavioral 1523895204 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" \
-      EN work/rom_mod 1523894114
+      EN work/rom_mod 1523895203
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" 2012/05/05.17:31:50 O.87xd
-EN work/shift_l 1523894102 \
+EN work/shift_l 1523895191 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/shift_l/Behavioral 1523894103 \
+AR work/shift_l/Behavioral 1523895192 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" \
-      EN work/shift_l 1523894102
+      EN work/shift_l 1523895191
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" 2012/05/05.17:29:14 O.87xd
-EN work/shift_r 1523894104 \
+EN work/shift_r 1523895193 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/shift_r/Behavioral 1523894105 \
+AR work/shift_r/Behavioral 1523895194 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" \
-      EN work/shift_r 1523894104
+      EN work/shift_r 1523895193
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" 2012/05/17.05:04:46 O.87xd
-EN work/SPW 1523894136 \
+EN work/SPW 1523895225 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/SPW/Behavioral 1523894137 \
+AR work/SPW/Behavioral 1523895226 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" \
-      EN work/SPW 1523894136
+      EN work/SPW 1523895225
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" 2012/05/07.02:43:08 O.87xd
-EN work/stkptr 1523894150 \
+EN work/stkptr 1523895239 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/stkptr/Behavioral 1523894151 \
+AR work/stkptr/Behavioral 1523895240 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" \
-      EN work/stkptr 1523894150
+      EN work/stkptr 1523895239
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" 2012/05/04.22:41:32 O.87xd
-EN work/sub 1523894086 \
+EN work/sub 1523895175 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/sub/Behavioral 1523894087 \
+AR work/sub/Behavioral 1523895176 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" \
-      EN work/sub 1523894086
+      EN work/sub 1523895175
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" 2012/05/04.23:15:30 O.87xd
-EN work/sub_deco 1523894088 \
+EN work/sub_deco 1523895177 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/sub_deco/Behavioral 1523894089 \
+AR work/sub_deco/Behavioral 1523895178 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" \
-      EN work/sub_deco 1523894088
+      EN work/sub_deco 1523895177
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" 2012/05/04.22:03:16 O.87xd
-EN work/SUM 1523894100 \
+EN work/SUM 1523895189 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" \
       PB ieee/std_logic_1164 1325952872 PB ieee/NUMERIC_STD 1325952877
-AR work/SUM/Behavioral 1523894101 \
+AR work/SUM/Behavioral 1523895190 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" \
-      EN work/SUM 1523894100
+      EN work/SUM 1523895189
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" 2012/05/01.21:26:02 O.87xd
-EN work/swap 1523894106 \
+EN work/swap 1523895195 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/swap/Behavioral 1523894107 \
+AR work/swap/Behavioral 1523895196 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" \
-      EN work/swap 1523894106
+      EN work/swap 1523895195
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" 2012/05/17.05:08:22 O.87xd
-EN work/uInst 1523894134 \
+EN work/uInst 1523895223 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/uInst/Behavioral 1523894135 \
+AR work/uInst/Behavioral 1523895224 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" \
-      EN work/uInst 1523894134
+      EN work/uInst 1523895223
 FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" 2012/05/06.16:27:08 O.87xd
-EN work/xor_8 1523894096 \
+EN work/xor_8 1523895185 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" \
       PB ieee/std_logic_1164 1325952872
-AR work/xor_8/Behavioral 1523894097 \
+AR work/xor_8/Behavioral 1523895186 \
       FL "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" \
-      EN work/xor_8 1523894096
+      EN work/xor_8 1523895185
