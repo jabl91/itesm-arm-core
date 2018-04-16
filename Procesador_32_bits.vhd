@@ -77,7 +77,7 @@ component data_bus
             port_b         : in  STD_LOGIC_VECTOR (3 downto 0);
             port_c         : in  STD_LOGIC_VECTOR (7 downto 0);
             sel            : in  STD_LOGIC_VECTOR (4 downto 0);
-            q              : out STD_LOGIC_VECTOR (7 downto 0)
+            q              : out STD_LOGIC_VECTOR (31 downto 0)
          );
 end component;
 
@@ -449,7 +449,7 @@ port map(
             port_b               =>    PORT_B_OUT1(3 DOWNTO 0),
             port_c               =>    PORT_C_OUT1(7 DOWNTO 0),
             sel                  =>    SEL_BUS,                  
-            q                    =>    BUS_OUT(7 DOWNTO 0)                                                                                                      
+            q                    =>    BUS_OUT                                                                                                     
             
          );
 

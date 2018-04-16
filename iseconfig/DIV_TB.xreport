@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-14T20:26:15</DateModified>
+  <DateModified>2018-04-16T11:48:33</DateModified>
   <ModuleName>Procesador_32_bits</ModuleName>
-  <SummaryTimeStamp>2018-04-14T20:25:52</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-04-16T11:46:39</SummaryTimeStamp>
   <SavedFilePath>C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/iseconfig/DIV_TB.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits</ImplementationReportsDirectory>
-  <DateInitialized>2018-04-14T20:26:15</DateInitialized>
+  <DateInitialized>2018-04-16T11:48:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

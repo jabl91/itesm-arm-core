@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/data_bus.syr" 

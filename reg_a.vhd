@@ -30,17 +30,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity reg_a is
-    Port ( in_bus : in  STD_LOGIC_VECTOR (7 downto 0):= "00000000";
+    Port ( in_bus : in  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
 			  in_ram : in STD_LOGIC_VECTOR (7 downto 0);
            load_a : in  STD_LOGIC;
 			  sel : in STD_LOGIC;  -- '1' ram   '0' bus
-           a_out : out  STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+           a_out : out  STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
 			  clk	:	STD_LOGIC);
 end reg_a;
 
 architecture Behavioral of reg_a is
 
-signal a : STD_LOGIC_VECTOR(7 DOWNTO 0) :="00000000";
+signal a : STD_LOGIC_VECTOR(7 DOWNTO 0) :=(others => '0');
 
 begin
 
