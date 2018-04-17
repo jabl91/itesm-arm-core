@@ -30,15 +30,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity data_bus is
-    Port ( pm : in  STD_LOGIC_VECTOR (3 downto 0);
-           alu : in  STD_LOGIC_VECTOR (7 downto 0);
-           a : in  STD_LOGIC_VECTOR (7 downto 0);
-           b : in  STD_LOGIC_VECTOR (7 downto 0);
-           port_a : in  STD_LOGIC_VECTOR (3 downto 0);
-           port_b : in  STD_LOGIC_VECTOR (3 downto 0);
-           port_c : in  STD_LOGIC_VECTOR (7 downto 0);
-			  sel : in STD_LOGIC_VECTOR (4 downto 0);
-           q : out  STD_LOGIC_VECTOR (31 downto 0));
+    Port ( pm        : in  STD_LOGIC_VECTOR (3 downto 0);
+           alu       : in  STD_LOGIC_VECTOR (31 downto 0);
+           a         : in  STD_LOGIC_VECTOR (31 downto 0);
+           b         : in  STD_LOGIC_VECTOR (31 downto 0);
+           port_a    : in  STD_LOGIC_VECTOR (7 downto 0);
+           port_b    : in  STD_LOGIC_VECTOR (7 downto 0);
+           port_c    : in  STD_LOGIC_VECTOR (7 downto 0);
+			  sel       : in  STD_LOGIC_VECTOR (4 downto 0);
+           q         : out STD_LOGIC_VECTOR (31 downto 0));
 end data_Bus;
 
 architecture Behavioral of data_bus is
@@ -51,13 +51,13 @@ begin
 	begin
 		case sel is
       
-			when "00000"   => out_q <= ("00000000" & "00000000" & "00000000" & a);
-			when "00001"   => out_q <= ("00000000" & "00000000" & "00000000" & b);
+			when "00000"   => out_q <= (a);
+			when "00001"   => out_q <= (b);
 			when "00010"   => out_q <= ("00000000" & "00000000" & "00000000" & "0000" & pm);
-			when "00011"   => out_q <= ("00000000" & "00000000" & "00000000" & "0000" & port_a);
-			when "00100"   => out_q <= ("00000000" & "00000000" & "00000000" & "0000" & port_b);
+			when "00011"   => out_q <= ("00000000" & "00000000" & "00000000" & port_a);
+			when "00100"   => out_q <= ("00000000" & "00000000" & "00000000" & port_b);
 			when "00101"   => out_q <= ("00000000" & "00000000" & "00000000" & port_c);
-			when "00110"   => out_q <= ("00000000" & "00000000" & "00000000" & alu);
+			when "00110"   => out_q <= (alu);
 			when others    => out_q <= ("00000000" & "00000000" & "00000000" & "00000000");
          
 		end case;
