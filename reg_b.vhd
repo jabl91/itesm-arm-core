@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity reg_b is
    Port (
-            in_bus   : in     STD_LOGIC_VECTOR (7 downto 0);
+            in_bus   : in     STD_LOGIC_VECTOR (31 downto 0);
             out_bus  : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b   : in     STD_LOGIC;
             clk      :        STD_LOGIC
@@ -50,7 +50,7 @@ process(clk)
    begin
       if (rising_edge(clk)) then
          if load_b = '1' then
-         out_bus <= ("00000000" & "00000000" & "00000000" & in_bus);
+         out_bus <= (in_bus);
          end if;
       end if;
 end process;

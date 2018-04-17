@@ -31,8 +31,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity reg_a is
    Port ( 
-            in_bus   : in     STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
-            in_ram   : in     STD_LOGIC_VECTOR (7 downto 0);
+            in_bus   : in     STD_LOGIC_VECTOR (31 downto 0):= (others => '0');
+            in_ram   : in     STD_LOGIC_VECTOR (31 downto 0);
             load_a   : in     STD_LOGIC;
             sel      : in     STD_LOGIC;  -- '1' ram   '0' bus
             a_out    : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
@@ -53,9 +53,9 @@ begin
       if load_a = '1' then
       
          if sel = '1' then
-            a <= ("00000000" & "00000000" & "00000000" & in_ram);
+            a <= (in_ram);
          elsif sel = '0' then
-            a <= ("00000000" & "00000000" & "00000000" & in_bus);
+            a <= (in_bus);
          end if;
          
       end if;

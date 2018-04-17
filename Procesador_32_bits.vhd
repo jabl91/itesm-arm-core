@@ -58,8 +58,8 @@ end component;
 
 component reg_a
   Port   ( 
-            in_bus         : in  STD_LOGIC_VECTOR (7 downto 0):= (others => '0');
-            in_ram         : in  STD_LOGIC_VECTOR (7 downto 0);
+            in_bus         : in  STD_LOGIC_VECTOR (31 downto 0):= (others => '0');
+            in_ram         : in  STD_LOGIC_VECTOR (31 downto 0);
             load_a         : in  STD_LOGIC;
             sel            : in  STD_LOGIC;                       -- '1' ram   '0' bus
             a_out          : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
@@ -83,7 +83,7 @@ end component;
 
 component reg_b
    Port  ( 
-            in_bus         : in  STD_LOGIC_VECTOR (7 downto 0);
+            in_bus         : in  STD_LOGIC_VECTOR (31 downto 0);
             out_bus        : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b         : in  STD_LOGIC;
             clk            :     STD_LOGIC
@@ -423,8 +423,8 @@ port map(
 
 reg_a_F : reg_a
 port map(
-            in_bus               =>    BUS_OUT(7 DOWNTO 0),
-            in_ram               =>    RAM_OUT(7 DOWNTO 0),
+            in_bus               =>    BUS_OUT,
+            in_ram               =>    RAM_OUT,
             load_a               =>    LOAD_A,
             sel                  =>    A_SRC_MUX,
             a_out                =>    A_OUT,
@@ -433,7 +433,7 @@ port map(
 
 reg_b_F : reg_b
 port map(
-            in_bus              => BUS_OUT(7 DOWNTO 0)  ,
+            in_bus              => BUS_OUT ,
             out_bus             => B_OUT,
             load_b              => LOAD_B,
             clk                 => clk
