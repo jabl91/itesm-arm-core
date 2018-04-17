@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.56 secs
+Total CPU time to Xst completion: 0.50 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.56 secs
+Total CPU time to Xst completion: 0.51 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -175,8 +175,7 @@ Architecture behavioral of Entity program_memory is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" in Library work.
-Entity <reg_a> compiled.
-Entity <reg_a> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity reg_a is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
 Architecture behavioral of Entity reg_b is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
@@ -463,17 +462,17 @@ Unit <phase_gen> synthesized.
 
 Synthesizing Unit <port_4>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/port_4.vhd".
-    Found 4-bit register for signal <a>.
+    Found 8-bit register for signal <a>.
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   8 D-type flip-flop(s).
 Unit <port_4> synthesized.
 
 
 Synthesizing Unit <portb_4>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/portb_4.vhd".
-    Found 4-bit register for signal <a>.
+    Found 8-bit register for signal <a>.
     Summary:
-	inferred   4 D-type flip-flop(s).
+	inferred   8 D-type flip-flop(s).
 Unit <portb_4> synthesized.
 
 
@@ -706,19 +705,10 @@ Unit <alu> synthesized.
 
 Synthesizing Unit <Procesador_32_bits>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd".
-WARNING:Xst:1306 - Output <PORT_A_OUT<7:4>> is never assigned.
-WARNING:Xst:647 - Input <PORT_B_IN<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1306 - Output <PORT_B_OUT<7:4>> is never assigned.
-WARNING:Xst:647 - Input <PORT_A_IN<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <WR_PORT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <RAM_OUT<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
 WARNING:Xst:646 - Signal <PORT_SELECT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <PORT_C_OUT1<31:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <PORT_B_OUT1<31:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <PORT_B_OUT1<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:646 - Signal <PORT_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <PORT_A_OUT1<31:8>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <PORT_A_OUT1<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:646 - Signal <PM_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_OUT<31:7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Load_Instr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -749,10 +739,10 @@ Macro Statistics
 # Registers                                            : 16
  1-bit register                                        : 5
  32-bit register                                       : 2
- 4-bit register                                        : 4
+ 4-bit register                                        : 2
  5-bit register                                        : 2
  7-bit register                                        : 1
- 8-bit register                                        : 2
+ 8-bit register                                        : 4
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
@@ -866,8 +856,8 @@ Macro Statistics
 # Counters                                             : 2
  5-bit updown counter                                  : 1
  7-bit up counter                                      : 1
-# Registers                                            : 118
- Flip-Flops                                            : 118
+# Registers                                            : 126
+ Flip-Flops                                            : 126
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
@@ -966,13 +956,11 @@ WARNING:Xst:2677 - Node <uInst_F/ALU_BUS> of sequential type is unconnected in b
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Procesador_32_bits, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block Procesador_32_bits, actual ratio is 5.
 FlipFlop RAM_Memory_F/MAR/out_addr_0 has been replicated 1 time(s)
 FlipFlop RAM_Memory_F/MAR/out_addr_1 has been replicated 1 time(s)
 FlipFlop RAM_Memory_F/MAR/out_addr_2 has been replicated 1 time(s)
 FlipFlop RAM_Memory_F/MAR/out_addr_3 has been replicated 1 time(s)
-FlipFlop reg_b_F/out_bus_0 has been replicated 1 time(s)
-FlipFlop reg_b_F/out_bus_1 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -980,8 +968,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 78
- Flip-Flops                                            : 78
+# Registers                                            : 84
+ Flip-Flops                                            : 84
 
 =========================================================================
 
@@ -1010,26 +998,25 @@ Design Statistics
 # IOs                              : 49
 
 Cell Usage :
-# BELS                             : 554
+# BELS                             : 631
 #      GND                         : 1
-#      INV                         : 2
+#      INV                         : 4
 #      LUT1                        : 1
-#      LUT2                        : 54
+#      LUT2                        : 53
 #      LUT2_D                      : 1
 #      LUT2_L                      : 1
-#      LUT3                        : 103
-#      LUT3_D                      : 3
-#      LUT3_L                      : 4
-#      LUT4                        : 241
-#      LUT4_D                      : 10
-#      LUT4_L                      : 26
+#      LUT3                        : 128
+#      LUT3_D                      : 2
+#      LUT4                        : 274
+#      LUT4_D                      : 12
+#      LUT4_L                      : 24
 #      MUXCY                       : 23
-#      MUXF5                       : 56
+#      MUXF5                       : 79
 #      VCC                         : 1
 #      XORCY                       : 27
-# FlipFlops/Latches                : 103
+# FlipFlops/Latches                : 109
 #      FD_1                        : 3
-#      FDE                         : 57
+#      FDE                         : 63
 #      FDE_1                       : 17
 #      FDS_1                       : 1
 #      LD                          : 25
@@ -1037,8 +1024,8 @@ Cell Usage :
 #      RAM32X1S                    : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 16
-#      OBUF                        : 16
+# IO Buffers                       : 24
+#      OBUF                        : 24
 # MULTs                            : 1
 #      MULT18X18SIO                : 1
 =========================================================================
@@ -1048,13 +1035,13 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      253  out of   5888     4%  
- Number of Slice Flip Flops:            103  out of  11776     0%  
- Number of 4 input LUTs:                462  out of  11776     3%  
-    Number used as logic:               446
+ Number of Slices:                      279  out of   5888     4%  
+ Number of Slice Flip Flops:            109  out of  11776     0%  
+ Number of 4 input LUTs:                516  out of  11776     4%  
+    Number used as logic:               500
     Number used as RAMs:                 16
  Number of IOs:                          49
- Number of bonded IOBs:                  17  out of    372     4%  
+ Number of bonded IOBs:                  25  out of    372     6%  
  Number of MULT18X18SIOs:                 1  out of     20     5%  
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -1079,8 +1066,8 @@ Clock Information:
 -------------------------------------------------------------+-------------------------------+-------+
 Clock Signal                                                 | Clock buffer(FF name)         | Load  |
 -------------------------------------------------------------+-------------------------------+-------+
-clk                                                          | BUFGP                         | 87    |
-ALU_F/out_c_not0001(ALU_F/out_c_not00011:O)                  | NONE(*)(ALU_F/out_c)          | 1     |
+clk                                                          | BUFGP                         | 93    |
+ALU_F/out_c_not0001(ALU_F/out_c_not000111:O)                 | NONE(*)(ALU_F/out_c)          | 1     |
 uInst_F/ALU_SIGNAL_not0001(uInst_F/ALU_SIGNAL_not000157:O)   | NONE(*)(uInst_F/ALU_SIGNAL_3) | 4     |
 uInst_F/ENABLE_PORT_not0001(uInst_F/ENABLE_PORT_not0001:O)   | NONE(*)(uInst_F/ENABLE_PORT_1)| 2     |
 uInst_F/SEL_BUS_not0001(uInst_F/SEL_BUS_not0001143:O)        | NONE(*)(uInst_F/SEL_BUS_2)    | 3     |
@@ -1113,9 +1100,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 12.931ns (Maximum Frequency: 77.334MHz)
+   Minimum period: 13.347ns (Maximum Frequency: 74.923MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 5.558ns
+   Maximum output required time after clock: 5.931ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -1124,10 +1111,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 12.931ns (frequency: 77.334MHz)
-  Total number of paths / destination ports: 16773 / 134
+  Clock period: 13.347ns (frequency: 74.923MHz)
+  Total number of paths / destination ports: 17284 / 140
 -------------------------------------------------------------------------
-Delay:               12.931ns (Levels of Logic = 11)
+Delay:               13.347ns (Levels of Logic = 12)
   Source:            reg_a_F/a_3 (FF)
   Destination:       ALU_F/G9/Mmult_Q1 (MULT)
   Source Clock:      clk rising
@@ -1137,53 +1124,54 @@ Delay:               12.931ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             21   0.591   1.271  reg_a_F/a_3 (reg_a_F/a_3)
-     LUT3_L:I0->LO         1   0.648   0.132  ALU_F/G10/Msub_p1_sub0000_cy<1>11 (ALU_F/G10/Msub_p1_sub0000_cy<1>)
-     LUT3:I2->O            6   0.648   0.672  ALU_F/G10/Msub_p1_sub0000_xor<3>11 (ALU_F/G10/p1_sub0000<3>)
+     FDE:C->Q             18   0.591   1.211  reg_a_F/a_3 (reg_a_F/a_3)
+     LUT3_D:I0->LO         1   0.648   0.132  ALU_F/G10/Msub_p1_sub0000_cy<1>11 (N367)
+     LUT3:I2->O            4   0.648   0.590  ALU_F/G10/Msub_p1_sub0000_xor<3>11 (ALU_F/G10/p1_sub0000<3>)
      LUT4:I3->O            0   0.648   0.000  ALU_F/G10/p1_mux0000<0>1 (ALU_F/G10/p1_mux0000<0>)
      MUXCY:DI->O           1   0.787   0.000  ALU_F/G10/Msub_p1_sub0001_cy<1> (ALU_F/G10/Msub_p1_sub0001_cy<1>)
      XORCY:CI->O           3   0.844   0.611  ALU_F/G10/Msub_p1_sub0001_xor<2> (ALU_F/G10/p1_sub0001<2>)
      LUT2:I1->O            0   0.643   0.000  ALU_F/G10/Madd_p1_addsub0001_lut<2> (ALU_F/G10/Madd_p1_addsub0001_lut<2>)
      XORCY:LI->O           2   0.720   0.450  ALU_F/G10/Madd_p1_addsub0001_xor<2> (ALU_F/G10/p1_addsub0001<2>)
      LUT4_D:I3->O          1   0.648   0.423  ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>1 (ALU_F/G10/Msub_p1_sub0002_Madd_lut<3>)
-     LUT4_L:I3->LO         1   0.648   0.132  ALU_F/G10/p1_mux0002<1>1_SW0 (N82)
+     LUT4_L:I3->LO         1   0.648   0.132  ALU_F/G10/p1_mux0002<1>1_SW0 (N148)
      LUT4:I2->O            2   0.648   0.450  ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>1 (ALU_F/G10/Msub_p1_sub0003_Madd_cy<2>)
-     LUT4:I3->O            6   0.648   0.669  BUS_F/out_q<0>296 (BUS_OUT<0>)
-     MULT18X18SIO:B0           0.000          ALU_F/G9/Mmult_Q1
+     LUT4_L:I3->LO         1   0.648   0.132  BUS_OUT<0>1599 (BUS_OUT<0>1599)
+     LUT3:I2->O            2   0.648   0.447  reg_a_F/a_mux0001<0>1 (reg_a_F/a_mux0001<0>)
+     MULT18X18SIO:A0           0.000          ALU_F/G9/Mmult_Q1
     ----------------------------------------
-    Total                     12.931ns (8.121ns logic, 4.810ns route)
-                                       (62.8% logic, 37.2% route)
+    Total                     13.347ns (8.769ns logic, 4.578ns route)
+                                       (65.7% logic, 34.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 16 / 16
+  Total number of paths / destination ports: 24 / 24
 -------------------------------------------------------------------------
-Offset:              5.558ns (Levels of Logic = 1)
-  Source:            Port_A/a_3 (FF)
-  Destination:       PORT_A_OUT<3> (PAD)
+Offset:              5.931ns (Levels of Logic = 1)
+  Source:            Port_A/a_1 (FF)
+  Destination:       PORT_A_OUT<1> (PAD)
   Source Clock:      clk rising
 
-  Data Path: Port_A/a_3 to PORT_A_OUT<3>
+  Data Path: Port_A/a_1 to PORT_A_OUT<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.591   0.447  Port_A/a_3 (Port_A/a_3)
-     OBUF:I->O                 4.520          PORT_A_OUT_3_OBUF (PORT_A_OUT<3>)
+     FDE:C->Q              9   0.591   0.820  Port_A/a_1 (Port_A/a_1)
+     OBUF:I->O                 4.520          PORT_A_OUT_1_OBUF (PORT_A_OUT<1>)
     ----------------------------------------
-    Total                      5.558ns (5.111ns logic, 0.447ns route)
-                                       (92.0% logic, 8.0% route)
+    Total                      5.931ns (5.111ns logic, 0.820ns route)
+                                       (86.2% logic, 13.8% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.93 secs
+Total CPU time to Xst completion: 9.29 secs
  
 --> 
 
-Total memory usage is 301908 kilobytes
+Total memory usage is 301780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  152 (   0 filtered)
+Number of warnings :  143 (   0 filtered)
 Number of infos    :   33 (   0 filtered)
 

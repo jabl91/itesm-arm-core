@@ -30,20 +30,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity portb_4 is
-	Port ( bus_in : in  STD_LOGIC_VECTOR (3 downto 0);
-           port_in : in  STD_LOGIC_VECTOR (3 downto 0);
+	Port ( bus_in : in  STD_LOGIC_VECTOR (7 downto 0);
+           port_in : in  STD_LOGIC_VECTOR (7 downto 0);
 			  clk 	: in std_logic;
 			  sel : in STD_LOGIC;  -- '1' puerto '0' bus
-           bus_out : out  STD_LOGIC_VECTOR (3 downto 0);
+           bus_out : out  STD_LOGIC_VECTOR (7 downto 0);
 			  enable_port : in std_logic_vector(1 downto 0);
-           port_out : out  STD_LOGIC_VECTOR (3 downto 0));
+           port_out : out  STD_LOGIC_VECTOR (7 downto 0));
 end portb_4;
 
 architecture Behavioral of portb_4 is
 
-signal b : STD_LOGIC_VECTOR (3 downto 0);
-signal p : STD_LOGIC_VECTOR (3 downto 0);
-signal a : STD_LOGIC_VECTOR (3 downto 0) := "0000";
+signal b : STD_LOGIC_VECTOR (7 downto 0);
+signal p : STD_LOGIC_VECTOR (7 downto 0);
+signal a : STD_LOGIC_VECTOR (7 downto 0) := (others => '0');
 
 begin
 

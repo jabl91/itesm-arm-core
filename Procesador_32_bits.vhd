@@ -152,25 +152,25 @@ end component;
 
 component port_4
    Port  ( 
-            bus_in         : in  STD_LOGIC_VECTOR (3 downto 0);
-            port_in        : in  STD_LOGIC_VECTOR (3 downto 0);
+            bus_in         : in  STD_LOGIC_VECTOR (7 downto 0);
+            port_in        : in  STD_LOGIC_VECTOR (7 downto 0);
             clk            : in  STD_LOGIC;
             sel            : in  STD_LOGIC;  -- '1' puerto '0' bus
-            bus_out        : out STD_LOGIC_VECTOR (3 downto 0);
+            bus_out        : out STD_LOGIC_VECTOR (7 downto 0);
             enable_port    : in  STD_LOGIC_VECTOR (1 downto 0);
-            port_out       : out STD_LOGIC_VECTOR (3 downto 0)
+            port_out       : out STD_LOGIC_VECTOR (7 downto 0)
          );
 end component;
 
 component portb_4 is
    Port ( 
-               bus_in      : in  STD_LOGIC_VECTOR (3 downto 0);
-               port_in     : in  STD_LOGIC_VECTOR (3 downto 0);
+               bus_in      : in  STD_LOGIC_VECTOR (7 downto 0);
+               port_in     : in  STD_LOGIC_VECTOR (7 downto 0);
                clk         : in  STD_LOGIC;
                sel         : in  STD_LOGIC;  -- '1' puerto '0' bus
-               bus_out     : out STD_LOGIC_VECTOR (3 downto 0);
+               bus_out     : out STD_LOGIC_VECTOR (7 downto 0);
                enable_port : in  STD_LOGIC_VECTOR (1 downto 0);
-               port_out    : out STD_LOGIC_VECTOR (3 downto 0)
+               port_out    : out STD_LOGIC_VECTOR (7 downto 0)
          );
 end component;
 
@@ -237,9 +237,9 @@ SIGNAL ALU_OUT       : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      --
 SIGNAL BUS_OUT       : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del BUS
 SIGNAL PC_OUT        : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del PC
 SIGNAL RAM_OUT       : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida de la RAM
-SIGNAL PORT_C_OUT1   : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
-SIGNAL PORT_B_OUT1   : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
-SIGNAL PORT_A_OUT1   : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
+SIGNAL PORT_C_OUT1   : STD_LOGIC_VECTOR (7 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
+SIGNAL PORT_B_OUT1   : STD_LOGIC_VECTOR (7 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
+SIGNAL PORT_A_OUT1   : STD_LOGIC_VECTOR (7 DOWNTO 0):= (others => '0');      -- Señal de entrada de PORT C, para ingresar al BUS
 SIGNAL DATA_PM       : STD_LOGIC_VECTOR (3 DOWNTO 0);                         -- Datos de PMS (Program Memory Structure)
 SIGNAL ADDR_PM       : STD_LOGIC_VECTOR (6 DOWNTO 0);                         -- Direccion de PMS
 SIGNAL INST_PM       : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- Instruccion de PMS
@@ -335,36 +335,36 @@ port map(
 
 Port_A : port_4
 port map(
-               bus_in            =>    BUS_OUT( 3 DOWNTO 0),
-               port_in           =>    PORT_A_IN( 3 DOWNTO 0),
+               bus_in            =>    BUS_OUT( 7 DOWNTO 0),
+               port_in           =>    PORT_A_IN,
                clk               =>    clk,
                sel               =>    SEL_PORT_OR_BUS,         
-               bus_out           =>    PORT_A_OUT1(3 DOWNTO 0),
+               bus_out           =>    PORT_A_OUT1,
                enable_port       =>    ENABLE_PORT,      
-               port_out          =>    PORT_A_OUT(3 DOWNTO 0)
+               port_out          =>    PORT_A_OUT
          );
 
 Port_B : portb_4
 port map(
-               bus_in            =>    BUS_OUT (3 DOWNTO 0),
-               port_in           =>    PORT_B_IN(3 DOWNTO 0),
+               bus_in            =>    BUS_OUT (7 DOWNTO 0),
+               port_in           =>    PORT_B_IN,
                clk               =>    clk,
                sel               =>    SEL_PORT_OR_BUS,         
-               bus_out           =>    PORT_B_OUT1(3 DOWNTO 0),
+               bus_out           =>    PORT_B_OUT1,
                enable_port       =>    ENABLE_PORT,         
-               port_out          =>    PORT_B_OUT(3 DOWNTO 0)
+               port_out          =>    PORT_B_OUT
          );
 
          
 Port_C : port_8
 port map(
                bus_in            =>    BUS_OUT(7 DOWNTO 0),
-               port_in           =>    PORT_C_IN(7 DOWNTO 0),
+               port_in           =>    PORT_C_IN,
                sel               =>    SEL_PORT_OR_BUS,               
                clk               =>    clk,
                enable_port       =>    ENABLE_PORT,
-               bus_out           =>    PORT_C_OUT1(7 DOWNTO 0), 
-               port_out          =>    PORT_C_OUT(7 DOWNTO 0)
+               bus_out           =>    PORT_C_OUT1, 
+               port_out          =>    PORT_C_OUT
          );
          
 PC_F : PC_MODULE
@@ -433,10 +433,10 @@ port map(
 
 reg_b_F : reg_b
 port map(
-            in_bus              => BUS_OUT ,
-            out_bus             => B_OUT,
-            load_b              => LOAD_B,
-            clk                 => clk
+            in_bus               =>    BUS_OUT ,
+            out_bus              =>    B_OUT,
+            load_b               =>    LOAD_B,
+            clk                  =>    clk
 );
 
 BUS_F : data_bus
@@ -445,9 +445,9 @@ port map(
             alu                  =>    ALU_OUT,
             a                    =>    A_OUT,
             b                    =>    B_OUT,
-            port_a               =>    PORT_A_OUT1(7 DOWNTO 0),
-            port_b               =>    PORT_B_OUT1(7 DOWNTO 0),
-            port_c               =>    PORT_C_OUT1(7 DOWNTO 0),
+            port_a               =>    PORT_A_OUT1,
+            port_b               =>    PORT_B_OUT1,
+            port_c               =>    PORT_C_OUT1,
             sel                  =>    SEL_BUS,                  
             q                    =>    BUS_OUT                                                                                                     
             
