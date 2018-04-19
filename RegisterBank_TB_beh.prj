@@ -1,3 +1,0 @@
-vhdl work "reg_b.vhd"
-vhdl work "RegisterBank.vhd"
-vhdl work "RegisterBank_TB.vhd"

@@ -2,9 +2,29 @@ Command line:
    RegisterBank_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51013
+     -socket  59364
 
-Thu Apr 19 13:54:10 2018
+Thu Apr 19 15:06:38 2018
 
 
- Elaboration Time: 0.046801 sec
+ Elaboration Time: 0.031201 sec
+
+ Current Memory Usage: 511.791 Meg
+
+ Total Signals          : 62
+ Total Nets             : 454
+ Total Signal Drivers   : 16
+ Total Blocks           : 14
+ Total Primitive Blocks : 12
+ Total Processes        : 13
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 938
+Total Line Count : 109
+Total Line Count : 109
+
+ Total Simulation Time: 0.078001 sec
+
+ Current Memory Usage: 511.791 Meg
+
+Thu Apr 19 15:07:07 2018
+

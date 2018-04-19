@@ -31,38 +31,43 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity uInst is
     Port ( 			
-						Phase 			: in  	STD_LOGIC_VECTOR 	(3 downto 0);
-						Inst 				: in  	STD_LOGIC_VECTOR 	(4 downto 0);
-						DATA_PM			: in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
-						PSW				: in 		STD_LOGIC;
-						Load_Instr 		: out  	STD_LOGIC 					:= '0';
-						ReadMem 			: out 	STD_LOGIC					:= '0';
+						Phase 			         : in  	STD_LOGIC_VECTOR 	(3 downto 0);
+						Inst 				         : in  	STD_LOGIC_VECTOR 	(4 downto 0);
+						DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
+                  SEL_REGISTER_BANK_PM    : in     STD_LOGIC_VECTOR  (3 downto 0);
+                  SEL_REGISTER_BANK_PM_2  : in     STD_LOGIC_VECTOR  (3 downto 0);
+						PSW				         : in 		STD_LOGIC;
+						Load_Instr 		         : out  	STD_LOGIC 					:= '0';
+						ReadMem 			         : out 	STD_LOGIC					:= '0';
 						
-						PC_SRC_MUX 		: out		STD_LOGIC					:= '0';
-						LOAD_PC	 		: out		STD_LOGIC					:= '0';
-						WR_RAM			: out		STD_LOGIC					:= '0';			
-						LOAD_MS_MUX		: out		STD_LOGIC					:= '0';
-						LOAD_CJNE		: out		STD_LOGIC					:= '0';
-						MBR_MUX			: out		STD_LOGIC					:= '0';
-						MAR_MUX			: out		STD_LOGIC					:= '0';
-						SPTR_DEC 		: out		STD_LOGIC					:= '0';
-						SPTR_INC 		: out		STD_LOGIC					:= '0';
-						PM_BUS			: out		STD_LOGIC					:= '0';
-						B_BUS				: out		STD_LOGIC					:= '0';
-						LOAD_B	 		: out		STD_LOGIC					:= '0';
-						LOAD_SPW			: out		STD_LOGIC					:= '0';
-						PC_INC	 		: out		STD_LOGIC					:= '0';
-						ALU_SIGNAL		: out 	STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
-						ALU_BUS	 		: out		STD_LOGIC					:= '0';
-						A_SRC_MUX 		: out		STD_LOGIC					:= '0';
-						A_BUS		 		: out		STD_LOGIC					:= '0';
-						LOAD_A	 		: out		STD_LOGIC					:= '0';
-						PORT_SELECT		: out		STD_LOGIC					:=	'0';
-						PORT_BUS			: out		STD_LOGIC					:= '0';
-						WR_PORT			: out		STD_LOGIC					:= '0';
-						ENABLE_PORT		: out 	STD_LOGIC_VECTOR (1 DOWNTO 0) := (others => '0');
-						SEL_BUS 			: out 	STD_LOGIC_VECTOR (4 DOWNTO 0);
-						SEL_PORT_OR_BUS : out STD_LOGIC				-- 0 para puerto y 1 para bus
+						PC_SRC_MUX 		         : out		STD_LOGIC					:= '0';
+						LOAD_PC	 		         : out		STD_LOGIC					:= '0';
+						WR_RAM			         : out		STD_LOGIC					:= '0';			
+						LOAD_MS_MUX		         : out		STD_LOGIC					:= '0';
+						LOAD_CJNE		         : out		STD_LOGIC					:= '0';
+						MBR_MUX			         : out		STD_LOGIC					:= '0';
+						MAR_MUX			         : out		STD_LOGIC					:= '0';
+						SPTR_DEC 		         : out		STD_LOGIC					:= '0';
+						SPTR_INC 		         : out		STD_LOGIC					:= '0';
+						PM_BUS			         : out		STD_LOGIC					:= '0';
+						B_BUS				         : out		STD_LOGIC					:= '0';
+						LOAD_B	 		         : out		STD_LOGIC					:= '0';
+						LOAD_SPW			         : out		STD_LOGIC					:= '0';
+						PC_INC	 		         : out		STD_LOGIC					:= '0';
+						ALU_SIGNAL		         : out 	STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+						ALU_BUS	 		         : out		STD_LOGIC					:= '0';
+						A_SRC_MUX 		         : out		STD_LOGIC					:= '0';
+						A_BUS		 		         : out		STD_LOGIC					:= '0';
+						LOAD_A	 		         : out		STD_LOGIC					:= '0';
+						PORT_SELECT		         : out		STD_LOGIC					:=	'0';
+						PORT_BUS			         : out		STD_LOGIC					:= '0';
+						WR_PORT			         : out		STD_LOGIC					:= '0';
+						ENABLE_PORT		         : out 	STD_LOGIC_VECTOR (1 DOWNTO 0) := (others => '0');
+						SEL_BUS 			         : out 	STD_LOGIC_VECTOR (4 DOWNTO 0);
+						SEL_PORT_OR_BUS         : out    STD_LOGIC;				-- 0 para puerto y 1 para bus
+                  SEL_REGISTER_BANK       : out    STD_LOGIC_VECTOR (3 DOWNTO 0);
+                  LOAD_EN_REGISTER_BANK   : out    STD_LOGIC  
+                  
 			);			
 			
 end uInst;
@@ -77,32 +82,34 @@ begin
 
 						when "0001" => --Primera Fase
 						
-								ReadMem 					<= '1';		--Lectura de Memoria de Programa (1)
-								Load_Instr 				<= '1';   	--Carga de la Instruccion obtenida de la memoria (1)
-								PC_SRC_MUX 				<= '0';
-								LOAD_PC	 				<= '0';
-								WR_RAM					<= '0';			
-								LOAD_MS_MUX				<= '0';
-								LOAD_CJNE				<= '0';			-- Esta señal se usa para no actualizar todo el SPW solo un bit
-								MBR_MUX					<= '0';
-								MAR_MUX					<= '0';
-								SPTR_DEC 				<= '0';
-								SPTR_INC 				<= '0';
-								PM_BUS					<= '0';
-								LOAD_SPW					<= '0';
-								B_BUS						<= '0';
-								LOAD_B	 				<= '0';
-								PC_INC	 				<= '0';
-								ALU_SIGNAL		 		<= (others => '0');
-								ALU_BUS	 				<= '0';
-								A_SRC_MUX 				<= '0';
-								A_BUS		 				<= '0';
-								LOAD_A	 				<= '0';
-								PORT_SELECT				<=	'0';
-								WR_PORT					<= '0';
-								PORT_BUS					<= '0';
-								ENABLE_PORT				<= "11";
-								SEL_PORT_OR_BUS			<= '0';
+								ReadMem 					   <= '1';		--Lectura de Memoria de Programa (1)
+								Load_Instr 				   <= '1';   	--Carga de la Instruccion obtenida de la memoria (1)
+								PC_SRC_MUX 				   <= '0';
+								LOAD_PC	 				   <= '0';
+								WR_RAM					   <= '0';			
+								LOAD_MS_MUX				   <= '0';
+								LOAD_CJNE				   <= '0';			-- Esta señal se usa para no actualizar todo el SPW solo un bit
+								MBR_MUX					   <= '0';
+								MAR_MUX					   <= '0';
+								SPTR_DEC 				   <= '0';
+								SPTR_INC 				   <= '0';
+								PM_BUS					   <= '0';
+								LOAD_SPW					   <= '0';
+								B_BUS						   <= '0';
+								LOAD_B	 				   <= '0';
+								PC_INC	 				   <= '0';
+								ALU_SIGNAL		 		   <= (others => '0');
+								ALU_BUS	 				   <= '0';
+								A_SRC_MUX 				   <= '0';
+								A_BUS		 				   <= '0';
+								LOAD_A	 				   <= '0';
+								PORT_SELECT				   <=	'0';
+								WR_PORT					   <= '0';
+								PORT_BUS					   <= '0';
+								ENABLE_PORT				   <= "11";
+								SEL_PORT_OR_BUS		   <= '0';
+                        SEL_REGISTER_BANK       <= "0000";
+                        LOAD_EN_REGISTER_BANK   <= '0';
 
 						when "0010" => --Segunda Fase
 						
@@ -212,6 +219,17 @@ begin
 									ReadMem 					<= '0';
 									Load_Instr 				<= '0';
 									PC_INC					<= '1';
+                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+                           ReadMem 					<= '0';
+									Load_Instr 				<= '0';
+									PC_INC					<= '1';
+                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
+                           ReadMem 					<= '0';
+									Load_Instr 				<= '0';
+									PC_INC					<= '1';
+                           SEL_REGISTER_BANK    <= SEL_REGISTER_BANK_PM;
+                           SEL_BUS              <= "00111";
+                           LOAD_A	            <= '1';
 									when others  => 		--?
 								end case;
 						
@@ -325,6 +343,17 @@ begin
 									PC_INC	<='0';
 									SEL_BUS 	<="00010";
 									LOAD_B   <='1';
+                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+									PC_INC	<='0';
+									SEL_BUS<= "00010";
+                           SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM;
+                           LOAD_EN_REGISTER_BANK   <= '1';
+                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
+									PC_INC	<='0';
+                           LOAD_A	<= '0';
+                           SEL_BUS 	<="00000";
+                           SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM_2;
+                           LOAD_EN_REGISTER_BANK   <= '1';                      
 									when others  => 		--?
 								end case;
 								
@@ -454,6 +483,10 @@ begin
 									ENABLE_PORT <= "11";
 									when "10111" => 		-- MOV B ,K
 									LOAD_B   <='0';
+                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+                           LOAD_EN_REGISTER_BANK   <= '0';
+                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
+                           LOAD_EN_REGISTER_BANK   <= '0';                          
 									when others  => 		--?
 								end case;
 								

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\RegisterBank_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank_TB_isim_beh.wdb 
+Running: C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\Procesador_Final_TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.wdb 
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,19 +10,26 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 # restart
-# run 1.00us
+# run 50.00us
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
-# run 20.00us
 # restart
-# run 20.00us
+# run 50.00us
 Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# restart
-# run 2.00us
-Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
@@ -31,10 +38,18 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 # restart
-# run 2.00us
+# run 50.00us
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
@@ -43,6 +58,26 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
@@ -51,10 +86,58 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 # restart
-# run 2.00us
+# run 50.00us
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+# restart
+# run 50.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 ISim O.87xd (signature 0xc3576ebc)
 WARNING: A WEBPACK license was found.
@@ -63,17 +146,16 @@ WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for 
 This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim O.87xd (signature 0xc3576ebc)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
 # restart
-# restart
-# run 10us
+# run 50.00us
 Simulator is doing circuit initialization process.
+at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.

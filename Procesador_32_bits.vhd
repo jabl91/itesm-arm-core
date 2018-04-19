@@ -205,38 +205,42 @@ end component;
 
 component uInst
    Port  ( 
-               Phase             : in     STD_LOGIC_VECTOR  (3 downto 0);
-               Inst              : in     STD_LOGIC_VECTOR  (4 downto 0);
-               DATA_PM           : in     STD_LOGIC_VECTOR  (1 downto 0);  -- Entrada de datos de PM para transferencia entre puertos
-               PSW               : in     STD_LOGIC;
-               Load_Instr        : out    STD_LOGIC;
-               ReadMem           : out    STD_LOGIC;
+               Phase 			         : in  	STD_LOGIC_VECTOR 	(3 downto 0);
+               Inst 				         : in  	STD_LOGIC_VECTOR 	(4 downto 0);
+               DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
+               SEL_REGISTER_BANK_PM    : in     STD_LOGIC_VECTOR  (3 downto 0);
+               SEL_REGISTER_BANK_PM_2  : in     STD_LOGIC_VECTOR  (3 downto 0);
+               PSW				         : in 		STD_LOGIC;
+               Load_Instr 		         : out  	STD_LOGIC 					:= '0';
+               ReadMem 			         : out 	STD_LOGIC					:= '0';
                
-               PC_SRC_MUX        : out    STD_LOGIC;
-               LOAD_PC           : out    STD_LOGIC;
-               WR_RAM            : out    STD_LOGIC;
-               LOAD_MS_MUX       : out    STD_LOGIC;
-               LOAD_CJNE         : out    STD_LOGIC;
-               MBR_MUX           : out    STD_LOGIC;
-               MAR_MUX           : out    STD_LOGIC;
-               SPTR_DEC          : out    STD_LOGIC;
-               LOAD_SPW          : out    STD_LOGIC;
-               SPTR_INC          : out    STD_LOGIC;
-               PM_BUS            : out    STD_LOGIC;
-               B_BUS             : out    STD_LOGIC;
-               LOAD_B            : out    STD_LOGIC;
-               PC_INC            : out    STD_LOGIC;
-               ALU_SIGNAL        : out    STD_LOGIC_VECTOR (3 downto 0);
-               ALU_BUS           : out    STD_LOGIC;
-               A_SRC_MUX         : out    STD_LOGIC;
-               A_BUS             : out    STD_LOGIC;
-               LOAD_A            : out    STD_LOGIC;
-               PORT_SELECT       : out    STD_LOGIC;
-               PORT_BUS          : out    STD_LOGIC;
-               WR_PORT           : out    STD_LOGIC;
-               SEL_PORT_OR_BUS   : out    STD_LOGIC;
-               ENABLE_PORT       : out    STD_LOGIC_VECTOR (1 DOWNTO 0);
-               SEL_BUS           : out    STD_LOGIC_VECTOR (4 DOWNTO 0)
+               PC_SRC_MUX 		         : out		STD_LOGIC					:= '0';
+               LOAD_PC	 		         : out		STD_LOGIC					:= '0';
+               WR_RAM			         : out		STD_LOGIC					:= '0';			
+               LOAD_MS_MUX		         : out		STD_LOGIC					:= '0';
+               LOAD_CJNE		         : out		STD_LOGIC					:= '0';
+               MBR_MUX			         : out		STD_LOGIC					:= '0';
+               MAR_MUX			         : out		STD_LOGIC					:= '0';
+               SPTR_DEC 		         : out		STD_LOGIC					:= '0';
+               SPTR_INC 		         : out		STD_LOGIC					:= '0';
+               PM_BUS			         : out		STD_LOGIC					:= '0';
+               B_BUS				         : out		STD_LOGIC					:= '0';
+               LOAD_B	 		         : out		STD_LOGIC					:= '0';
+               LOAD_SPW			         : out		STD_LOGIC					:= '0';
+               PC_INC	 		         : out		STD_LOGIC					:= '0';
+               ALU_SIGNAL		         : out 	STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+               ALU_BUS	 		         : out		STD_LOGIC					:= '0';
+               A_SRC_MUX 		         : out		STD_LOGIC					:= '0';
+               A_BUS		 		         : out		STD_LOGIC					:= '0';
+               LOAD_A	 		         : out		STD_LOGIC					:= '0';
+               PORT_SELECT		         : out		STD_LOGIC					:=	'0';
+               PORT_BUS			         : out		STD_LOGIC					:= '0';
+               WR_PORT			         : out		STD_LOGIC					:= '0';
+               ENABLE_PORT		         : out 	STD_LOGIC_VECTOR (1 DOWNTO 0) := (others => '0');
+               SEL_BUS 			         : out 	STD_LOGIC_VECTOR (4 DOWNTO 0);
+               SEL_PORT_OR_BUS         : out    STD_LOGIC;				         -- 0 para puerto y 1 para bus
+               SEL_REGISTER_BANK       : out    STD_LOGIC_VECTOR (3 DOWNTO 0);
+               LOAD_EN_REGISTER_BANK   : out    STD_LOGIC     
          );
 end component;
 
@@ -308,38 +312,42 @@ port map(
 
 uInst_F : uInst
 port map(   
-                  Phase                =>    PHASE,      
-                  Inst                 =>    INST_PM,
-                  DATA_PM              =>    DATA_PM (1 DOWNTO 0),      -- Datos de PM Solo 2 ultimos bits
-                  PSW                  =>    SPW_OUT(1),                  --Checar si el subindice corresponde a Igualdad
-                  Load_Instr           =>    Load_Instr,      
-                  ReadMem              =>    ReadMem,         -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FALTA RETROALIMENTAR ESTA SALIDA A LA MISMA uInst
+                  Phase                   =>    PHASE,      
+                  Inst                    =>    INST_PM,
+                  DATA_PM                 =>    DATA_PM (1 DOWNTO 0),      -- Datos de PM Solo 2 ultimos bits
+                  SEL_REGISTER_BANK_PM    =>    ADDR_PM  (3 downto 0),
+                  SEL_REGISTER_BANK_PM_2  =>    DATA_PM,
+                  PSW                     =>    SPW_OUT(1),                  --Checar si el subindice corresponde a Igualdad
+                  Load_Instr              =>    Load_Instr,      
+                  ReadMem                 =>    ReadMem,         -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FALTA RETROALIMENTAR ESTA SALIDA A LA MISMA uInst
                   
-                  PC_SRC_MUX           =>    PC_SRC_MUX ,      -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
-                  LOAD_PC              =>    LOAD_PC,         
-                  WR_RAM               =>    WR_RAM,         
-                  LOAD_MS_MUX          =>    LOAD_MS_MUX,      
-                  LOAD_CJNE            =>    LOAD_CJNE,
-                  MBR_MUX              =>    MBR_MUX,         
-                  MAR_MUX              =>    MAR_MUX,         
-                  SPTR_DEC             =>    SPTR_DEC,        
-                  SPTR_INC             =>    SPTR_INC,         
-                  PM_BUS               =>    PM_BUS,         
-                  B_BUS                =>    B_BUS,            
-                  LOAD_B               =>    LOAD_B,         
-                  LOAD_SPW             =>    LOAD_SPW,
-                  PC_INC               =>    PC_INC,         
-                  ALU_SIGNAL           =>    ALU_SIGNAL,      
-                  ALU_BUS              =>    ALU_BUS,         
-                  A_SRC_MUX            =>    A_SRC_MUX ,      
-                  A_BUS                =>    A_BUS,            
-                  LOAD_A               =>    LOAD_A,         
-                  PORT_SELECT          =>    PORT_SELECT,      -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
-                  PORT_BUS             =>    PORT_BUS,         
-                  WR_PORT              =>    WR_PORT,         -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
-                  ENABLE_PORT          =>    ENABLE_PORT,            -- Activacion de puerto en especifico
-                  SEL_BUS              =>    SEL_BUS,                 -- Salida para el multiplexor del BUS
-                  SEL_PORT_OR_BUS      =>    SEL_PORT_OR_BUS
+                  PC_SRC_MUX              =>    PC_SRC_MUX ,      -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
+                  LOAD_PC                 =>    LOAD_PC,         
+                  WR_RAM                  =>    WR_RAM,         
+                  LOAD_MS_MUX             =>    LOAD_MS_MUX,      
+                  LOAD_CJNE               =>    LOAD_CJNE,
+                  MBR_MUX                 =>    MBR_MUX,         
+                  MAR_MUX                 =>    MAR_MUX,         
+                  SPTR_DEC                =>    SPTR_DEC,        
+                  SPTR_INC                =>    SPTR_INC,         
+                  PM_BUS                  =>    PM_BUS,         
+                  B_BUS                   =>    B_BUS,            
+                  LOAD_B                  =>    LOAD_B,         
+                  LOAD_SPW                =>    LOAD_SPW,
+                  PC_INC                  =>    PC_INC,         
+                  ALU_SIGNAL              =>    ALU_SIGNAL,      
+                  ALU_BUS                 =>    ALU_BUS,         
+                  A_SRC_MUX               =>    A_SRC_MUX ,      
+                  A_BUS                   =>    A_BUS,            
+                  LOAD_A                  =>    LOAD_A,         
+                  PORT_SELECT             =>    PORT_SELECT,      -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
+                  PORT_BUS                =>    PORT_BUS,         
+                  WR_PORT                 =>    WR_PORT,         -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Falta
+                  ENABLE_PORT             =>    ENABLE_PORT,            -- Activacion de puerto en especifico
+                  SEL_BUS                 =>    SEL_BUS,                 -- Salida para el multiplexor del BUS
+                  SEL_PORT_OR_BUS         =>    SEL_PORT_OR_BUS,
+                  SEL_REGISTER_BANK       =>    SEL_REGISTER_BANK,         -- Selection Control of Register Bank.
+                  LOAD_EN_REGISTER_BANK   =>    LOAD_EN_REGISTER_BANK    
          );
 
 SPW_F : SPW

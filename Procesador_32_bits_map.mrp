@@ -10,25 +10,25 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Thu Apr 19 14:11:24 2018
+Mapped Date    : Thu Apr 19 15:45:01 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   19
+Number of warnings:   21
 Logic Utilization:
-  Total Number Slice Registers:         109 out of  11,776    1%
-    Number used as Flip Flops:           84
-    Number used as Latches:              25
-  Number of 4 input LUTs:               519 out of  11,776    4%
+  Total Number Slice Registers:         216 out of  11,776    1%
+    Number used as Flip Flops:          186
+    Number used as Latches:              30
+  Number of 4 input LUTs:               557 out of  11,776    4%
 Logic Distribution:
-  Number of occupied Slices:            286 out of   5,888    4%
-    Number of Slices containing only related logic:     286 out of     286 100%
-    Number of Slices containing unrelated logic:          0 out of     286   0%
+  Number of occupied Slices:            348 out of   5,888    5%
+    Number of Slices containing only related logic:     348 out of     348 100%
+    Number of Slices containing unrelated logic:          0 out of     348   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         521 out of  11,776    4%
-    Number used as logic:               503
-    Number used as a route-thru:          2
+  Total Number of 4 input LUTs:         560 out of  11,776    4%
+    Number used as logic:               541
+    Number used as a route-thru:          3
     Number used for 32x1 RAMs:           16
       (Two LUTs used per 32x1 RAM)
 
@@ -39,9 +39,9 @@ Logic Distribution:
   Number of BUFGMUXs:                     1 out of      24    4%
   Number of MULT18X18SIOs:                1 out of      20    5%
 
-Average Fanout of Non-Clock Nets:                4.25
+Average Fanout of Non-Clock Nets:                3.91
 
-Peak Memory Usage:  284 MB
+Peak Memory Usage:  283 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
@@ -84,25 +84,19 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/SEL_BUS_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/PC_INC_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/MBR_MUX_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/ALU_SIGNAL_not0001
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_PC_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/WR_RAM_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/PC_SRC_MUX_not0001
-   is sourced by a combinatorial pin. This is not good design practice. Use the
-   CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/MAR_MUX_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_CJNE_not0001
-   is sourced by a combinatorial pin. This is not good design practice. Use the
-   CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/SPTR_DEC_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/SEL_BUS_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/SPTR_INC_not0001 is
@@ -114,31 +108,45 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/Load_Instr_not0001
 WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/ENABLE_PORT_not0001
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_MS_MUX_not0001
-   is sourced by a combinatorial pin. This is not good design practice. Use the
-   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uInst_F/SEL_REGISTER_BANK_not0001 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ALU_F/out_c_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_SPW_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   uInst_F/LOAD_EN_REGISTER_BANK_not0001 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/A_SRC_MUX_not0001
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_B_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/PC_INC_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_PC_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_A_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/WR_RAM_not0001 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/A_SRC_MUX_not0001
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_MS_MUX_not0001
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/MBR_MUX_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/SPTR_DEC_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_B_not0001 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_CJNE_not0001
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/MAR_MUX_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/PC_SRC_MUX_not0001
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net uInst_F/LOAD_SPW_not0001 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 
