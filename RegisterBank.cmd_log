@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "RegisterBank.ngc" RegisterBank.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o RegisterBank_map.ncd RegisterBank.ngd RegisterBank.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterBank_map.ncd RegisterBank.ncd RegisterBank.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RegisterBank.twx RegisterBank.ncd -o RegisterBank.twr RegisterBank.pcf 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "RegisterBank.ngc" RegisterBank.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o RegisterBank_map.ncd RegisterBank.ngd RegisterBank.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterBank_map.ncd RegisterBank.ncd RegisterBank.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RegisterBank.twx RegisterBank.ncd -o RegisterBank.twr RegisterBank.pcf 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "RegisterBank.ngc" RegisterBank.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o RegisterBank_map.ncd RegisterBank.ngd RegisterBank.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterBank_map.ncd RegisterBank.ncd RegisterBank.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RegisterBank.twx RegisterBank.ncd -o RegisterBank.twr RegisterBank.pcf 
+xst -intstyle ise -ifn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.xst" -ofn "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "RegisterBank.ngc" RegisterBank.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o RegisterBank_map.ncd RegisterBank.ngd RegisterBank.pcf 
+par -w -intstyle ise -ol high -t 1 RegisterBank_map.ncd RegisterBank.ncd RegisterBank.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RegisterBank.twx RegisterBank.ncd -o RegisterBank.twr RegisterBank.pcf 

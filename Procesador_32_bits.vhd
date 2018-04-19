@@ -45,6 +45,16 @@ end Procesador_32_bits;
 
 architecture Behavioral of Procesador_32_bits is
 
+component RegisterBank is
+   Port (
+            clk            : IN  STD_LOGIC;
+            data_in        : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
+            sel            : IN  STD_LOGIC_VECTOR (3  DOWNTO 0);
+            load_en        : IN  STD_LOGIC;
+            data_out       : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+         );
+end component;
+
 component alu
     Port ( 
             A_F            : in  STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -73,6 +83,7 @@ component data_bus
             alu            : in  STD_LOGIC_VECTOR (31 downto 0);
             a              : in  STD_LOGIC_VECTOR (31 downto 0);
             b              : in  STD_LOGIC_VECTOR (31 downto 0);
+            RegBank        : in  STD_LOGIC_VECTOR (31 downto 0);
             port_a         : in  STD_LOGIC_VECTOR (7  downto 0);
             port_b         : in  STD_LOGIC_VECTOR (7  downto 0);
             port_c         : in  STD_LOGIC_VECTOR (7  downto 0);
@@ -247,6 +258,7 @@ SIGNAL PHASE         : STD_LOGIC_VECTOR (3 DOWNTO 0);                         --
 SIGNAL ADDR_SPTR     : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- Direccion de Salida del SPTR
 SIGNAL SPW_IN        : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- STATUS PROGRAM WORD
 SIGNAL SPW_OUT       : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');      -- STATUS PROGRAM WORD
+SIGNAL REG_BANK_OUT  : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');
 
 -- SEÑALES DE CONTROL
 
@@ -277,9 +289,22 @@ SIGNAL SPW_OUT       : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');      --
                   SIGNAL WR_PORT                : STD_LOGIC;
                   SIGNAL SEL_PORT_OR_BUS        : STD_LOGIC;                     
                   SIGNAL ENABLE_PORT            : STD_LOGIC_VECTOR (1 DOWNTO 0);  
-                  SIGNAL SEL_BUS                : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');                  
+                  SIGNAL SEL_BUS                : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');
+                  SIGNAL SEL_REGISTER_BANK      : STD_LOGIC_VECTOR (3 DOWNTO 0) := (others => '0');
+                  SIGNAL LOAD_EN_REGISTER_BANK  : STD_LOGIC := '0';                   
  
 begin
+
+
+RegisterBank_F : RegisterBank
+port map(
+            clk            => clk,
+            data_in        => BUS_OUT,
+            sel            => SEL_REGISTER_BANK,
+            load_en        => LOAD_EN_REGISTER_BANK,
+            data_out       => REG_BANK_OUT
+         );
+
 
 uInst_F : uInst
 port map(   
@@ -445,6 +470,7 @@ port map(
             alu                  =>    ALU_OUT,
             a                    =>    A_OUT,
             b                    =>    B_OUT,
+            RegBank              =>    REG_BANK_OUT,
             port_a               =>    PORT_A_OUT1,
             port_b               =>    PORT_B_OUT1,
             port_c               =>    PORT_C_OUT1,

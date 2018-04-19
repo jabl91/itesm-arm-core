@@ -10,7 +10,7 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Tue Apr 17 16:17:44 2018
+Mapped Date    : Thu Apr 19 14:11:24 2018
 
 Mapping design into LUTs...
 Running directed packing...

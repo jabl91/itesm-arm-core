@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank_TB_isim_beh.exe" -prj "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank_TB_beh.prj" "RegisterBank_TB" 

@@ -1,0 +1,415 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
+ 
+--> Reading design: RegisterBank.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterBank.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterBank"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : RegisterBank
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
+Architecture behavioral of Entity reg_b is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd" in Library work.
+Entity <registerbank> compiled.
+Entity <registerbank> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reg_b> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RegisterBank> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd" line 162: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Reg_Bank_Out>
+Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
+
+Analyzing Entity <reg_b> in library <work> (Architecture <behavioral>).
+Entity <reg_b> analyzed. Unit <reg_b> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <reg_b>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd".
+    Found 32-bit register for signal <out_bus>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <reg_b> synthesized.
+
+
+Synthesizing Unit <RegisterBank>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd".
+WARNING:Xst:646 - Signal <Reg_N_EN<31:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <Reg_Bank_Out>.
+    Found 32-bit register for signal <Reg_N_EN>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <RegisterBank> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 12
+ 32-bit register                                       : 12
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_13> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_14> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_15> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_16> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_17> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_18> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_19> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_20> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_21> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_22> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_23> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_24> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_25> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_26> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_27> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_28> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_29> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_30> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_31> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_13> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_14> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_15> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_16> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_17> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_18> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_19> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_20> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_21> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_22> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_23> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_24> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_25> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_26> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_27> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_28> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_29> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_30> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_31> of sequential type is unconnected in block <RegisterBank>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 362
+ Flip-Flops                                            : 362
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegisterBank> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterBank, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 362
+ Flip-Flops                                            : 362
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RegisterBank.ngr
+Top Level Output File Name         : RegisterBank
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 70
+
+Cell Usage :
+# BELS                             : 212
+#      LUT2                        : 10
+#      LUT4                        : 170
+#      LUT4_L                      : 32
+# FlipFlops/Latches                : 362
+#      FD                          : 10
+#      FDE                         : 320
+#      FDS                         : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 69
+#      IBUF                        : 37
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg484-4 
+
+ Number of Slices:                      226  out of   5888     3%  
+ Number of Slice Flip Flops:            362  out of  11776     3%  
+ Number of 4 input LUTs:                212  out of  11776     1%  
+ Number of IOs:                          70
+ Number of bonded IOBs:                  70  out of    372    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 362   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.086ns (Maximum Frequency: 324.044MHz)
+   Minimum input arrival time before clock: 5.971ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.086ns (frequency: 324.044MHz)
+  Total number of paths / destination ports: 640 / 384
+-------------------------------------------------------------------------
+Delay:               3.086ns (Levels of Logic = 2)
+  Source:            Reg_08/out_bus_0 (FF)
+  Destination:       Reg_Bank_Out_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Reg_08/out_bus_0 to Reg_Bank_Out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.452  Reg_08/out_bus_0 (Reg_08/out_bus_0)
+     LUT4:I2->O            1   0.648   0.500  Reg_Bank_Out_mux0001<0>21 (Reg_Bank_Out_mux0001<0>21)
+     LUT4:I1->O            1   0.643   0.000  Reg_Bank_Out_mux0001<0>521 (Reg_Bank_Out_mux0001<0>52)
+     FDS:D                     0.252          Reg_Bank_Out_0
+    ----------------------------------------
+    Total                      3.086ns (2.134ns logic, 0.952ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1650 / 394
+-------------------------------------------------------------------------
+Offset:              5.971ns (Levels of Logic = 4)
+  Source:            sel<2> (PAD)
+  Destination:       Reg_Bank_Out_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sel<2> to Reg_Bank_Out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   0.849   1.025  sel_2_IBUF (sel_2_IBUF)
+     LUT4:I0->O           33   0.648   1.406  Reg_N_EN_cmp_eq00071 (Reg_N_EN_cmp_eq0007)
+     LUT4:I0->O            1   0.648   0.500  Reg_Bank_Out_mux0001<3>21 (Reg_Bank_Out_mux0001<3>21)
+     LUT4:I1->O            1   0.643   0.000  Reg_Bank_Out_mux0001<3>521 (Reg_Bank_Out_mux0001<3>52)
+     FDS:D                     0.252          Reg_Bank_Out_3
+    ----------------------------------------
+    Total                      5.971ns (3.040ns logic, 2.931ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            Reg_Bank_Out_31 (FF)
+  Destination:       data_out<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Reg_Bank_Out_31 to data_out<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              1   0.591   0.420  Reg_Bank_Out_31 (Reg_Bank_Out_31)
+     OBUF:I->O                 4.520          data_out_31_OBUF (data_out<31>)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.11 secs
+ 
+--> 
+
+Total memory usage is 270356 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

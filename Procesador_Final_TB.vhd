@@ -42,25 +42,25 @@ ARCHITECTURE behavior OF Procesador_Final_TB IS
     COMPONENT Procesador_32_bits
     PORT(
          clk : IN  std_logic;
-         PORT_A_IN : IN  std_logic_vector(3 downto 0);
-         PORT_B_IN : IN  std_logic_vector(3 downto 0);
+         PORT_A_IN : IN  std_logic_vector(7 downto 0);
+         PORT_B_IN : IN  std_logic_vector(7 downto 0);
          PORT_C_IN : IN  std_logic_vector(7 downto 0);
-         PORT_A_OUT : OUT  std_logic_vector(3 downto 0) := "0000";
-         PORT_B_OUT : OUT  std_logic_vector(3 downto 0):= "0000";
-         PORT_C_OUT : OUT  std_logic_vector(7 downto 0) := "00000000"
+         PORT_A_OUT : OUT  std_logic_vector(7 downto 0) := (others => '0');
+         PORT_B_OUT : OUT  std_logic_vector(7 downto 0):= (others => '0');
+         PORT_C_OUT : OUT  std_logic_vector(7 downto 0) := (others => '0')
         );
     END COMPONENT;
     
 
    --Inputs
    signal clk : std_logic := '0';
-   signal PORT_A_IN : std_logic_vector(3 downto 0) := (others => '0');
-   signal PORT_B_IN : std_logic_vector(3 downto 0) := (others => '0');
+   signal PORT_A_IN : std_logic_vector(7 downto 0) := (others => '0');
+   signal PORT_B_IN : std_logic_vector(7 downto 0) := (others => '0');
    signal PORT_C_IN : std_logic_vector(7 downto 0) := (others => '0');
 
  	--Outputs
-   signal PORT_A_OUT : std_logic_vector(3 downto 0):= (others => '0');
-   signal PORT_B_OUT : std_logic_vector(3 downto 0):= (others => '0');
+   signal PORT_A_OUT : std_logic_vector(7 downto 0):= (others => '0');
+   signal PORT_B_OUT : std_logic_vector(7 downto 0):= (others => '0');
    signal PORT_C_OUT : std_logic_vector(7 downto 0):= (others => '0');
 
    -- Clock period definitions

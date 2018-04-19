@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.50 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.54 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.51 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -152,6 +152,11 @@ Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bit
 Architecture behavioral of Entity mux_mar is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
 Architecture behavioral of Entity program_counter is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
+Architecture behavioral of Entity reg_b is up to date.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd" in Library work.
+Entity <registerbank> compiled.
+Entity <registerbank> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
 Architecture behavioral of Entity uinst is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
@@ -176,10 +181,9 @@ Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bit
 Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" in Library work.
 Architecture behavioral of Entity reg_a is up to date.
-Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
-Architecture behavioral of Entity reg_b is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
-Architecture behavioral of Entity data_bus is up to date.
+Entity <data_bus> compiled.
+Entity <data_bus> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" in Library work.
 Entity <procesador_32_bits> compiled.
 Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
@@ -188,6 +192,8 @@ Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
 *                     Design Hierarchy Analysis                         *
 =========================================================================
 Analyzing hierarchy for entity <Procesador_32_bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterBank> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <uInst> in library <work> (architecture <behavioral>).
 
@@ -269,6 +275,9 @@ Analyzing hierarchy for entity <sub_deco> in library <work> (architecture <behav
 =========================================================================
 Analyzing Entity <Procesador_32_bits> in library <work> (Architecture <behavioral>).
 Entity <Procesador_32_bits> analyzed. Unit <Procesador_32_bits> generated.
+
+Analyzing Entity <RegisterBank> in library <work> (Architecture <behavioral>).
+Entity <RegisterBank> analyzed. Unit <RegisterBank> generated.
 
 Analyzing Entity <uInst> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" line 73: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
@@ -674,6 +683,17 @@ WARNING:Xst:653 - Signal <c> is used but never assigned. This sourceless signal 
 Unit <sub_deco> synthesized.
 
 
+Synthesizing Unit <RegisterBank>.
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd".
+WARNING:Xst:646 - Signal <Reg_N_EN<31:10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Reg_Bank_Out> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <data_out>.
+    Found 32-bit register for signal <Reg_N_EN>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <RegisterBank> synthesized.
+
+
 Synthesizing Unit <PC_MODULE>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd".
 Unit <PC_MODULE> synthesized.
@@ -706,12 +726,14 @@ Unit <alu> synthesized.
 Synthesizing Unit <Procesador_32_bits>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd".
 WARNING:Xst:646 - Signal <WR_PORT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <SEL_REGISTER_BANK> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <RAM_OUT<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000000000.
 WARNING:Xst:646 - Signal <PORT_SELECT> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PORT_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <PM_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <PC_OUT<31:7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <Load_Instr> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <LOAD_EN_REGISTER_BANK> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <B_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <A_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <ALU_BUS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -736,9 +758,9 @@ Macro Statistics
 # Counters                                             : 2
  5-bit updown counter                                  : 1
  7-bit up counter                                      : 1
-# Registers                                            : 16
+# Registers                                            : 28
  1-bit register                                        : 5
- 32-bit register                                       : 2
+ 32-bit register                                       : 14
  4-bit register                                        : 2
  5-bit register                                        : 2
  7-bit register                                        : 1
@@ -759,8 +781,122 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1290 - Hierarchical block <Reg_02> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_03> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_04> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_05> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_06> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_07> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_08> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_09> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Reg_10> is unconnected in block <RegisterBank_F>.
+   It will be removed from the design.
 WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Reg_N_EN_0> has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_7> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_6> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_5> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_4> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_3> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_2> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_1> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_0> (without init value) has a constant value of 0 in block <RegisterBank_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_7> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_6> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_5> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_4> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_3> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_2> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_1> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_bus_0> has a constant value of 0 in block <Reg_01>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <out_bus_8> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_9> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_10> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_11> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_12> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_13> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_14> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_15> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_16> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_17> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_18> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_19> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_20> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_21> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_22> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_23> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_24> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_25> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_26> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_27> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_28> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_29> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_30> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <out_bus_31> of sequential type is unconnected in block <Reg_01>.
+WARNING:Xst:2677 - Node <data_out_8> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_9> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_10> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_11> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_12> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_13> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_14> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_15> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_16> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_17> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_18> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_19> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_20> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_21> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_22> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_23> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_24> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_25> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_26> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_27> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_28> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_29> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_30> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <data_out_31> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_1> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_2> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_3> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_4> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_5> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_6> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_7> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_8> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_9> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_13> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_14> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_15> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_16> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_17> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_18> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_19> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_20> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_21> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_22> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_23> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_24> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_25> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_26> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_27> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_28> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_29> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_30> of sequential type is unconnected in block <RegisterBank_F>.
+WARNING:Xst:2677 - Node <Reg_N_EN_31> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <a_8> of sequential type is unconnected in block <reg_a_F>.
 WARNING:Xst:2677 - Node <a_9> of sequential type is unconnected in block <reg_a_F>.
 WARNING:Xst:2677 - Node <a_10> of sequential type is unconnected in block <reg_a_F>.
@@ -809,6 +945,8 @@ WARNING:Xst:2677 - Node <out_bus_28> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <out_bus_29> of sequential type is unconnected in block <reg_b_F>.
 WARNING:Xst:2677 - Node <out_bus_30> of sequential type is unconnected in block <reg_b_F>.
 WARNING:Xst:2677 - Node <out_bus_31> of sequential type is unconnected in block <reg_b_F>.
+WARNING:Xst:1290 - Hierarchical block <RegisterBank_F> is unconnected in block <Procesador_32_bits>.
+   It will be removed from the design.
 
 Synthesizing (advanced) Unit <Procesador_32_bits>.
 	Found pipelined multiplier on signal <ALU_F/q_MUL>:
@@ -834,6 +972,28 @@ INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to
     |     doA            | connected to signal <dataout_ram>   |          |
     -----------------------------------------------------------------------
 Unit <ram_mod> synthesized (advanced).
+WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_13> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_14> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_15> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_16> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_17> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_18> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_19> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_20> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_21> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_22> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_23> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_24> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_25> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_26> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_27> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_28> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_29> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_30> of sequential type is unconnected in block <RegisterBank>.
+WARNING:Xst:2677 - Node <Reg_N_EN_31> of sequential type is unconnected in block <RegisterBank>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -856,8 +1016,8 @@ Macro Statistics
 # Counters                                             : 2
  5-bit updown counter                                  : 1
  7-bit up counter                                      : 1
-# Registers                                            : 126
- Flip-Flops                                            : 126
+# Registers                                            : 488
+ Flip-Flops                                            : 488
 # Latches                                              : 22
  1-bit latch                                           : 19
  2-bit latch                                           : 1
@@ -875,6 +1035,371 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <SEL_BUS_3> in Unit <uInst> is equivalent to the following FF/Latch, which will be removed : <SEL_BUS_4> 
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_3> (without init value) has a constant value of 0 in block <uInst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_out_21> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_22> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_23> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_24> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_25> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_26> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_27> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_28> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_29> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_30> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_31> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_N_EN_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_0> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_1> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_2> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_3> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_4> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_5> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_6> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_7> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_8> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_9> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_20> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_19> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_18> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_17> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_16> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_15> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_14> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_13> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_12> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_11> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_out_10> (without init value) has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_05/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_06/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_02/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_01/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_03/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_07/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_10/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_04/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_3> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_2> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_1> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_0> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_31> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_30> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_29> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_28> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_27> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_26> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_25> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_24> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_09/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_23> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_22> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_21> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_20> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_19> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_18> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_17> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_16> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_15> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_14> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_13> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_12> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_11> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_10> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_9> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_8> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_7> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_6> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_5> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Reg_08/out_bus_4> has a constant value of 0 in block <RegisterBank>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_4> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_3> of sequential type is unconnected in block <Procesador_32_bits>.
+WARNING:Xst:2677 - Node <SPW_F/out_SPW_0> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <reg_a_F/a_8> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <reg_a_F/a_9> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <reg_a_F/a_10> of sequential type is unconnected in block <Procesador_32_bits>.
@@ -923,9 +1448,6 @@ WARNING:Xst:2677 - Node <reg_b_F/out_bus_28> of sequential type is unconnected i
 WARNING:Xst:2677 - Node <reg_b_F/out_bus_29> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <reg_b_F/out_bus_30> of sequential type is unconnected in block <Procesador_32_bits>.
 WARNING:Xst:2677 - Node <reg_b_F/out_bus_31> of sequential type is unconnected in block <Procesador_32_bits>.
-WARNING:Xst:2677 - Node <SPW_F/out_SPW_4> of sequential type is unconnected in block <Procesador_32_bits>.
-WARNING:Xst:2677 - Node <SPW_F/out_SPW_3> of sequential type is unconnected in block <Procesador_32_bits>.
-WARNING:Xst:2677 - Node <SPW_F/out_SPW_0> of sequential type is unconnected in block <Procesador_32_bits>.
 INFO:Xst:2261 - The FF/Latch <PM_F/DIR/out_pc_1> in Unit <Procesador_32_bits> is equivalent to the following 2 FFs/Latches, which will be removed : <PM_F/DIR/out_pc_2> <PM_F/DIR/out_pc_3> 
 INFO:Xst:2261 - The FF/Latch <PM_F/DIR/out_pc_0> in Unit <Procesador_32_bits> is equivalent to the following 5 FFs/Latches, which will be removed : <PM_F/DIR/out_pc_4> <PM_F/DIR/out_pc_5> <PM_F/DIR/out_pc_6> <PM_F/INST/out_bus_1> <PM_F/INST/out_bus_3> 
 
@@ -1164,14 +1686,14 @@ Offset:              5.931ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.29 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.36 secs
  
 --> 
 
-Total memory usage is 301780 kilobytes
+Total memory usage is 307604 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  143 (   0 filtered)
+Number of warnings :  637 (   0 filtered)
 Number of infos    :   33 (   0 filtered)
 

@@ -34,6 +34,7 @@ entity data_bus is
            alu       : in  STD_LOGIC_VECTOR (31 downto 0);
            a         : in  STD_LOGIC_VECTOR (31 downto 0);
            b         : in  STD_LOGIC_VECTOR (31 downto 0);
+           RegBank   : in  STD_LOGIC_VECTOR (31 downto 0);
            port_a    : in  STD_LOGIC_VECTOR (7 downto 0);
            port_b    : in  STD_LOGIC_VECTOR (7 downto 0);
            port_c    : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -47,7 +48,7 @@ signal out_q : STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 
 begin
 
-	process (pm,alu,a,b,port_a,port_b,port_c,sel)
+	process (pm,alu,a,b,port_a,port_b,port_c,sel,RegBank)
 	begin
 		case sel is
       
@@ -58,6 +59,7 @@ begin
 			when "00100"   => out_q <= ("00000000" & "00000000" & "00000000" & port_b);
 			when "00101"   => out_q <= ("00000000" & "00000000" & "00000000" & port_c);
 			when "00110"   => out_q <= (alu);
+         when "00111"   => out_q <= RegBank;
 			when others    => out_q <= ("00000000" & "00000000" & "00000000" & "00000000");
          
 		end case;
