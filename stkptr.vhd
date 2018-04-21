@@ -31,6 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity stkptr is
     Port ( clk : in  STD_LOGIC;
+           reset : in std_logic;
            dec_stack : in  STD_LOGIC;
 			  inc_stack : in STD_LOGIC;
            out_dir : out  STD_LOGIC_VECTOR (4 downto 0) := "11111");
@@ -45,9 +46,12 @@ begin
 
 --clk_stack <= clk and dec_stack;
 
-	process(clk) 
+	process(clk,reset) 
 	begin
-		if(rising_edge(clk)) then
+		
+      if (reset = '0') then    
+         stack_dir <= (others => '1');
+      elsif(rising_edge(clk)) then
 			if dec_stack = '1' then
 			stack_dir <= stack_dir - 1;
 			end if;

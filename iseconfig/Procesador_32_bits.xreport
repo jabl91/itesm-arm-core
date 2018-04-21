@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-04-17T16:47:25</DateModified>
+  <DateModified>2018-04-21T15:51:02</DateModified>
   <ModuleName>Procesador_32_bits</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/iseconfig/Procesador_32_bits.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits\</ImplementationReportsDirectory>
   <DateInitialized>2018-04-17T12:33:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

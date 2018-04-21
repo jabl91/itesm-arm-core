@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="ARM_Cortex_32_Bits" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DIV_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|DIV_TB.vhd</ClosedNode>
+         <ClosedNode>/MUL_DIV_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|MUL_DIV_TB.vhd</ClosedNode>
+         <ClosedNode>/MUL_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|MUL_TB.vhd</ClosedNode>
+         <ClosedNode>/Procesador_32_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_32_bits.vhd/ALU_F - alu - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_32_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_32_bits.vhd/PC_F - PC_MODULE - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_32_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_32_bits.vhd/PM_F - Program_Memory - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_32_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_32_bits.vhd/RAM_Memory_F - RAM_Memory - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_4_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_4_bits.vhd</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/ALU_F - alu - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/ALU_F - alu - Behavioral/G11 - restador - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/PC_F - PC_MODULE - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RAM_Memory_F - RAM_Memory - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RegisterBank_F - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_4_bits - Behavioral/ALU_F - alu - Behavioral/G11 - restador - Behavioral</ClosedNode>
+         <ClosedNode>/RAM_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RAM_TB.vhd</ClosedNode>
+         <ClosedNode>/adder_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|adder_TB.vhd</ClosedNode>
+         <ClosedNode>/uInst_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|uInst_TB.vhd</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>BUS_F - data_bus - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cc0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>BUS_F - data_bus - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>alu.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000002ef0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000cb000000cf01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/ALU_F - alu - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/PC_F - PC_MODULE - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RAM_Memory_F - RAM_Memory - Behavioral</ClosedNode>
+         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RegisterBank_F - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/RAM_Memory_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RAM_Memory_tb.vhd</ClosedNode>
+         <ClosedNode>/RegisterBank - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RegisterBank.vhd</ClosedNode>
+         <ClosedNode>/RegisterBank_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RegisterBank_TB.vhd/uut - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/alu_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|alu_tb.vhd</ClosedNode>
+         <ClosedNode>/and_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|and_8_tb.vhd</ClosedNode>
+         <ClosedNode>/data_bus_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|data_bus_tb.vhd</ClosedNode>
+         <ClosedNode>/dir_reg_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|dir_reg_tb.vhd</ClosedNode>
+         <ClosedNode>/inst_reg_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|inst_reg_tb.vhd</ClosedNode>
+         <ClosedNode>/not_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|not_8_tb.vhd</ClosedNode>
+         <ClosedNode>/oc_reg_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|oc_reg_tb.vhd</ClosedNode>
+         <ClosedNode>/or_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|or_8_tb.vhd</ClosedNode>
+         <ClosedNode>/pc_module_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|pc_module_tb.vhd</ClosedNode>
+         <ClosedNode>/port_4_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|port_4_tb.vhd</ClosedNode>
+         <ClosedNode>/port_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|port_8_tb.vhd</ClosedNode>
+         <ClosedNode>/program_counter_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|program_counter_tb.vhd</ClosedNode>
+         <ClosedNode>/program_memory_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|program_memory_tb.vhd</ClosedNode>
+         <ClosedNode>/reg_a_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|reg_a_tb.vhd</ClosedNode>
+         <ClosedNode>/restador_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|restador_tb.vhd</ClosedNode>
+         <ClosedNode>/rom_mod_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|rom_mod_tb.vhd</ClosedNode>
+         <ClosedNode>/spw_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|spw_tb.vhd</ClosedNode>
+         <ClosedNode>/sub_deco_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|sub_deco_tb.vhd</ClosedNode>
+         <ClosedNode>/sub_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|sub_tb.vhd</ClosedNode>
+         <ClosedNode>/sum_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|sum_tb.vhd</ClosedNode>
+         <ClosedNode>/swap_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|swap_tb.vhd</ClosedNode>
+         <ClosedNode>/xor_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|xor_8_tb.vhd</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ROM - rom_mod - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cc0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>ROM - rom_mod - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe" -prj "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj" "Procesador_Final_TB" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe" -prj "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj" "work.Procesador_Final_TB" 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -94,5 +94,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 28 sub-compilation(s) to finish...
 Compiled 83 VHDL Units
 Built simulation executable C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe
-Fuse Memory Usage: 40776 KB
-Fuse CPU Usage: 1154 ms
+Fuse Memory Usage: 41072 KB
+Fuse CPU Usage: 1201 ms

@@ -34,6 +34,7 @@ entity reg_b is
             in_bus   : in     STD_LOGIC_VECTOR (31 downto 0);
             out_bus  : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b   : in     STD_LOGIC;
+            reset    : in     STD_LOGIC;
             clk      :        STD_LOGIC
          );
 end reg_b;
@@ -46,9 +47,12 @@ begin
 
 --clk_b <= clk and load_a;
 
-process(clk)
+process(clk,reset)
    begin
-      if (rising_edge(clk)) then
+   
+      if (reset = '0') then
+         out_bus <= (others => '0');
+      elsif (rising_edge(clk)) then
          if load_b = '1' then
          out_bus <= (in_bus);
          end if;

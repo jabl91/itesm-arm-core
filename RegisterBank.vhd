@@ -32,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity RegisterBank is
    Port (
             clk            : IN  STD_LOGIC;
+            reset          : IN  STD_LOGIC;
             data_in        : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
             sel            : IN  STD_LOGIC_VECTOR (3  DOWNTO 0);
             load_en        : IN  STD_LOGIC;
@@ -46,6 +47,7 @@ component reg_b is
             in_bus   : in     STD_LOGIC_VECTOR (31 downto 0);
             out_bus  : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b   : in     STD_LOGIC;
+            reset    : in     STD_LOGIC;
             clk      :        STD_LOGIC
          );
 end component;
@@ -77,6 +79,7 @@ port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_01_Out, 
             load_b            =>   Reg_N_EN(0), 
+            reset             =>   reset,
             clk               =>   clk          
          );
          
@@ -84,7 +87,8 @@ Reg_02 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_02_Out, 
-            load_b            =>   Reg_N_EN(1),  
+            load_b            =>   Reg_N_EN(1),
+            reset             =>   reset,            
             clk               =>   clk          
          );
 
@@ -92,7 +96,8 @@ Reg_03 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_03_Out, 
-            load_b            =>   Reg_N_EN(2),  
+            load_b            =>   Reg_N_EN(2),
+            reset             =>   reset,            
             clk               =>   clk          
          );
          
@@ -100,7 +105,8 @@ Reg_04 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_04_Out, 
-            load_b            =>   Reg_N_EN(3),  
+            load_b            =>   Reg_N_EN(3),
+            reset             =>   reset,            
             clk               =>   clk          
          );
          
@@ -109,7 +115,8 @@ Reg_05 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_05_Out,
-            load_b            =>   Reg_N_EN(4),  
+            load_b            =>   Reg_N_EN(4),
+            reset             =>   reset,            
             clk               =>   clk          
          );
 
@@ -118,7 +125,8 @@ Reg_06 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_06_Out, 
-            load_b            =>   Reg_N_EN(5),  
+            load_b            =>   Reg_N_EN(5),
+            reset             =>   reset,            
             clk               =>   clk          
          );
 
@@ -127,7 +135,8 @@ Reg_07 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_07_Out, 
-            load_b            =>   Reg_N_EN(6),  
+            load_b            =>   Reg_N_EN(6),
+            reset             =>   reset,            
             clk               =>   clk          
          );
 
@@ -136,7 +145,8 @@ Reg_08 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_08_Out, 
-            load_b            =>   Reg_N_EN(7),  
+            load_b            =>   Reg_N_EN(7),
+            reset             =>   reset,            
             clk               =>   clk          
          );
 
@@ -145,7 +155,8 @@ Reg_09 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_09_Out, 
-            load_b            =>   Reg_N_EN(8),  
+            load_b            =>   Reg_N_EN(8),
+            reset             =>   reset,            
             clk               =>   clk          
          );         
 
@@ -154,7 +165,8 @@ Reg_10 : reg_b
 port map(
             in_bus            =>   data_in, 
             out_bus           =>   Reg_10_Out, 
-            load_b            =>   Reg_N_EN(9),  
+            load_b            =>   Reg_N_EN(9),
+            reset             =>   reset,            
             clk               =>   clk          
          );
          

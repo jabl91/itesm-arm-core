@@ -34,6 +34,7 @@ use work.ARITH_PLUS.all;
 entity Procesador_32_bits is
    Port (
             clk            : IN  STD_LOGIC;
+            reset          : IN  STD_LOGIC;
             PORT_A_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
             PORT_B_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
             PORT_C_IN      : IN  STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -48,6 +49,7 @@ architecture Behavioral of Procesador_32_bits is
 component RegisterBank is
    Port (
             clk            : IN  STD_LOGIC;
+            reset          : IN  STD_LOGIC;
             data_in        : IN  STD_LOGIC_VECTOR (31 DOWNTO 0);
             sel            : IN  STD_LOGIC_VECTOR (3  DOWNTO 0);
             load_en        : IN  STD_LOGIC;
@@ -73,6 +75,7 @@ component reg_a
             load_a         : in  STD_LOGIC;
             sel            : in  STD_LOGIC;                       -- '1' ram   '0' bus
             a_out          : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+            reset          : in  STD_LOGIC;
             clk            :     STD_LOGIC
          );
 end component;
@@ -97,6 +100,7 @@ component reg_b
             in_bus         : in  STD_LOGIC_VECTOR (31 downto 0);
             out_bus        : out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
             load_b         : in  STD_LOGIC;
+            reset          : in  STD_LOGIC;
             clk            :     STD_LOGIC
          );
 end component;
@@ -115,6 +119,7 @@ end component;
 component stkptr
    Port  ( 
             clk            : in  STD_LOGIC;
+            reset          : in  STD_LOGIC;
             dec_stack      : in  STD_LOGIC;
             inc_stack      : in  STD_LOGIC;
             out_dir        : out STD_LOGIC_VECTOR (4 downto 0)
@@ -142,6 +147,7 @@ component PC_MODULE is
             ram_in         : in  STD_LOGIC_VECTOR (6 downto 0);
             pm_in          : in  STD_LOGIC_VECTOR (6 downto 0);
             clk            : in  STD_LOGIC;
+            reset          : in  STD_LOGIC;
             sel            : in  STD_LOGIC;
             load_pc        : in  STD_LOGIC;
             inc_pc         : in  STD_LOGIC;
@@ -189,6 +195,7 @@ component phase_gen
    Port  ( 
             clear_phase    : in  STD_LOGIC;
             clk            : in  STD_LOGIC;
+            reset          : in  STD_LOGIC;
             out_phase      : out STD_LOGIC_VECTOR (3 downto 0)
          );
 end component;
@@ -199,6 +206,7 @@ component SPW
             out_SPW        : out STD_LOGIC_VECTOR (4 downto 0);
             load_SPW       : in  STD_LOGIC;
             load_CJNE      : in  STD_LOGIC;
+            reset          : in  STD_LOGIC;
             clk            :     STD_LOGIC
          );
 end component;
@@ -303,6 +311,7 @@ begin
 RegisterBank_F : RegisterBank
 port map(
             clk            => clk,
+            reset          => reset,
             data_in        => BUS_OUT,
             sel            => SEL_REGISTER_BANK,
             load_en        => LOAD_EN_REGISTER_BANK,
@@ -356,6 +365,7 @@ port map(
                   out_SPW        =>    SPW_OUT,
                   load_SPW       =>    LOAD_SPW,         -- Se uso la señal de activacion de regA para cargar el SPW
                   load_CJNE      =>    LOAD_CJNE,         --HACE FALTA ESTA SEÑAL
+                  reset          =>    reset,
                   clk            =>    clk
          );
 
@@ -363,6 +373,7 @@ Phase_gen_F : phase_gen
 port map(
                clear_phase       =>    '1',      -- Tambien hace falta definir esta
                clk               =>    clk,
+               reset             =>    reset,
                out_phase         =>    PHASE
          );
 
@@ -405,6 +416,7 @@ port map(
                ram_in            =>    RAM_OUT(6 downto 0), --this is required to be 7 bits long
                pm_in             =>    ADDR_PM,
                clk               =>    clk,
+               reset             =>    reset,
                sel               =>    PC_SRC_MUX,
                load_pc           =>    LOAD_PC,
                inc_pc            =>    PC_INC,
@@ -428,6 +440,7 @@ port map(
 STKPTR_F : stkptr
 port map(
             clk                  =>    clk,
+            reset                =>    reset,
             dec_stack            =>    SPTR_DEC,
             inc_stack            =>    SPTR_INC,
             out_dir              =>    ADDR_SPTR
@@ -461,6 +474,7 @@ port map(
             load_a               =>    LOAD_A,
             sel                  =>    A_SRC_MUX,
             a_out                =>    A_OUT,
+            reset                =>    reset,
             clk                  =>    clk
 );
 
@@ -469,6 +483,7 @@ port map(
             in_bus               =>    BUS_OUT ,
             out_bus              =>    B_OUT,
             load_b               =>    LOAD_B,
+            reset                =>    reset,
             clk                  =>    clk
 );
 

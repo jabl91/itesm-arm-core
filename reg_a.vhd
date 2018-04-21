@@ -36,6 +36,7 @@ entity reg_a is
             load_a   : in     STD_LOGIC;
             sel      : in     STD_LOGIC;  -- '1' ram   '0' bus
             a_out    : out    STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+            reset    : in     STD_LOGIC;
             clk      :        STD_LOGIC
          );
 end reg_a;
@@ -46,10 +47,12 @@ signal a : STD_LOGIC_VECTOR(31 DOWNTO 0) :=(others => '0');
 
 begin
 
-process(clk)
+process(clk,reset)
 begin
 
-   if (rising_edge(clk)) then
+   if (reset = '0') then
+      a <= (others => '0');
+   elsif (rising_edge(clk)) then
       if load_a = '1' then
       
          if sel = '1' then

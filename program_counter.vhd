@@ -31,6 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity program_counter is
     Port ( clk : in  STD_LOGIC;
+           reset : in STD_LOGIC;
            in_addr : in  STD_LOGIC_VECTOR (6 downto 0);
            out_addr : out  STD_LOGIC_VECTOR (6 downto 0) := "0000000";
 			  inc_pc : in std_logic;
@@ -43,9 +44,12 @@ signal addr_out1 : unsigned(6 downto 0) := "0000000";
 
 begin
 
-	process(clk,inc_pc,load_pc) 
+	process(clk,inc_pc,load_pc, reset) 
 	begin
-		if (rising_edge(clk)) then
+   
+      if (reset = '0') then
+         addr_out1 <= (others => '0');   
+		elsif (rising_edge(clk)) then
 			if(inc_pc = '1') then
 				addr_out1 <= addr_out1 + 1;
 			elsif(load_pc = '1') then

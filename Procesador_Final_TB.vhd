@@ -42,6 +42,7 @@ ARCHITECTURE behavior OF Procesador_Final_TB IS
     COMPONENT Procesador_32_bits
     PORT(
          clk : IN  std_logic;
+         reset: IN std_logic;
          PORT_A_IN : IN  std_logic_vector(7 downto 0);
          PORT_B_IN : IN  std_logic_vector(7 downto 0);
          PORT_C_IN : IN  std_logic_vector(7 downto 0);
@@ -54,6 +55,7 @@ ARCHITECTURE behavior OF Procesador_Final_TB IS
 
    --Inputs
    signal clk : std_logic := '0';
+   signal reset : std_logic := '1';
    signal PORT_A_IN : std_logic_vector(7 downto 0) := (others => '0');
    signal PORT_B_IN : std_logic_vector(7 downto 0) := (others => '0');
    signal PORT_C_IN : std_logic_vector(7 downto 0) := (others => '0');
@@ -71,6 +73,7 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: Procesador_32_bits PORT MAP (
           clk => clk,
+          reset => reset,
           PORT_A_IN => PORT_A_IN,
           PORT_B_IN => PORT_B_IN,
           PORT_C_IN => PORT_C_IN,
@@ -93,9 +96,22 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
+      
+      reset <= '1';
+      
       wait for 100 ns;	
 		
       wait for clk_period*10;
+      
+      wait for clk_period*100;
+      
+      reset <= '0';
+      
+      wait for clk_period*100;
+      
+      reset <= '1';
+      
+      
 
       -- insert stimulus here 
 

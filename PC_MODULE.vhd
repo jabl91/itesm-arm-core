@@ -33,6 +33,7 @@ entity PC_MODULE is
     Port ( ram_in : in  STD_LOGIC_VECTOR (6 downto 0);
            pm_in : in  STD_LOGIC_VECTOR (6 downto 0);
 			  clk : in std_logic;
+           reset : in std_logic;
 			  sel :	in std_logic;
            load_pc : in  STD_LOGIC;
            inc_pc : in  STD_LOGIC;
@@ -43,6 +44,7 @@ architecture Behavioral of PC_MODULE is
 
 component program_counter is
     Port ( clk : in  STD_LOGIC;
+           reset : in std_logic;
            in_addr : in  STD_LOGIC_VECTOR (6 downto 0);
            out_addr : out  STD_LOGIC_VECTOR (6 downto 0) := "0000000";
 			  inc_pc : in std_logic;
@@ -63,7 +65,7 @@ begin
 	end process;
 	
 	PC_X : program_counter
-		port map(clk, pc_in, pc_out, inc_pc, load_pc);
+		port map(clk, reset, pc_in, pc_out, inc_pc, load_pc);
 
 end Behavioral;
 

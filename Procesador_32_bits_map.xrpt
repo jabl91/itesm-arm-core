@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Apr 19 15:45:03 2018">
+  <application stringID="Map" timeStamp="Sat Apr 21 16:20:23 2018">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\13.4\ISE_DS\ISE\\lib\nt64;C:\Xilinx\13.4\ISE_DS\ISE\\bin\nt64;C:\Xilinx\13.4\ISE_DS\PlanAhead\bin;C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64;C:\Xilinx\13.4\ISE_DS\ISE\lib\nt64;C:\Xilinx\13.4\ISE_DS\EDK\bin\nt64;C:\Xilinx\13.4\ISE_DS\EDK\lib\nt64;C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\13.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\13.4\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\13.4\ISE_DS\common\bin\nt64;C:\Xilinx\13.4\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Rational\common;C:\Perl\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\7-Zip;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files (x86)\Plantronics\Spokes3G\;C:\Program Files\Rational\ClearCase\bin;C:\Program Files\Rational\ClearCase\RemoteClient\cteapis;C:\Program Files\MATLAB\MATLAB Runtime\v90\runtime\win64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\MATLAB\R2017b\bin;C:\Program Files\MATLAB\R2015b64\runtime\win64;C:\Program Files\MATLAB\R2015b64\bin;C:\Program Files\MATLAB\R2015b64\polyspace\bin;C:\Program Files (x86)\IBM\gsk8\lib;C:\Program Files (x86)\IBM\gsk8\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Toolbase Client;C:\PRQA\PRQA-Framework-2.1.0\common\bin;C:\Users\brj3mx\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;D:\intelFPGA_lite\17.1\modelsim_ase\win32aloem;C:\Users\brj3mx\AppData\Roaming\npm"/>
+          <item stringID="value" value="C:\Xilinx\13.4\ISE_DS\ISE\\lib\nt64;C:\Xilinx\13.4\ISE_DS\ISE\\bin\nt64;C:\Xilinx\13.4\ISE_DS\PlanAhead\bin;C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64;C:\Xilinx\13.4\ISE_DS\ISE\lib\nt64;C:\Xilinx\13.4\ISE_DS\EDK\bin\nt64;C:\Xilinx\13.4\ISE_DS\EDK\lib\nt64;C:\Xilinx\13.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;C:\Xilinx\13.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;C:\Xilinx\13.4\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\13.4\ISE_DS\common\bin\nt64;C:\Xilinx\13.4\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Rational\common;C:\Perl\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\7-Zip;C:\Program Files (x86)\Enterprise Vault\EVClient\;C:\Program Files (x86)\Plantronics\Spokes3G\;C:\Program Files\Rational\ClearCase\bin;C:\Program Files\Rational\ClearCase\RemoteClient\cteapis;C:\Program Files\MATLAB\MATLAB Runtime\v90\runtime\win64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\MATLAB\R2017b\bin;C:\Program Files\MATLAB\R2015b64\runtime\win64;C:\Program Files\MATLAB\R2015b64\bin;C:\Program Files\MATLAB\R2015b64\polyspace\bin;C:\Program Files (x86)\IBM\gsk8\lib;C:\Program Files (x86)\IBM\gsk8\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Toolbase Client;C:\PRQA\PRQA-Framework-2.1.0\common\bin;C:\Users\brj3mx\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\;D:\intelFPGA_lite\17.1\modelsim_ase\win32aloem;C:\Users\brj3mx\AppData\Roaming\npm"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -78,21 +78,21 @@
         <item stringID="MAP_TOTAL_CPU_TIME" value="2 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="11776" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="216">
-          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="186"/>
+        <item AVAILABLE="11776" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="214">
+          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="184"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="30"/>
         </item>
-        <item AVAILABLE="11776" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="560">
-          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="3"/>
+        <item AVAILABLE="11776" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="565">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="1"/>
           <item dataType="int" stringID="MAP_NUM_RAM32" value="16"/>
         </item>
-        <item AVAILABLE="5888" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="348">
+        <item AVAILABLE="5888" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="349">
           <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
         <section stringID="MAP_IOB_DATA">
-          <item AVAILABLE="372" dataType="int" stringID="MAP_AGG_BONDED_IO" value="25"/>
+          <item AVAILABLE="372" dataType="int" stringID="MAP_AGG_BONDED_IO" value="26"/>
         </section>
       </section>
       <section stringID="MAP_HARD_IP_REPORTING">
@@ -363,6 +363,13 @@
             <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
             <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
           </row>
+          <row stringID="row" value="26">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="reset"/>
+            <item stringID="Type" value="IBUF"/>
+            <item stringID="Direction" value="INPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS25"/>
+            <item label="IBUF/IFD&#xA;Delay" stringID="IBUF_IFD_DELAY" value="0 / 0"/>
+          </row>
         </table>
       </section>
       <section stringID="MAP_RPM_MACROS">
@@ -375,8 +382,8 @@
       <section stringID="MAP_TIMING_REPORT"/>
       <section stringID="MAP_CONFIGURATION_STRING_DETAILS"/>
       <section stringID="MAP_GENERAL_CONFIG_DATA">
-        <item stringID="MAP_AREG" value="1"/>
-        <item stringID="MAP_BREG" value="1"/>
+        <item stringID="MAP_AREG" value="0"/>
+        <item stringID="MAP_BREG" value="0"/>
         <item stringID="MAP_B_INPUT" value="DIRECT"/>
         <item stringID="MAP_PREG" value="0"/>
         <item stringID="MAP_DISABLE_ATTR" value="LOW"/>

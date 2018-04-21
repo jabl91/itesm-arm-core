@@ -34,6 +34,7 @@ entity SPW is
            out_SPW : out  STD_LOGIC_VECTOR (4 downto 0) := "00000";
            load_SPW : in  STD_LOGIC;
 			  load_CJNE		:in STD_LOGIC;
+           reset        : in STD_LOGIC;
 			  clk	:	STD_LOGIC);
 end SPW;
 
@@ -45,9 +46,11 @@ begin
 
 --	clk_b <= clk and load_a;
 
-	process(clk)
+	process(clk,reset)
 		begin
-			if (rising_edge(clk)) then
+         if (reset = '0') then
+            out_SPW <= (others => '0');
+			elsif (rising_edge(clk)) then
 				if load_SPW = '1' then
 					out_SPW <= in_SPW;
 				end if;

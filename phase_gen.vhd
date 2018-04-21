@@ -32,6 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity phase_gen is
     Port ( clear_phase : in  STD_LOGIC;
            clk : in  STD_LOGIC;
+           reset : in STD_LOGIC;
 			  out_phase : out std_logic_vector(3 downto 0) := "0000");
 end phase_gen;
 
@@ -42,10 +43,12 @@ signal phase_out : std_logic_vector(3 downto 0) := "0001";
 begin
 
 
-	process(clk,clear_phase)
+	process(clk,clear_phase,reset)
 	begin
-		if (clear_phase = '0') then
-			phase_out <= "0000";
+		if(reset = '0') then
+         phase_out <= "0001";
+      elsif(clear_phase = '0') then
+			phase_out <= "0001";
 		elsif falling_edge(clk) then
 			if (phase_out = "0000") then
 				phase_out <= "0001";
