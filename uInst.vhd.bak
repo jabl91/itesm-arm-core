@@ -31,7 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity uInst is
     Port ( 			
-						clk							: in		STD_LOGIC;
 						Phase 			         : in  	STD_LOGIC_VECTOR 	(3 downto 0);
 						Inst 				         : in  	STD_LOGIC_VECTOR 	(4 downto 0);
 						DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
@@ -76,9 +75,9 @@ end uInst;
 architecture Behavioral of uInst is
 begin
 
-		process(Phase,clk) is
+		process(Phase) is
 		begin
-		if (rising_edge(clk)) then
+
 				case Phase is
 
 						when "0001" => --Primera Fase
@@ -89,7 +88,7 @@ begin
 								LOAD_PC	 				   <= '0';
 								WR_RAM					   <= '0';			
 								LOAD_MS_MUX				   <= '0';
-								LOAD_CJNE				   <= '0';			-- Esta seï¿½al se usa para no actualizar todo el SPW solo un bit
+								LOAD_CJNE				   <= '0';			-- Esta señal se usa para no actualizar todo el SPW solo un bit
 								MBR_MUX					   <= '0';
 								MAR_MUX					   <= '0';
 								SPTR_DEC 				   <= '0';
@@ -521,7 +520,6 @@ begin
 								ENABLE_PORT				<= "11";
 
 				end case;
-		end if;
 		end process;
 		
 		
