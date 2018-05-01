@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity uInst is
     Port ( 			
 						clk							: in		STD_LOGIC;
-						Phase 			         : in  	STD_LOGIC_VECTOR 	(3 downto 0);
+						Phase 			         : in  	STD_LOGIC_VECTOR 	(7 downto 0);
 						Inst 				         : in  	STD_LOGIC_VECTOR 	(4 downto 0);
 						DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
                   SEL_REGISTER_BANK_PM    : in     STD_LOGIC_VECTOR  (3 downto 0);
@@ -81,7 +81,7 @@ begin
 		if (rising_edge(clk)) then
 				case Phase is
 
-						when "0001" => --Primera Fase
+						when "00000001" => --Primera Fase
 						
 								ReadMem 					   <= '1';		--Lectura de Memoria de Programa (1)
 								Load_Instr 				   <= '1';   	--Carga de la Instruccion obtenida de la memoria (1)
@@ -112,7 +112,7 @@ begin
                         SEL_REGISTER_BANK       <= "0000";
                         LOAD_EN_REGISTER_BANK   <= '0';
 
-						when "0010" => --Segunda Fase
+						when "00000010" => --Segunda Fase
 						
 							case Inst is
 									when "00000" =>		-- NOP
@@ -235,7 +235,7 @@ begin
 								end case;
 						
 					
-						when "0100" => --Tercera Fase
+						when "00000100" => --Tercera Fase
 							
 							case Inst is
 									when "00000" =>		-- NOP
@@ -360,7 +360,7 @@ begin
 								
 
 
-						when "1000" => --Cuarta Fase
+						when "00001000" => --Cuarta Fase
 
 								case Inst is
 									when "00000" =>		-- NOP
@@ -496,29 +496,34 @@ begin
 
 				when others =>			--Default (Falta por definir)
 								
-								ReadMem 					<= '0';
-								Load_Instr 				<= '0';  
-								PC_SRC_MUX 				<= '0';
-								LOAD_PC	 				<= '0';
-								WR_RAM					<= '0';			
-								LOAD_MS_MUX				<= '0';
-								MBR_MUX					<= '0';
-								MAR_MUX					<= '0';
-								SPTR_DEC 				<= '0';
-								SPTR_INC 				<= '0';
-								PM_BUS					<= '0';
-								B_BUS						<= '0';
-								LOAD_B	 				<= '0';
-								PC_INC	 				<= '0';
-								ALU_SIGNAL		 		<= (others => '0');
-								ALU_BUS	 				<= '0';
-								A_SRC_MUX 				<= '0';
-								A_BUS		 				<= '0';
-								LOAD_A	 				<= '0';
-								PORT_SELECT				<=	'0';
-								WR_PORT					<= '0';
-								PORT_BUS					<= '0';
-								ENABLE_PORT				<= "11";
+								ReadMem 					   <= '0';		--Lectura de Memoria de Programa (1)
+								Load_Instr 				   <= '0';   	--Carga de la Instruccion obtenida de la memoria (1)
+								PC_SRC_MUX 				   <= '0';
+								LOAD_PC	 				   <= '0';
+								WR_RAM					   <= '0';			
+								LOAD_MS_MUX				   <= '0';
+								LOAD_CJNE				   <= '0';			-- Esta se�al se usa para no actualizar todo el SPW solo un bit
+								MBR_MUX					   <= '0';
+								MAR_MUX					   <= '0';
+								SPTR_DEC 				   <= '0';
+								SPTR_INC 				   <= '0';
+								PM_BUS					   <= '0';
+								LOAD_SPW					   <= '0';
+								B_BUS						   <= '0';
+								LOAD_B	 				   <= '0';
+								PC_INC	 				   <= '0';
+								ALU_SIGNAL		 		   <= (others => '0');
+								ALU_BUS	 				   <= '0';
+								A_SRC_MUX 				   <= '0';
+								A_BUS		 				   <= '0';
+								LOAD_A	 				   <= '0';
+								PORT_SELECT				   <=	'0';
+								WR_PORT					   <= '0';
+								PORT_BUS					   <= '0';
+								ENABLE_PORT				   <= "11";
+								SEL_PORT_OR_BUS		   <= '0';
+                        SEL_REGISTER_BANK       <= "0000";
+                        LOAD_EN_REGISTER_BANK   <= '0';
 
 				end case;
 		end if;

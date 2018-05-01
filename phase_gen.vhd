@@ -33,12 +33,12 @@ entity phase_gen is
     Port ( clear_phase : in  STD_LOGIC;
            clk : in  STD_LOGIC;
            reset : in STD_LOGIC;
-			  out_phase : out std_logic_vector(3 downto 0) := "0000");
+			  out_phase : out std_logic_vector(7 downto 0) := (others => '0'));
 end phase_gen;
 
 architecture Behavioral of phase_gen is
 
-signal phase_out : std_logic_vector(3 downto 0) := "0001";
+signal phase_out : std_logic_vector(7 downto 0) := "00000001";
 
 begin
 
@@ -46,14 +46,14 @@ begin
 	process(clk,clear_phase,reset)
 	begin
 		if(reset = '0') then
-         phase_out <= "0001";
+         phase_out <= "00000001";
       elsif(clear_phase = '0') then
-			phase_out <= "0001";
+			phase_out <= "00000001";
 		elsif falling_edge(clk) then
-			if (phase_out = "0000") then
-				phase_out <= "0001";
+			if (phase_out = "00000000") then
+				phase_out <= "00000001";
 			else
-				phase_out <= phase_out(2) & phase_out(1 downto 0) & phase_out(3);
+				phase_out <= phase_out(6) & phase_out(5 downto 0) & phase_out(7);
 			end if;
 		end if;
 	end process;

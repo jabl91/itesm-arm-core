@@ -2,9 +2,9 @@ Command line:
    Procesador_Final_TB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52627
+     -socket  56603
 
-Sat Apr 21 16:24:48 2018
+Tue May 01 10:20:07 2018
 
 
- Elaboration Time: 0.1092 sec
+ Elaboration Time: 0.0624 sec

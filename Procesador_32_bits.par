@@ -1,7 +1,7 @@
-Release 13.4 par O.87xd (nt64)
+Release 13.4 par O.87xd (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-GA543C3A::  Mon Apr 23 08:39:06 2018
+GA543C3A::  Tue May 01 09:43:28 2018
 
 par -w -intstyle ise -ol high -t 1 Procesador_32_bits_map.ncd
 Procesador_32_bits.ncd Procesador_32_bits.pcf 
@@ -40,7 +40,7 @@ Design Summary Report:
 
    Number of BUFGMUXs                        1 out of 24      4%
    Number of MULT18X18SIOs                   1 out of 20      5%
-   Number of Slices                        349 out of 5888    5%
+   Number of Slices                        364 out of 5888    6%
       Number of SLICEMs                      8 out of 2944    1%
 
 
@@ -59,50 +59,50 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:114e1) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:12b61) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:114e1) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:12b61) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:114e1) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:12b61) REAL time: 3 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-........
-Phase 4.2  Initial Clock and IO Placement (Checksum:6badf8ea) REAL time: 4 secs 
+.........
+Phase 4.2  Initial Clock and IO Placement (Checksum:6bae0f6a) REAL time: 5 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:6badf8ea) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:6bae0f6a) REAL time: 5 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:6badf8ea) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:6bae0f6a) REAL time: 5 secs 
 
 Phase 7.3  Local Placement Optimization
-........
-Phase 7.3  Local Placement Optimization (Checksum:6dc2d5c2) REAL time: 5 secs 
+.......
+Phase 7.3  Local Placement Optimization (Checksum:6dc2ec42) REAL time: 6 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:6dc2d5c2) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:6dc2ec42) REAL time: 6 secs 
 
 Phase 9.8  Global Placement
-..................
-..................
-........................................................................
-.............................................................................................
-........................
-Phase 9.8  Global Placement (Checksum:b4a6f1ab) REAL time: 5 secs 
+......................................................
+..........................
+.............................................
+...................................
+............................................................
+Phase 9.8  Global Placement (Checksum:c6da5888) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:b4a6f1ab) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:c6da5888) REAL time: 7 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:d24c085e) REAL time: 6 secs 
+Phase 11.18  Placement Optimization (Checksum:55ecf2c6) REAL time: 9 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:d24c085e) REAL time: 6 secs 
+Phase 12.5  Local Placement Optimization (Checksum:55ecf2c6) REAL time: 9 secs 
 
-Total REAL time to Placer completion: 6 secs 
-Total CPU  time to Placer completion: 6 secs 
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 7 secs 
 Writing design to file Procesador_32_bits.ncd
 
 
@@ -110,37 +110,33 @@ Writing design to file Procesador_32_bits.ncd
 Starting Router
 
 
-Phase  1  : 2616 unrouted;      REAL time: 10 secs 
+Phase  1  : 2717 unrouted;      REAL time: 12 secs 
 
-Phase  2  : 2475 unrouted;      REAL time: 10 secs 
+Phase  2  : 2562 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 693 unrouted;      REAL time: 10 secs 
+Phase  3  : 645 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 728 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  4  : 711 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
-
-Updating file: Procesador_32_bits.ncd with current fully routed design.
-
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
-
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
 Updating file: Procesador_32_bits.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 18 secs 
-WARNING:Route:455 - CLK Net:uInst_F/SEL_BUS_not0001 may have excessive skew because 
-      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
-WARNING:Route:455 - CLK Net:uInst_F/SEL_REGISTER_BANK_not0001 may have excessive skew because 
-      3 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
 
-Total REAL time to Router completion: 18 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+
+Total REAL time to Router completion: 20 secs 
 Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
@@ -159,69 +155,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP |  BUFGMUX_X1Y0| No   |  125 |  0.160     |  1.142      |
+|           clk_BUFGP |  BUFGMUX_X1Y0| No   |  148 |  0.191     |  1.168      |
 +---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_A_not00 |              |      |      |            |             |
-|                  01 |         Local|      |    1 |  0.000     |  1.105      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/PC_INC_not00 |              |      |      |            |             |
-|                  01 |         Local|      |    1 |  0.000     |  1.238      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/ALU_SIGNAL_n |              |      |      |            |             |
-|              ot0001 |         Local|      |    4 |  0.026     |  2.110      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_SPW_not |              |      |      |            |             |
-|                0001 |         Local|      |    1 |  0.000     |  1.446      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/SEL_BUS_not0 |              |      |      |            |             |
-|                 001 |         Local|      |    3 |  0.276     |  0.941      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/WR_RAM_not00 |              |      |      |            |             |
-|                  01 |         Local|      |    1 |  0.000     |  0.393      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/SPTR_INC_not |              |      |      |            |             |
-|                0001 |         Local|      |    1 |  0.000     |  1.167      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/Load_Instr_n |              |      |      |            |             |
-|              ot0001 |         Local|      |    1 |  0.000     |  1.183      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/ENABLE_PORT_ |              |      |      |            |             |
-|             not0001 |         Local|      |    2 |  0.000     |  1.713      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/SEL_REGISTER |              |      |      |            |             |
-|       _BANK_not0001 |         Local|      |    3 |  0.534     |  1.414      |
-+---------------------+--------------+------+------+------------+-------------+
-| ALU_F/out_c_not0001 |         Local|      |    1 |  0.000     |  0.862      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/A_SRC_MUX_no |              |      |      |            |             |
-|               t0001 |         Local|      |    1 |  0.000     |  0.393      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/MAR_MUX_not0 |              |      |      |            |             |
-|                 001 |         Local|      |    1 |  0.000     |  1.243      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/SPTR_DEC_not |              |      |      |            |             |
-|                0001 |         Local|      |    1 |  0.000     |  0.393      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/PC_SRC_MUX_n |              |      |      |            |             |
-|              ot0001 |         Local|      |    1 |  0.000     |  1.192      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_B_not00 |              |      |      |            |             |
-|                  01 |         Local|      |    1 |  0.000     |  1.382      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_CJNE_no |              |      |      |            |             |
-|               t0001 |         Local|      |    1 |  0.000     |  0.407      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_EN_REGI |              |      |      |            |             |
-|   STER_BANK_not0001 |         Local|      |    1 |  0.000     |  0.926      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_MS_MUX_ |              |      |      |            |             |
-|             not0001 |         Local|      |    1 |  0.000     |  0.640      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/MBR_MUX_not0 |              |      |      |            |             |
-|                 001 |         Local|      |    1 |  0.000     |  0.393      |
-+---------------------+--------------+------+------+------------+-------------+
-|uInst_F/LOAD_PC_not0 |              |      |      |            |             |
-|                 001 |         Local|      |    1 |  0.000     |  0.557      |
+| ALU_F/out_c_not0001 |         Local|      |    1 |  0.000     |  1.390      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -241,8 +177,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|    12.304ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.980ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|    13.518ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.018ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -258,16 +194,16 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 18 secs 
-Total CPU time to PAR completion: 18 secs 
+Total REAL time to PAR completion: 20 secs 
+Total CPU time to PAR completion: 19 secs 
 
-Peak Memory Usage:  305 MB
+Peak Memory Usage:  247 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 2
+Number of warning messages: 0
 Number of info messages: 1
 
 Writing design to file Procesador_32_bits.ncd

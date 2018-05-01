@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 13.4 Trace  (nt64)
+Release 13.4 Trace  (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
--n 3 -fastpaths -xml Procesador_32_bits.twx Procesador_32_bits.ncd -o
+C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Procesador_32_bits.twx Procesador_32_bits.ncd -o
 Procesador_32_bits.twr Procesador_32_bits.pcf
 
 Design file:              Procesador_32_bits.ncd
@@ -45,30 +45,30 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-PORT_A_OUT<0>|    8.509(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<1>|    8.447(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<2>|    7.889(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<3>|    7.923(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<4>|    7.673(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<5>|    7.991(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<6>|    7.461(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<7>|    7.484(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<0>|    8.272(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<1>|    8.059(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<2>|    8.076(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<3>|    7.838(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<4>|    7.946(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<5>|    8.589(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<6>|    7.816(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<7>|    8.319(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<0>|    8.986(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<1>|    8.205(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<2>|    8.504(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<3>|    7.901(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<4>|    7.958(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<5>|    7.476(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<6>|    8.080(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<7>|    7.747(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<0>|    8.254(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<1>|    8.477(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<2>|    7.867(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<3>|    8.354(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<4>|    8.441(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<5>|    8.536(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<6>|    8.334(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<7>|    8.636(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<0>|    8.866(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<1>|    8.399(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<2>|    7.856(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<3>|    7.910(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<4>|    7.301(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<5>|    7.568(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<6>|    8.166(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<7>|    7.857(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<0>|    8.434(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<1>|    8.196(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<2>|    8.405(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<3>|    8.151(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<4>|    7.531(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<5>|    7.790(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<6>|    7.875(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<7>|    8.127(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -76,18 +76,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   12.311|    6.053|    5.092|    2.630|
+clk            |   12.821|    6.545|    6.759|    4.182|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Apr 23 08:39:29 2018 
+Analysis completed Tue May 01 09:43:53 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 207 MB
+Peak Memory Usage: 160 MB
 
 
 

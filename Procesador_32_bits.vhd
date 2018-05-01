@@ -196,7 +196,7 @@ component phase_gen
             clear_phase    : in  STD_LOGIC;
             clk            : in  STD_LOGIC;
             reset          : in  STD_LOGIC;
-            out_phase      : out STD_LOGIC_VECTOR (3 downto 0)
+            out_phase      : out STD_LOGIC_VECTOR (7 downto 0)
          );
 end component;
 
@@ -214,7 +214,7 @@ end component;
 component uInst
    Port  ( 
 					clk							: in		STD_LOGIC;
-               Phase 			         : in  	STD_LOGIC_VECTOR 	(3 downto 0);
+               Phase 			         : in  	STD_LOGIC_VECTOR 	(7 downto 0);
                Inst 				         : in  	STD_LOGIC_VECTOR 	(4 downto 0);
                DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
                SEL_REGISTER_BANK_PM    : in     STD_LOGIC_VECTOR  (3 downto 0);
@@ -267,7 +267,7 @@ SIGNAL PORT_A_OUT1   : STD_LOGIC_VECTOR (7 DOWNTO 0):= (others => '0');      -- 
 SIGNAL DATA_PM       : STD_LOGIC_VECTOR (3 DOWNTO 0);                         -- Datos de PMS (Program Memory Structure)
 SIGNAL ADDR_PM       : STD_LOGIC_VECTOR (6 DOWNTO 0);                         -- Direccion de PMS
 SIGNAL INST_PM       : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- Instruccion de PMS
-SIGNAL PHASE         : STD_LOGIC_VECTOR (3 DOWNTO 0);                         -- Se�al de Fase
+SIGNAL PHASE         : STD_LOGIC_VECTOR (7 DOWNTO 0);                         -- Se�al de Fase
 SIGNAL ADDR_SPTR     : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- Direccion de Salida del SPTR
 SIGNAL SPW_IN        : STD_LOGIC_VECTOR (4 DOWNTO 0);                         -- STATUS PROGRAM WORD
 SIGNAL SPW_OUT       : STD_LOGIC_VECTOR (4 DOWNTO 0) := (others => '0');      -- STATUS PROGRAM WORD
