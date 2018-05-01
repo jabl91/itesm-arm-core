@@ -46,8 +46,8 @@ Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 127340 KB
-Fuse CPU Usage: 545 ms
+Fuse Memory Usage: 127404 KB
+Fuse CPU Usage: 577 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -93,8 +93,8 @@ Compiling architecture behavioral of entity data_bus [data_bus_default]
 Compiling architecture behavioral of entity Procesador_32_bits [procesador_32_bits_default]
 Compiling architecture behavior of entity procesador_final_tb
 Time Resolution for simulation is 1ps.
-Waiting for 28 sub-compilation(s) to finish...
+Waiting for 26 sub-compilation(s) to finish...
 Compiled 83 VHDL Units
 Built simulation executable C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe
-Fuse Memory Usage: 148188 KB
-Fuse CPU Usage: 1622 ms
+Fuse Memory Usage: 147740 KB
+Fuse CPU Usage: 1388 ms

@@ -220,17 +220,29 @@ begin
 									ReadMem 					<= '0';
 									Load_Instr 				<= '0';
 									PC_INC					<= '1';
-                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+                           when "11000" =>      -- MOV Rn, k
                            ReadMem 					<= '0';
 									Load_Instr 				<= '0';
 									PC_INC					<= '1';
-                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
+                           when "11001" =>      -- MOV Rm, Rn
                            ReadMem 					<= '0';
 									Load_Instr 				<= '0';
 									PC_INC					<= '1';
                            SEL_REGISTER_BANK    <= SEL_REGISTER_BANK_PM;
                            SEL_BUS              <= "00111";
                            LOAD_A	            <= '1';
+                           when "11010" =>      -- MOV A, Rn
+                           ReadMem 					<= '0';
+									Load_Instr 				<= '0';
+									PC_INC					<= '1';
+                           when "11011" =>      -- MOV B, Rn
+                           ReadMem 					<= '0';
+									Load_Instr 				<= '0';
+									PC_INC					<= '1';
+                           when "11100" =>      -- MOV Rn, A
+                           ReadMem 					<= '0';
+									Load_Instr 				<= '0';
+									PC_INC					<= '1';                             
 									when others  => 		--?
 								end case;
 						
@@ -344,17 +356,32 @@ begin
 									PC_INC	<='0';
 									SEL_BUS 	<="00010";
 									LOAD_B   <='1';
-                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+                           when "11000" =>      -- MOV Rn, k
 									PC_INC	<='0';
 									SEL_BUS<= "00010";
                            SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM;
                            LOAD_EN_REGISTER_BANK   <= '1';
-                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
+                           when "11001" =>      -- MOV Rm, Rn
 									PC_INC	<='0';
                            LOAD_A	<= '0';
                            SEL_BUS 	<="00000";
                            SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM_2;
-                           LOAD_EN_REGISTER_BANK   <= '1';                      
+                           LOAD_EN_REGISTER_BANK   <= '1';
+                           when "11010" =>      -- MOV A, Rn
+									PC_INC					<= '0';
+                           SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM;
+                           SEL_BUS              <= "00111";
+                           LOAD_A	            <= '1';
+                           when "11011" =>      -- MOV B, Rn
+									PC_INC					<= '0';
+                           SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM;
+                           SEL_BUS              <= "00111";
+                           LOAD_B	            <= '1';
+                           when "11100" =>      -- MOV Rn, A
+									PC_INC					<= '0';
+                           SEL_BUS              <= "00000";
+                           SEL_REGISTER_BANK       <= SEL_REGISTER_BANK_PM;
+                           LOAD_EN_REGISTER_BANK   <= '1';                           
 									when others  => 		--?
 								end case;
 								
@@ -484,17 +511,23 @@ begin
 									ENABLE_PORT <= "11";
 									when "10111" => 		-- MOV B ,K
 									LOAD_B   <='0';
-                           when "11000" =>      -- TEST REGISTER BANK MOV k, Rn
+                           when "11000" =>      -- MOV Rn, k
                            LOAD_EN_REGISTER_BANK   <= '0';
-                           when "11001" =>      -- TEST REGISTER BANK MOV Rm, Rn
-                           LOAD_EN_REGISTER_BANK   <= '0';                          
+                           when "11001" =>      -- MOV Rm, Rn
+                           LOAD_EN_REGISTER_BANK   <= '0';
+                           when "11010" =>      -- MOV A, Rn
+                           LOAD_A	            <= '0';
+                           when "11011" =>      -- MOV B, Rn
+                           LOAD_B	            <= '0';
+                           when "11100" =>      -- MOV Rn, A
+                           LOAD_EN_REGISTER_BANK   <= '0';                            
 									when others  => 		--?
 								end case;
 								
 								
 								
 
-				when others =>			--Default (Falta por definir)
+				when others =>			--Default
 								
 								ReadMem 					   <= '0';		--Lectura de Memoria de Programa (1)
 								Load_Instr 				   <= '0';   	--Carga de la Instruccion obtenida de la memoria (1)

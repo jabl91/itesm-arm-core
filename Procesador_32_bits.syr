@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.64 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.64 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.55 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -157,7 +157,8 @@ Architecture behavioral of Entity reg_b is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd" in Library work.
 Architecture behavioral of Entity registerbank is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
-Architecture behavioral of Entity uinst is up to date.
+Entity <uinst> compiled.
+Entity <uinst> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
 Architecture behavioral of Entity spw is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" in Library work.
@@ -183,8 +184,7 @@ Architecture behavioral of Entity reg_a is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
 Architecture behavioral of Entity data_bus is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" in Library work.
-Entity <procesador_32_bits> compiled.
-Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity procesador_32_bits is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -1518,8 +1518,10 @@ WARNING:Xst:2677 - Node <RegisterBank_F/data_out_8> of sequential type is unconn
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block Procesador_32_bits, actual ratio is 5.
+FlipFlop Phase_gen_F/phase_out_0 has been replicated 1 time(s)
 FlipFlop Phase_gen_F/phase_out_1 has been replicated 1 time(s)
 FlipFlop Phase_gen_F/phase_out_2 has been replicated 1 time(s)
+FlipFlop Phase_gen_F/phase_out_3 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -1527,8 +1529,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 214
- Flip-Flops                                            : 214
+# Registers                                            : 217
+ Flip-Flops                                            : 217
 
 =========================================================================
 
@@ -1557,33 +1559,33 @@ Design Statistics
 # IOs                              : 50
 
 Cell Usage :
-# BELS                             : 687
+# BELS                             : 684
 #      GND                         : 1
 #      INV                         : 2
 #      LUT1                        : 1
-#      LUT2                        : 71
-#      LUT2_D                      : 4
-#      LUT2_L                      : 3
-#      LUT3                        : 98
-#      LUT3_D                      : 10
-#      LUT3_L                      : 6
-#      LUT4                        : 311
-#      LUT4_D                      : 21
+#      LUT2                        : 70
+#      LUT2_D                      : 6
+#      LUT2_L                      : 5
+#      LUT3                        : 86
+#      LUT3_D                      : 13
+#      LUT3_L                      : 3
+#      LUT4                        : 313
+#      LUT4_D                      : 29
 #      LUT4_L                      : 52
 #      MUXCY                       : 23
-#      MUXF5                       : 56
+#      MUXF5                       : 52
 #      VCC                         : 1
 #      XORCY                       : 27
-# FlipFlops/Latches                : 215
-#      FD                          : 13
+# FlipFlops/Latches                : 218
+#      FD                          : 8
 #      FD_1                        : 10
-#      FDC_1                       : 9
+#      FDC_1                       : 11
 #      FDCE                        : 105
 #      FDE                         : 34
 #      FDE_1                       : 13
-#      FDP_1                       : 1
+#      FDP_1                       : 2
 #      FDPE                        : 5
-#      FDS                         : 16
+#      FDS                         : 21
 #      FDS_1                       : 8
 #      LD                          : 1
 # RAMS                             : 8
@@ -1602,10 +1604,10 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      314  out of   5888     5%  
- Number of Slice Flip Flops:            215  out of  11776     1%  
- Number of 4 input LUTs:                595  out of  11776     5%  
-    Number used as logic:               579
+ Number of Slices:                      315  out of   5888     5%  
+ Number of Slice Flip Flops:            218  out of  11776     1%  
+ Number of 4 input LUTs:                596  out of  11776     5%  
+    Number used as logic:               580
     Number used as RAMs:                 16
  Number of IOs:                          50
  Number of bonded IOBs:                  26  out of    372     6%  
@@ -1633,7 +1635,7 @@ Clock Information:
 -------------------------------------------+------------------------+-------+
 Clock Signal                               | Clock buffer(FF name)  | Load  |
 -------------------------------------------+------------------------+-------+
-clk                                        | BUFGP                  | 222   |
+clk                                        | BUFGP                  | 225   |
 ALU_F/out_c_not0001(ALU_F/out_c_not00011:O)| NONE(*)(ALU_F/out_c)   | 1     |
 -------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -1646,14 +1648,14 @@ Asynchronous Control Signals Information:
 ------------------------------------------+----------------------------+-------+
 Control Signal                            | Buffer(FF name)            | Load  |
 ------------------------------------------+----------------------------+-------+
-PC_F/reset_inv(reg_b_F/reset_inv1_INV_0:O)| NONE(PC_F/PC_X/addr_out1_0)| 120   |
+PC_F/reset_inv(reg_b_F/reset_inv1_INV_0:O)| NONE(PC_F/PC_X/addr_out1_0)| 123   |
 ------------------------------------------+----------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 13.973ns (Maximum Frequency: 71.566MHz)
+   Minimum period: 13.456ns (Maximum Frequency: 74.316MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 5.642ns
    Maximum combinational path delay: No path found
@@ -1664,28 +1666,28 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 13.973ns (frequency: 71.566MHz)
-  Total number of paths / destination ports: 49500 / 450
+  Clock period: 13.456ns (frequency: 74.316MHz)
+  Total number of paths / destination ports: 49603 / 458
 -------------------------------------------------------------------------
-Delay:               6.987ns (Levels of Logic = 4)
-  Source:            Phase_gen_F/phase_out_1 (FF)
-  Destination:       uInst_F/SEL_BUS_0 (FF)
+Delay:               6.728ns (Levels of Logic = 4)
+  Source:            Phase_gen_F/phase_out_2 (FF)
+  Destination:       uInst_F/SEL_REGISTER_BANK_3 (FF)
   Source Clock:      clk falling
   Destination Clock: clk rising
 
-  Data Path: Phase_gen_F/phase_out_1 to uInst_F/SEL_BUS_0
+  Data Path: Phase_gen_F/phase_out_2 to uInst_F/SEL_REGISTER_BANK_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q           33   0.591   1.406  Phase_gen_F/phase_out_1 (Phase_gen_F/phase_out_1)
-     LUT3_D:I0->O         15   0.648   1.020  uInst_F/Load_Instr_mux0000122 (uInst_F/LOAD_MS_MUX_cmp_eq0000)
-     LUT4:I3->O            1   0.648   0.452  uInst_F/SEL_BUS_mux0000<3>140 (uInst_F/SEL_BUS_mux0000<3>140)
-     LUT4:I2->O            3   0.648   0.674  uInst_F/SEL_BUS_mux0000<3>1231 (uInst_F/N0)
-     LUT4:I0->O            1   0.648   0.000  uInst_F/SEL_BUS_mux0000<4>551 (uInst_F/SEL_BUS_mux0000<4>55)
-     FDS:D                     0.252          uInst_F/SEL_BUS_0
+     FDC_1:C->Q           24   0.591   1.332  Phase_gen_F/phase_out_2 (Phase_gen_F/phase_out_2)
+     LUT3_D:I1->O          7   0.643   0.711  uInst_F/Load_Instr_mux0000212 (uInst_F/LOAD_EN_REGISTER_BANK_cmp_eq0000)
+     LUT4:I3->O            4   0.648   0.590  uInst_F/SEL_REGISTER_BANK_mux0000<0>2 (uInst_F/N17)
+     LUT4:I3->O            1   0.648   0.000  uInst_F/SEL_REGISTER_BANK_mux0000<0>8_G (N177)
+     MUXF5:I1->O           1   0.276   0.420  uInst_F/SEL_REGISTER_BANK_mux0000<0>8 (uInst_F/SEL_REGISTER_BANK_mux0000<0>8)
+     FDS:S                     0.869          uInst_F/SEL_REGISTER_BANK_0
     ----------------------------------------
-    Total                      6.987ns (3.435ns logic, 3.552ns route)
-                                       (49.2% logic, 50.8% route)
+    Total                      6.728ns (3.675ns logic, 3.053ns route)
+                                       (54.6% logic, 45.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1709,12 +1711,12 @@ Offset:              5.642ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.27 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.61 secs
  
 --> 
 
-Total memory usage is 251280 kilobytes
+Total memory usage is 252368 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  696 (   0 filtered)
