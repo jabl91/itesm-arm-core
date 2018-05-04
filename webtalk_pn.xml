@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue May 01 12:03:29 2018">
+<application name="pn" timeStamp="Thu May 03 19:52:34 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="F1152E338F7A421E9E78A31EC22C4440" type="project"/>
-<property name="ProjectIteration" value="35" type="project"/>
+<property name="ProjectIteration" value="36" type="project"/>
 <property name="ProjectFile" value="C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARM_Cortex_32_Bits.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2018-04-14T19:56:50" type="project"/>
 </section>
@@ -18,7 +18,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_LastAppliedStrategy" value="Xilinx Default (unlocked)" type="design"/>
 <property name="PROP_ManualCompileOrderImp" value="false" type="design"/>
 <property name="PROP_PropSpecInProjFile" value="Store all values" type="design"/>
-<property name="PROP_SelectedInstanceHierarchicalPath" value="/Procesador_Final_TB/uut/uInst_F" type="process"/>
+<property name="PROP_SelectedInstanceHierarchicalPath" value="/Procesador_Final_TB/uut" type="process"/>
 <property name="PROP_Simulator" value="ISim (VHDL/Verilog)" type="design"/>
 <property name="PROP_SynthTopFile" value="changed" type="process"/>
 <property name="PROP_Top_Level_Module_Type" value="HDL" type="design"/>
@@ -26,10 +26,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2018-04-14T19:56:50" type="design"/>
 <property name="PROP_intWbtProjectID" value="F1152E338F7A421E9E78A31EC22C4440" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="35" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="36" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_selectedSimRootSourceNode_behav" value="work.uInst" type="process"/>
+<property name="PROP_selectedSimRootSourceNode_behav" value="work.Procesador_32_bits" type="process"/>
 <property name="PROP_xilxBitgStart_IntDone" value="true" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Spartan3A and Spartan3AN" type="design"/>
@@ -40,7 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_DevSpeed" value="-4" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_USERDOC" value="2" type="source"/>
-<property name="FILE_VHDL" value="65" type="source"/>
+<property name="FILE_VHDL" value="42" type="source"/>
 </section>
 </application>
 </document>

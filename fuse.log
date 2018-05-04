@@ -1,33 +1,33 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe" -prj "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj" "work.Procesador_Final_TB" 
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe -prj C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj work.Procesador_Final_TB 
 ISim O.87xd (signature 0x2f00eba5)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco_32.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ARITH_PLUS.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_8.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/xor_32.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap_32.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SUM_32.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_r32.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/shift_l32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/ram_mod.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_8.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/or_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/oc_reg.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_8.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/not_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MBR.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MBR.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" into library work
-Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_8.vhd" into library work
+Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/and_32.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" into library work
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" into library work
@@ -46,8 +46,8 @@ Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 127404 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 127660 KB
+Fuse CPU Usage: 748 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -74,27 +74,27 @@ Compiling architecture behavioral of entity inst_reg [inst_reg_default]
 Compiling architecture behavioral of entity dir_reg [dir_reg_default]
 Compiling architecture behavioral of entity oc_reg [oc_reg_default]
 Compiling architecture behavioral of entity Program_Memory [program_memory_default]
-Compiling architecture behavioral of entity and_8 [and_8_default]
-Compiling architecture behavioral of entity or_8 [or_8_default]
-Compiling architecture behavioral of entity xor_8 [xor_8_default]
-Compiling architecture behavioral of entity not_8 [not_8_default]
-Compiling architecture behavioral of entity SUM [sum_default]
-Compiling architecture behavioral of entity shift_l [shift_l_default]
-Compiling architecture behavioral of entity shift_r [shift_r_default]
-Compiling architecture behavioral of entity swap [swap_default]
-Compiling architecture behavioral of entity MUL [mul_default]
-Compiling architecture behavioral of entity DIV [div_default]
-Compiling architecture behavioral of entity sub [sub_default]
-Compiling architecture behavioral of entity sub_deco [sub_deco_default]
-Compiling architecture behavioral of entity restador [restador_default]
+Compiling architecture behavioral of entity and_32 [and_32_default]
+Compiling architecture behavioral of entity or_32 [or_32_default]
+Compiling architecture behavioral of entity xor_32 [xor_32_default]
+Compiling architecture behavioral of entity not_32 [not_32_default]
+Compiling architecture behavioral of entity SUM_32 [sum_32_default]
+Compiling architecture behavioral of entity shift_l_32 [shift_l_32_default]
+Compiling architecture behavioral of entity shift_r_32 [shift_r_32_default]
+Compiling architecture behavioral of entity swap_32 [swap_32_default]
+Compiling architecture behavioral of entity MUL_32 [mul_32_default]
+Compiling architecture behavioral of entity DIV_32 [div_32_default]
+Compiling architecture behavioral of entity sub_32 [sub_32_default]
+Compiling architecture behavioral of entity sub_deco_32 [sub_deco_32_default]
+Compiling architecture behavioral of entity restador_32 [restador_32_default]
 Compiling architecture behavioral of entity alu [alu_default]
 Compiling architecture behavioral of entity reg_a [reg_a_default]
 Compiling architecture behavioral of entity data_bus [data_bus_default]
 Compiling architecture behavioral of entity Procesador_32_bits [procesador_32_bits_default]
 Compiling architecture behavior of entity procesador_final_tb
 Time Resolution for simulation is 1ps.
-Waiting for 26 sub-compilation(s) to finish...
+Waiting for 28 sub-compilation(s) to finish...
 Compiled 83 VHDL Units
 Built simulation executable C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe
-Fuse Memory Usage: 147740 KB
-Fuse CPU Usage: 1388 ms
+Fuse Memory Usage: 148764 KB
+Fuse CPU Usage: 2074 ms

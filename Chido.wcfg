@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="arith_plus" />
+            <top_module name="numeric_std" />
+            <top_module name="procesador_final_tb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="67" />
+   <wvobject fp_name="/procesador_final_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/reg_a_F/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/BUS_F/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/Phase_gen_F/out_phase" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_phase[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_phase[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/Phase_gen_F/clear_phase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clear_phase</obj_property>
+      <obj_property name="ObjectShortName">clear_phase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/SPW_F/out_spw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_spw[4:0]</obj_property>
+      <obj_property name="ObjectShortName">out_spw[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/SPW_F/in_spw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_spw[4:0]</obj_property>
+      <obj_property name="ObjectShortName">in_spw[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/PC_F/pc_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/spw_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">spw_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spw_in[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/PC_F/pm_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pm_in[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pm_in[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/PC_F/pc_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_out[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/data_pm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_pm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_pm[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/psw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">psw</obj_property>
+      <obj_property name="ObjectShortName">psw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/rega" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rega[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rega[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/pm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pm[4:0]</obj_property>
+      <obj_property name="ObjectShortName">pm[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sptr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sptr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank_pm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_register_bank_pm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_register_bank_pm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank_pm_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_register_bank_pm_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_register_bank_pm_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_instr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_instr</obj_property>
+      <obj_property name="ObjectShortName">load_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/readmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readmem</obj_property>
+      <obj_property name="ObjectShortName">readmem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pc_src_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_src_mux</obj_property>
+      <obj_property name="ObjectShortName">pc_src_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_pc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_pc</obj_property>
+      <obj_property name="ObjectShortName">load_pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/wr_ram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_ram</obj_property>
+      <obj_property name="ObjectShortName">wr_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_ms_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_ms_mux</obj_property>
+      <obj_property name="ObjectShortName">load_ms_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/mbr_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mbr_mux</obj_property>
+      <obj_property name="ObjectShortName">mbr_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_spw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_spw</obj_property>
+      <obj_property name="ObjectShortName">load_spw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/mar_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mar_mux</obj_property>
+      <obj_property name="ObjectShortName">mar_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sptr_dec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr_dec</obj_property>
+      <obj_property name="ObjectShortName">sptr_dec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sptr_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr_inc</obj_property>
+      <obj_property name="ObjectShortName">sptr_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pm_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pm_bus</obj_property>
+      <obj_property name="ObjectShortName">pm_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/b_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b_bus</obj_property>
+      <obj_property name="ObjectShortName">b_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b</obj_property>
+      <obj_property name="ObjectShortName">load_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pc_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc</obj_property>
+      <obj_property name="ObjectShortName">pc_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/alu_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_bus</obj_property>
+      <obj_property name="ObjectShortName">alu_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/a_src_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_src_mux</obj_property>
+      <obj_property name="ObjectShortName">a_src_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/a_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_bus</obj_property>
+      <obj_property name="ObjectShortName">a_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_a</obj_property>
+      <obj_property name="ObjectShortName">load_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/port_select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">port_select</obj_property>
+      <obj_property name="ObjectShortName">port_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/port_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">port_bus</obj_property>
+      <obj_property name="ObjectShortName">port_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/wr_port" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_port</obj_property>
+      <obj_property name="ObjectShortName">wr_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/enable_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_port[1:0]</obj_property>
+      <obj_property name="ObjectShortName">enable_port[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_bus[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_bus[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/BUS_F/q" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_port_or_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_port_or_bus</obj_property>
+      <obj_property name="ObjectShortName">sel_port_or_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/STKPTR_F/out_dir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_dir[4:0]</obj_property>
+      <obj_property name="ObjectShortName">out_dir[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_01_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_01_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_01_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_02_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_02_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_02_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_03_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_03_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_03_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_04_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_04_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_04_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_05_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_05_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_05_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_06_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_06_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_06_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_07_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_07_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_07_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_08_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_08_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_08_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_09_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_09_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_09_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_10_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_10_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_10_out[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/load_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_en</obj_property>
+      <obj_property name="ObjectShortName">load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/Reg_01/load_b" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">load_b</obj_property>
+      <obj_property name="ObjectShortName">load_b</obj_property>
+      <obj_property name="label">load_b_Reg1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/Reg_01/in_bus" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_bus[31:0]</obj_property>
+      <obj_property name="label">in_bus_Reg1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/Reg_10/load_b" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">load_b</obj_property>
+      <obj_property name="ObjectShortName">load_b</obj_property>
+      <obj_property name="label">load_b_Reg10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/Reg_10/in_bus" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">in_bus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_bus[31:0]</obj_property>
+      <obj_property name="label">in_bus_Reg10[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -59,8 +59,8 @@ end component;
 
 component alu
     Port ( 
-            A_F            : in  STD_LOGIC_VECTOR (7 DOWNTO 0);
-            B_F            : in  STD_LOGIC_VECTOR (7 DOWNTO 0);
+            A_F            : in  STD_LOGIC_VECTOR (31 DOWNTO 0);
+            B_F            : in  STD_LOGIC_VECTOR (31 DOWNTO 0);
             spw_in         : in  STD_LOGIC_VECTOR (4 DOWNTO 0);   -- z,half-carry,carry,igualdad,negativos
             spw_out        : out STD_LOGIC_VECTOR (4 downto 0);
             q              : out STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -460,8 +460,8 @@ port map(
 
 ALU_F: alu       
 port map(
-            A_F                  =>    A_OUT(7 DOWNTO 0),
-            B_F                  =>    B_OUT(7 DOWNTO 0),
+            A_F                  =>    A_OUT,
+            B_F                  =>    B_OUT,
          --   spw => (SPW_IN,SPW_OUT),
             spw_in               =>    SPW_OUT,
             spw_out              =>    SPW_IN,

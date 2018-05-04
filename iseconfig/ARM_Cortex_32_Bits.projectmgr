@@ -56,7 +56,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002c60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000208000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000013c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>alu.vhd</CurrentItem>
    </ItemView>
@@ -85,7 +85,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001df000000010000000100000000000000000000000064ffffffff000000810000000000000001000001df0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -103,18 +103,25 @@
       <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000cb000000cf01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/ALU_F - alu - Behavioral</ClosedNode>
-         <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/PC_F - PC_MODULE - Behavioral</ClosedNode>
+         <ClosedNode>/DIV_32_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|DIV_32_TB.vhd</ClosedNode>
+         <ClosedNode>/DIV_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|DIV_TB.vhd</ClosedNode>
+         <ClosedNode>/MUL_32_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|MUL_32_TB.vhd</ClosedNode>
+         <ClosedNode>/MUL_DIV_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|MUL_DIV_TB.vhd</ClosedNode>
+         <ClosedNode>/Procesador_4_bits - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_4_bits.vhd</ClosedNode>
          <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RAM_Memory_F - RAM_Memory - Behavioral</ClosedNode>
          <ClosedNode>/Procesador_Final_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|Procesador_Final_TB.vhd/uut - Procesador_32_bits - Behavioral/RegisterBank_F - RegisterBank - Behavioral</ClosedNode>
          <ClosedNode>/RAM_Memory_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RAM_Memory_tb.vhd</ClosedNode>
+         <ClosedNode>/RAM_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RAM_TB.vhd</ClosedNode>
          <ClosedNode>/RegisterBank - Behavioral C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RegisterBank.vhd</ClosedNode>
+         <ClosedNode>/RegisterBank_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RegisterBank_TB.vhd</ClosedNode>
          <ClosedNode>/RegisterBank_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|RegisterBank_TB.vhd/uut - RegisterBank - Behavioral</ClosedNode>
+         <ClosedNode>/adder_TB - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|adder_TB.vhd</ClosedNode>
          <ClosedNode>/alu_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|alu_tb.vhd</ClosedNode>
+         <ClosedNode>/alu_tb_32 - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|alu_tb_32.vhd</ClosedNode>
          <ClosedNode>/and_8_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|and_8_tb.vhd</ClosedNode>
          <ClosedNode>/dir_reg_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|dir_reg_tb.vhd</ClosedNode>
          <ClosedNode>/inst_reg_tb - behavior C:|Users|brj3mx|Desktop|Procesador 4 bits|ARM_Cortex_32_Bits|inst_reg_tb.vhd</ClosedNode>
@@ -138,13 +145,13 @@
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uInst_F - uInst - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd)</SelectedItem>
+         <SelectedItem>Procesador_Final_TB - behavior (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cc0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uInst_F - uInst - Behavioral (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd)</CurrentItem>
+      <CurrentItem>Procesador_Final_TB - behavior (C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -152,25 +159,25 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Utilities</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Utilities</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001df000000010000000100000000000000000000000064ffffffff000000810000000000000001000001df0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>
