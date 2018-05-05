@@ -3,14 +3,14 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.53 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.53 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -133,8 +133,7 @@ Architecture behavioral of Entity div_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/restador_32.vhd" in Library work.
 Architecture behavioral of Entity restador_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/COND_FLAGS.vhd" in Library work.
-Entity <cond_flags_mod> compiled.
-Entity <cond_flags_mod> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity cond_flags_mod is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" in Library work.
 Architecture behavioral of Entity rom_mod is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" in Library work.
@@ -178,8 +177,7 @@ Architecture behavioral of Entity ram_memory is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" in Library work.
 Architecture behavioral of Entity stkptr is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" in Library work.
-Entity <program_memory> compiled.
-Entity <program_memory> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity program_memory is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_a.vhd" in Library work.
@@ -187,7 +185,8 @@ Architecture behavioral of Entity reg_a is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
 Architecture behavioral of Entity data_bus is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" in Library work.
-Architecture behavioral of Entity procesador_32_bits is up to date.
+Entity <procesador_32_bits> compiled.
+Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -236,7 +235,7 @@ Analyzing hierarchy for entity <MAR_mod> in library <work> (architecture <behavi
 
 Analyzing hierarchy for entity <Mux_MAR> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <cond_flags_mod> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <cond_flags_mod> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <rom_mod> in library <work> (architecture <behavioral>).
 
@@ -335,7 +334,7 @@ Entity <stkptr> analyzed. Unit <stkptr> generated.
 Analyzing Entity <Program_Memory> in library <work> (Architecture <behavioral>).
 Entity <Program_Memory> analyzed. Unit <Program_Memory> generated.
 
-Analyzing Entity <cond_flags_mod> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <cond_flags_mod> in library <work> (Architecture <behavioral>).
 Entity <cond_flags_mod> analyzed. Unit <cond_flags_mod> generated.
 
 Analyzing Entity <rom_mod> in library <work> (Architecture <behavioral>).
@@ -351,6 +350,8 @@ Analyzing Entity <oc_reg> in library <work> (Architecture <behavioral>).
 Entity <oc_reg> analyzed. Unit <oc_reg> generated.
 
 Analyzing Entity <alu> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd" line 166: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <spw_in>, <spw_default>
 Entity <alu> analyzed. Unit <alu> generated.
 
 Analyzing Entity <and_32> in library <work> (Architecture <behavioral>).
@@ -734,8 +735,9 @@ Unit <restador_32> synthesized.
 
 Synthesizing Unit <alu>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/alu.vhd".
-WARNING:Xst:647 - Input <spw_in<4:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <spw_in<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <spw_default> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:646 - Signal <spw_alu<4:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <spw_alu<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <q_not> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:737 - Found 1-bit latch for signal <out_c>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
@@ -800,6 +802,7 @@ Macro Statistics
 
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_3> (without init value) has a constant value of 0 in block <uInst_F>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_4> (without init value) has a constant value of 0 in block <uInst_F>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <out_uc_2> has a constant value of 0 in block <COND_FLAGS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank_F>.
@@ -824,7 +827,6 @@ WARNING:Xst:2677 - Node <Reg_N_EN_30> of sequential type is unconnected in block
 WARNING:Xst:2677 - Node <Reg_N_EN_31> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <out_uc_0> of sequential type is unconnected in block <COND_FLAGS>.
 WARNING:Xst:2677 - Node <out_uc_1> of sequential type is unconnected in block <COND_FLAGS>.
-WARNING:Xst:2677 - Node <out_uc_2> of sequential type is unconnected in block <COND_FLAGS>.
 
 Synthesizing (advanced) Unit <ram_mod>.
 INFO:Xst:3231 - The small RAM <Mram_RAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -992,16 +994,16 @@ Design Statistics
 # IOs                              : 50
 
 Cell Usage :
-# BELS                             : 2962
+# BELS                             : 2992
 #      GND                         : 1
 #      INV                         : 48
 #      LUT1                        : 1
-#      LUT2                        : 408
-#      LUT3                        : 352
-#      LUT4                        : 938
+#      LUT2                        : 411
+#      LUT3                        : 337
+#      LUT4                        : 951
 #      LUT4_L                      : 6
 #      MUXCY                       : 561
-#      MUXF5                       : 83
+#      MUXF5                       : 112
 #      VCC                         : 1
 #      XORCY                       : 563
 # FlipFlops/Latches                : 540
@@ -1034,8 +1036,8 @@ Selected Device : 3s700afg484-4
 
  Number of Slices:                      945  out of   5888    16%  
  Number of Slice Flip Flops:            540  out of  11776     4%  
- Number of 4 input LUTs:               1769  out of  11776    15%  
-    Number used as logic:              1753
+ Number of 4 input LUTs:               1770  out of  11776    15%  
+    Number used as logic:              1754
     Number used as RAMs:                 16
  Number of IOs:                          50
  Number of bonded IOBs:                  26  out of    372     6%  
@@ -1196,7 +1198,7 @@ Delay:               83.003ns (Levels of Logic = 89)
      LUT3:I2->O            0   0.648   0.000  ALU_F/G10/p1_mux0014<13>1 (ALU_F/G10/p1_mux0014<13>)
      MUXCY:DI->O           0   0.787   0.000  ALU_F/G10/Msub_p1_sub0015_Madd_cy<14> (ALU_F/G10/Msub_p1_sub0015_Madd_cy<14>)
      XORCY:CI->O           2   0.844   0.450  ALU_F/G10/Msub_p1_sub0015_Madd_xor<15> (ALU_F/G10/p1_sub0015<15>)
-     LUT4:I3->O           15   0.648   0.000  BUS_F/out_q<0>295 (BUS_OUT<0>)
+     LUT4:I3->O           15   0.648   0.000  BUS_F/out_q<0>307 (BUS_OUT<0>)
      FDCE:D                    0.252          reg_b_F/out_bus_0
     ----------------------------------------
     Total                     83.003ns (64.716ns logic, 18.287ns route)
@@ -1225,13 +1227,13 @@ Offset:              5.558ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.32 secs
  
 --> 
 
-Total memory usage is 256592 kilobytes
+Total memory usage is 257424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   79 (   0 filtered)
+Number of warnings :   81 (   0 filtered)
 Number of infos    :   10 (   0 filtered)
 

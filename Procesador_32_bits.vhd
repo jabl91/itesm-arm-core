@@ -62,6 +62,7 @@ component alu
             A_F            : in  STD_LOGIC_VECTOR (31 DOWNTO 0);
             B_F            : in  STD_LOGIC_VECTOR (31 DOWNTO 0);
             spw_in         : in  STD_LOGIC_VECTOR (4 DOWNTO 0);   -- z,half-carry,carry,igualdad,negativos
+            inhibit_spw    : in  STD_LOGIC;
             spw_out        : out STD_LOGIC_VECTOR (4 downto 0);
             q              : out STD_LOGIC_VECTOR (31 DOWNTO 0);
             sel            : in  STD_LOGIC_VECTOR (3 DOWNTO 0)
@@ -256,7 +257,6 @@ component uInst
 end component;
 
 -- INTERCONEXIONES ENTRE BLOQUES
-
 SIGNAL COND_FLAGS    : STD_LOGIC_VECTOR (3 DOWNTO 0) := (others => '0');      -- SPW Control from INST
 SIGNAL A_OUT         : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del Acumulador
 SIGNAL B_OUT         : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del Registro B
@@ -469,6 +469,7 @@ port map(
             B_F                  =>    B_OUT,
          --   spw => (SPW_IN,SPW_OUT),
             spw_in               =>    SPW_OUT,
+            inhibit_spw          =>    COND_FLAGS(2),
             spw_out              =>    SPW_IN,
             q                    =>    ALU_OUT,
             sel                  =>    ALU_SIGNAL

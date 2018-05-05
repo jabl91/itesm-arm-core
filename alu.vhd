@@ -30,17 +30,20 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity alu is
-    Port ( A_F 		: in  STD_LOGIC_VECTOR(31 DOWNTO 0);--32bits
-           B_F 		: in  STD_LOGIC_VECTOR(31 DOWNTO 0);
---			  c_in 	: in STD_LOGIC;
-			  --add_sub : in STD_LOGIC;
-			  --mul_div : in STD_LOGIC;
---			  r_l 	: in STD_LOGIC;
-           spw_in : in  STD_LOGIC_VECTOR(4 DOWNTO 0) := "00000"; -- z,half-carry,carry,igualdad,negativos
-			  spw_out : out std_logic_vector (4 downto 0) := "00000";
-           q 		: out  STD_LOGIC_VECTOR(31 DOWNTO 0);-- Duda
-			  sel 	: in STD_LOGIC_VECTOR(3 DOWNTO 0));
-end alu;
+   Port ( 
+            A_F 		   : in  STD_LOGIC_VECTOR(31 DOWNTO 0);--32bits
+            B_F 		   : in  STD_LOGIC_VECTOR(31 DOWNTO 0);
+            --			  c_in 	: in STD_LOGIC;
+            --add_sub : in STD_LOGIC;
+            --mul_div : in STD_LOGIC;
+            --			  r_l 	: in STD_LOGIC;
+            inhibit_spw : in STD_LOGIC;
+            spw_in      : in  STD_LOGIC_VECTOR(4 DOWNTO 0) := "00000"; -- z,half-carry,carry,igualdad,negativos
+            spw_out     : out std_logic_vector (4 downto 0) := "00000";
+            q 		      : out  STD_LOGIC_VECTOR(31 DOWNTO 0);-- Duda
+            sel 	      : in STD_LOGIC_VECTOR(3 DOWNTO 0)
+         );
+   end alu;
 
 architecture Behavioral of alu is
 
@@ -124,6 +127,7 @@ component swap_32
            q : out  	STD_LOGIC_VECTOR(31 DOWNTO 0));
 end component;
 
+signal spw_default: STD_LOGIC_VECTOR(4 DOWNTO 0)   := (others => '0');
 signal q_and 		: STD_LOGIC_VECTOR(31 DOWNTO 0) 	:= (others => '0');
 signal q_or 		: STD_LOGIC_VECTOR(31 DOWNTO 0) 	:= (others => '0');
 signal q_xor 		: STD_LOGIC_VECTOR(31 DOWNTO 0) 	:= (others => '0');
@@ -143,6 +147,7 @@ signal c_sr 		: STD_LOGIC 							:= '0';
 signal signox		: std_logic 							:= '0';
 signal zero			: STD_LOGIC								:= '0';
 signal equal		: STD_LOGIC								:= '0';--32
+signal spw_alu    : STD_LOGIC_VECTOR(4 DOWNTO 0)   := (others => '0');
 
 begin
 
@@ -150,15 +155,15 @@ G1: and_32 			port map 	(A_F,B_F,q => q_and);
 G2: or_32 			port map  	(A_F,B_F,q => q_or);
 G3: xor_32 			port map 	(A_F,B_F,q_xor,equal => equal);
 G4: not_32 			port map 	(A_F,q => q_not);
-G5: SUM_32			port map		(A_F,B_F,spw_in(2),c_sum,q_sum);
-G6: shift_l_32		port map 	(A_F,spw_in(2),c_sl,q => q_shift_l); --NO TB
-G7: shift_r_32		port map 	(A_F,spw_in(2),c_sr,q => q_shift_r); --NO TB
+G5: SUM_32			port map		(A_F,B_F,spw_alu(2),c_sum,q_sum);
+G6: shift_l_32		port map 	(A_F,spw_alu(2),c_sl,q => q_shift_l); --NO TB
+G7: shift_r_32		port map 	(A_F,spw_alu(2),c_sr,q => q_shift_r); --NO TB
 G8: swap_32		   port map 	(A_F,q => q_swap);
 G9: MUL_32		   port map 	(A => A_F(15 downto 0),B => B_F(15 downto 0),Q => q_MUL);
 G10: DIV_32		   port map 	(A => A_F(15 downto 0),B => B_F(15 downto 0),Q=>q_DIV);
 G11: restador_32  port map 	(A_F,B_F,signox,q_rest);
 
-process (A_F,B_F,sel,q_and,q_or,q_xor,q_not,q_sum,c_sum,q_shift_l,c_sl,q_shift_r,c_sr,q_swap,q_MUL,q_DIV,q_rest)
+process (A_F,B_F,sel,q_and,q_or,q_xor,q_not,q_sum,c_sum,q_shift_l,c_sl,q_shift_r,c_sr,q_swap,q_MUL,q_DIV,q_rest,inhibit_spw)
 begin 
 	case sel is
 		when "0000" 	=> out_q <= q_and;
@@ -176,6 +181,12 @@ begin
 		when "1010"		=> out_q <= q_rest;
 		when OTHERS		=> out_q <=(others => '0');
 	end case;
+   
+   if inhibit_spw = '0' then
+      spw_alu <= spw_in;
+   else
+      spw_alu <= spw_default;
+   end if;
 end process;
 
 process(out_q)

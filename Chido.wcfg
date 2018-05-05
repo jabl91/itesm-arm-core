@@ -12,7 +12,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="68" />
+   <WVObjectSize size="69" />
    <wvobject fp_name="/procesador_final_tb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -52,6 +52,10 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/spw_alu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">spw_alu[4:0]</obj_property>
+      <obj_property name="ObjectShortName">spw_alu[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/procesador_final_tb/uut/SPW_F/in_spw" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">in_spw[4:0]</obj_property>
