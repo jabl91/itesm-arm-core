@@ -111,6 +111,7 @@ component Program_Memory
             out_uinst      : out STD_LOGIC_VECTOR (4 downto 0);
             out_addr       : out STD_LOGIC_VECTOR (6 downto 0);
             out_data       : out STD_LOGIC_VECTOR (3 downto 0);
+            out_cond_flags : out STD_LOGIC_VECTOR (3 downto 0);
             clk            : in  STD_LOGIC;
             load           : in  STD_LOGIC
          );
@@ -219,6 +220,7 @@ component uInst
                DATA_PM			         : in 		STD_LOGIC_VECTOR	(1 DOWNTO 0);  -- Entrada de datos de PM para transferencia entre puertos
                SEL_REGISTER_BANK_PM    : in     STD_LOGIC_VECTOR  (3 downto 0);
                SEL_REGISTER_BANK_PM_2  : in     STD_LOGIC_VECTOR  (3 downto 0);
+               Cond_Flags              : in     STD_LOGIC_VECTOR  (3 downto 0);
                PSW				         : in 		STD_LOGIC;
                Load_Instr 		         : out  	STD_LOGIC 					:= '0';
                ReadMem 			         : out 	STD_LOGIC					:= '0';
@@ -255,6 +257,7 @@ end component;
 
 -- INTERCONEXIONES ENTRE BLOQUES
 
+SIGNAL COND_FLAGS    : STD_LOGIC_VECTOR (3 DOWNTO 0) := (others => '0');      -- SPW Control from INST
 SIGNAL A_OUT         : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del Acumulador
 SIGNAL B_OUT         : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Salida del Registro B
 SIGNAL ALU_OUT       : STD_LOGIC_VECTOR (31 DOWNTO 0):= (others => '0');      -- Respuesta de la ALU
@@ -328,6 +331,7 @@ port map(
                   DATA_PM                 =>    DATA_PM (1 DOWNTO 0),      -- Datos de PM Solo 2 ultimos bits
                   SEL_REGISTER_BANK_PM    =>    ADDR_PM  (3 downto 0),
                   SEL_REGISTER_BANK_PM_2  =>    DATA_PM,
+                  Cond_Flags              =>    COND_FLAGS,
                   PSW                     =>    SPW_OUT(1),                  --Checar si el subindice corresponde a Igualdad
                   Load_Instr              =>    Load_Instr,      
                   ReadMem                 =>    ReadMem,         -->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FALTA RETROALIMENTAR ESTA SALIDA A LA MISMA uInst
@@ -454,6 +458,7 @@ port map(
             out_uinst            =>    INST_PM,
             out_addr             =>    ADDR_PM,
             out_data             =>    DATA_PM,
+            out_cond_flags       =>    COND_FLAGS,
             clk                  =>    clk,
             load                 =>    ReadMem
          );

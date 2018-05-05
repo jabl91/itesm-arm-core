@@ -10,7 +10,7 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Thu May 03 19:52:27 2018
+Mapped Date    : Sat May 05 12:38:56 2018
 
 Mapping design into LUTs...
 Running directed packing...
@@ -28,18 +28,18 @@ Design Summary:
 Number of errors:      0
 Number of warnings:    1
 Logic Utilization:
-  Total Number Slice Registers:         539 out of  11,776    4%
-    Number used as Flip Flops:          538
+  Total Number Slice Registers:         540 out of  11,776    4%
+    Number used as Flip Flops:          539
     Number used as Latches:               1
-  Number of 4 input LUTs:             1,771 out of  11,776   15%
+  Number of 4 input LUTs:             1,772 out of  11,776   15%
 Logic Distribution:
-  Number of occupied Slices:          1,101 out of   5,888   18%
-    Number of Slices containing only related logic:   1,101 out of   1,101 100%
-    Number of Slices containing unrelated logic:          0 out of   1,101   0%
+  Number of occupied Slices:          1,103 out of   5,888   18%
+    Number of Slices containing only related logic:   1,103 out of   1,103 100%
+    Number of Slices containing unrelated logic:          0 out of   1,103   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,789 out of  11,776   15%
-    Number used as logic:             1,755
-    Number used as a route-thru:         18
+  Total Number of 4 input LUTs:       1,791 out of  11,776   15%
+    Number used as logic:             1,756
+    Number used as a route-thru:         19
     Number used for 32x1 RAMs:           16
       (Two LUTs used per 32x1 RAM)
 
@@ -50,11 +50,11 @@ Logic Distribution:
   Number of BUFGMUXs:                     1 out of      24    4%
   Number of MULT18X18SIOs:                1 out of      20    5%
 
-Average Fanout of Non-Clock Nets:                3.24
+Average Fanout of Non-Clock Nets:                3.25
 
 Peak Memory Usage:  231 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   3 secs 
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 

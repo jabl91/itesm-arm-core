@@ -20,7 +20,13 @@
 <msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">SEL_PORT_OR_BUS</arg>&gt; in unit &lt;<arg fmt="%s" index="2">uInst</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">Cond_Flags&lt;2:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">CE</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">rom_data&lt;30:16&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">c</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000000000000000000000000001</arg>.
@@ -153,6 +159,15 @@ This instance will be removed from the design along with all underlying logic
 <msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Reg_N_EN_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RegisterBank_F</arg>&gt;.
 </msg>
 
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">out_uc_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">COND_FLAGS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">out_uc_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">COND_FLAGS</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">out_uc_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">COND_FLAGS</arg>&gt;.
+</msg>
+
 <msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
@@ -226,6 +241,12 @@ This instance will be removed from the design along with all underlying logic
 </msg>
 
 <msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">SEL_BUS_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">uInst</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PM_F/COND_FLAGS/out_uc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Procesador_32_bits</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PM_F/COND_FLAGS/out_uc_1&gt; &lt;PM_F/COND_FLAGS/out_uc_2&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">PM_F/COND_FLAGS/out_uc_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Procesador_32_bits</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PM_F/DIR/out_pc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Procesador_32_bits</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PM_F/DIR/out_pc_1&gt; &lt;PM_F/DIR/out_pc_2&gt; &lt;PM_F/DIR/out_pc_3&gt; &lt;PM_F/DIR/out_pc_4&gt; &lt;PM_F/DIR/out_pc_5&gt; &lt;PM_F/DIR/out_pc_6&gt; &lt;PM_F/INST/out_bus_1&gt; &lt;PM_F/INST/out_bus_3&gt; </arg>

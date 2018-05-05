@@ -34,6 +34,7 @@ entity Program_Memory is
            out_uinst : out  STD_LOGIC_VECTOR (4 downto 0):="00000";
            out_addr : out  STD_LOGIC_VECTOR (6 downto 0):="0000000";
            out_data : out  STD_LOGIC_VECTOR (3 downto 0):="0000";
+           out_cond_flags : out STD_LOGIC_VECTOR (3 downto 0):= (others => '0');
            clk : in  STD_LOGIC;
            load : in  STD_LOGIC);
 end Program_Memory;
@@ -44,6 +45,7 @@ component rom_mod is
     Port ( addr : in  STD_LOGIC_VECTOR (6 downto 0);
            out_oc : out  STD_LOGIC_VECTOR (4 downto 0) ;
            out_dir : out  STD_LOGIC_VECTOR (6 downto 0);
+           cond_flags : out STD_LOGIC_VECTOR (3 downto 0);
            out_data : out  STD_LOGIC_VECTOR (3 downto 0)
 			);
 end component;
@@ -70,12 +72,20 @@ component oc_reg is
 			  clk : in std_logic);
 end component;
 
+component cond_flags_mod is
+    Port ( in_pm : in  STD_LOGIC_VECTOR (3 downto 0);
+           out_uc : out  STD_LOGIC_VECTOR (3 downto 0) := (others => '0');
+			  load_oc : in std_logic;
+			  clk : in std_logic);
+end component;
+
 --attribute KEEP : boolean;
 --
 --
 signal rom_oc : std_logic_vector (4 downto 0);
 signal rom_dir : std_logic_vector (6 downto 0);
 signal rom_data : std_logic_vector (3 downto 0);
+signal rom_cond_flags : std_logic_vector (3 downto 0);
 --
 --attribute KEEP of rom_oc :signal is true;
 --attribute KEEP of rom_dir :signal is true;
@@ -84,11 +94,22 @@ signal rom_data : std_logic_vector (3 downto 0);
 
 begin
 
+
+COND_FLAGS: cond_flags_mod
+	port map (
+		in_pm => rom_cond_flags,
+		out_uc => out_cond_flags,
+		load_oc => load,
+		clk => clk
+		);
+      
+      
 ROM : rom_mod
 	port map (
 		addr => in_addr_pc,
 		out_oc => rom_oc,
 		out_dir => rom_dir,
+      cond_flags =>rom_cond_flags,
 		out_data => rom_data
 		);
 		
