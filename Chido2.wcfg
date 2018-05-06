@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="arith_plus" />
+            <top_module name="numeric_std" />
+            <top_module name="procesador_final_tb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="72" />
+   <wvobject fp_name="/procesador_final_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/Phase_gen_F/out_phase" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_phase[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_phase[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_a_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_a_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_a_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_b_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_b_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_b_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_c_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_c_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_c_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_a_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_a_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_a_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_b_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_b_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_b_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/port_c_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_c_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_c_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/a_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/ALU_F/b_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b_f[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_f[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_01_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_01_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_01_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_02_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_02_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_02_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_03_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_03_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_03_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_04_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_04_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_04_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_05_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_05_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_05_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_06_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_06_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_06_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_07_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_07_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_07_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_08_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_08_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_08_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_09_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_09_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_09_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RegisterBank_F/reg_10_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_10_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_10_out[31:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[4:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[4:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/data_pm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_pm[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_pm[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank_pm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_register_bank_pm[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_register_bank_pm[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank_pm_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_register_bank_pm_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_register_bank_pm_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/cond_flags" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cond_flags[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cond_flags[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/psw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">psw</obj_property>
+      <obj_property name="ObjectShortName">psw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_instr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_instr</obj_property>
+      <obj_property name="ObjectShortName">load_instr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/readmem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readmem</obj_property>
+      <obj_property name="ObjectShortName">readmem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pc_src_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_src_mux</obj_property>
+      <obj_property name="ObjectShortName">pc_src_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_pc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_pc</obj_property>
+      <obj_property name="ObjectShortName">load_pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/wr_ram" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_ram</obj_property>
+      <obj_property name="ObjectShortName">wr_ram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_ms_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_ms_mux</obj_property>
+      <obj_property name="ObjectShortName">load_ms_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_cjne" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_cjne</obj_property>
+      <obj_property name="ObjectShortName">load_cjne</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/mbr_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mbr_mux</obj_property>
+      <obj_property name="ObjectShortName">mbr_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/mar_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mar_mux</obj_property>
+      <obj_property name="ObjectShortName">mar_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sptr_dec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr_dec</obj_property>
+      <obj_property name="ObjectShortName">sptr_dec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sptr_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr_inc</obj_property>
+      <obj_property name="ObjectShortName">sptr_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pm_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pm_bus</obj_property>
+      <obj_property name="ObjectShortName">pm_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/b_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">b_bus</obj_property>
+      <obj_property name="ObjectShortName">b_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_b</obj_property>
+      <obj_property name="ObjectShortName">load_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_spw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_spw</obj_property>
+      <obj_property name="ObjectShortName">load_spw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/pc_inc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_inc</obj_property>
+      <obj_property name="ObjectShortName">pc_inc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/alu_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_signal[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_signal[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/alu_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_bus</obj_property>
+      <obj_property name="ObjectShortName">alu_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/a_src_mux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_src_mux</obj_property>
+      <obj_property name="ObjectShortName">a_src_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/a_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a_bus</obj_property>
+      <obj_property name="ObjectShortName">a_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_a</obj_property>
+      <obj_property name="ObjectShortName">load_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/port_select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">port_select</obj_property>
+      <obj_property name="ObjectShortName">port_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/port_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">port_bus</obj_property>
+      <obj_property name="ObjectShortName">port_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/wr_port" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_port</obj_property>
+      <obj_property name="ObjectShortName">wr_port</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/enable_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_port[1:0]</obj_property>
+      <obj_property name="ObjectShortName">enable_port[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_bus[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_bus[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_port_or_bus" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_port_or_bus</obj_property>
+      <obj_property name="ObjectShortName">sel_port_or_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_register_bank[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_register_bank[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_en_register_bank" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">load_en_register_bank</obj_property>
+      <obj_property name="ObjectShortName">load_en_register_bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/out_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/pc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pc[6:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/rega" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rega[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rega[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/regb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regb[4:0]</obj_property>
+      <obj_property name="ObjectShortName">regb[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sptr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sptr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">sptr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sel_mbr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_mbr</obj_property>
+      <obj_property name="ObjectShortName">sel_mbr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sel_mar" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_mar</obj_property>
+      <obj_property name="ObjectShortName">sel_mar</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/in_mbr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_mbr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_mbr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/out_mbr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mbr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mbr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/in_addr_mar" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_addr_mar[4:0]</obj_property>
+      <obj_property name="ObjectShortName">in_addr_mar[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/out_addr_mar" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_addr_mar[4:0]</obj_property>
+      <obj_property name="ObjectShortName">out_addr_mar[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[0:31]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:31]</obj_property>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">ram[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">ram[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">ram[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">ram[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">ram[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">ram[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">ram[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">ram[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">ram[8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">ram[9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">ram[10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">ram[11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">ram[12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">ram[13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">ram[14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">ram[15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">ram[16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">ram[17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">ram[18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">ram[19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">ram[20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">ram[21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">ram[22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">ram[23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">ram[24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">ram[25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">ram[26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">ram[27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">ram[28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">ram[29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">ram[30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/RAM/ram[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">ram[31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

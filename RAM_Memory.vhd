@@ -36,7 +36,7 @@ entity RAM_Memory is
 					clk : in  STD_LOGIC;
 					PC : in STD_LOGIC_VECTOR (6 downto 0) := "0000000";
 					regA : in STD_LOGIC_VECTOR (7 downto 0);
-					PM : in STD_LOGIC_VECTOR (4 downto 0);
+					regB : in STD_LOGIC_VECTOR (4 downto 0);
 					SPTR : in STD_LOGIC_VECTOR (4 downto 0);
 					sel_mbr : in STD_LOGIC;
 					sel_mar :in STD_LOGIC;
@@ -78,7 +78,7 @@ component MAR_mod is
 end component;
 
 component Mux_MAR is
-   port(	 		PM : in std_logic_vector (4 downto 0);
+   port(	 		regB : in std_logic_vector (4 downto 0);
 					SPTR: in std_logic_vector (4 downto 0);
 					sel: in std_logic;
 					output : out std_logic_vector (4 downto 0) := "00000"
@@ -128,7 +128,7 @@ MAR : MAR_mod
 
 MUX2 : Mux_MAR
 	port map (
-		PM => PM,
+		regB => regB,
 		SPTR => SPTR,
 		sel => sel_mar,
 		output => in_addr_MAR

@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe" -prj "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj" "work.Procesador_Final_TB" 
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe -prj C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_beh.prj work.Procesador_Final_TB 
 ISim O.87xd (signature 0x2f00eba5)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -47,8 +47,8 @@ Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/
 Parsing VHDL file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 127084 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 127660 KB
+Fuse CPU Usage: 561 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -95,8 +95,8 @@ Compiling architecture behavioral of entity data_bus [data_bus_default]
 Compiling architecture behavioral of entity Procesador_32_bits [procesador_32_bits_default]
 Compiling architecture behavior of entity procesador_final_tb
 Time Resolution for simulation is 1ps.
-Waiting for 29 sub-compilation(s) to finish...
+Waiting for 28 sub-compilation(s) to finish...
 Compiled 85 VHDL Units
 Built simulation executable C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_Final_TB_isim_beh.exe
-Fuse Memory Usage: 147932 KB
-Fuse CPU Usage: 1528 ms
+Fuse Memory Usage: 147484 KB
+Fuse CPU Usage: 1419 ms

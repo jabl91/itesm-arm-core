@@ -3,13 +3,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.53 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.53 secs
  
 --> Reading design: Procesador_32_bits.prj
@@ -135,7 +135,8 @@ Architecture behavioral of Entity restador_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/COND_FLAGS.vhd" in Library work.
 Architecture behavioral of Entity cond_flags_mod is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd" in Library work.
-Architecture behavioral of Entity rom_mod is up to date.
+Entity <rom_mod> compiled.
+Entity <rom_mod> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/inst_reg.vhd" in Library work.
 Architecture behavioral of Entity inst_reg is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/dir_reg.vhd" in Library work.
@@ -151,7 +152,8 @@ Architecture behavioral of Entity mux_mbr is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" in Library work.
 Architecture behavioral of Entity mar_mod is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" in Library work.
-Architecture behavioral of Entity mux_mar is up to date.
+Entity <mux_mar> compiled.
+Entity <mux_mar> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
 Architecture behavioral of Entity program_counter is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
@@ -173,7 +175,8 @@ Architecture behavioral of Entity port_8 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" in Library work.
 Architecture behavioral of Entity pc_module is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" in Library work.
-Architecture behavioral of Entity ram_memory is up to date.
+Entity <ram_memory> compiled.
+Entity <ram_memory> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" in Library work.
 Architecture behavioral of Entity stkptr is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" in Library work.
@@ -561,7 +564,7 @@ Unit <cond_flags_mod> synthesized.
 
 Synthesizing Unit <rom_mod>.
     Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/rom_mod.vhd".
-WARNING:Xst:646 - Signal <rom_data<30:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rom_data<29:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 128x32-bit ROM for signal <rom_data$rom0000> created at line 76.
     Summary:
 	inferred   1 ROM(s).
@@ -802,7 +805,6 @@ Macro Statistics
 
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_3> (without init value) has a constant value of 0 in block <uInst_F>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_4> (without init value) has a constant value of 0 in block <uInst_F>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <out_uc_2> has a constant value of 0 in block <COND_FLAGS>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <Reg_N_EN_10> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <Reg_N_EN_11> of sequential type is unconnected in block <RegisterBank_F>.
 WARNING:Xst:2677 - Node <Reg_N_EN_12> of sequential type is unconnected in block <RegisterBank_F>.
@@ -902,7 +904,7 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <SEL_BUS_3> (without init value) has a constant value of 0 in block <uInst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SEL_BUS_4> (without init value) has a constant value of 0 in block <uInst>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <PM_F/COND_FLAGS/out_uc_0> in Unit <Procesador_32_bits> is equivalent to the following 2 FFs/Latches, which will be removed : <PM_F/COND_FLAGS/out_uc_1> <PM_F/COND_FLAGS/out_uc_2> 
+INFO:Xst:2261 - The FF/Latch <PM_F/COND_FLAGS/out_uc_0> in Unit <Procesador_32_bits> is equivalent to the following FF/Latch, which will be removed : <PM_F/COND_FLAGS/out_uc_1> 
 WARNING:Xst:1293 - FF/Latch <PM_F/COND_FLAGS/out_uc_0> has a constant value of 0 in block <Procesador_32_bits>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <PM_F/DIR/out_pc_0> in Unit <Procesador_32_bits> is equivalent to the following 8 FFs/Latches, which will be removed : <PM_F/DIR/out_pc_1> <PM_F/DIR/out_pc_2> <PM_F/DIR/out_pc_3> <PM_F/DIR/out_pc_4> <PM_F/DIR/out_pc_5> <PM_F/DIR/out_pc_6> <PM_F/INST/out_bus_1> <PM_F/INST/out_bus_3> 
 
@@ -964,8 +966,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 539
- Flip-Flops                                            : 539
+# Registers                                            : 540
+ Flip-Flops                                            : 540
 
 =========================================================================
 
@@ -994,24 +996,24 @@ Design Statistics
 # IOs                              : 50
 
 Cell Usage :
-# BELS                             : 2992
+# BELS                             : 2997
 #      GND                         : 1
 #      INV                         : 48
 #      LUT1                        : 1
 #      LUT2                        : 411
-#      LUT3                        : 337
-#      LUT4                        : 951
+#      LUT3                        : 340
+#      LUT4                        : 953
 #      LUT4_L                      : 6
 #      MUXCY                       : 561
 #      MUXF5                       : 112
 #      VCC                         : 1
 #      XORCY                       : 563
-# FlipFlops/Latches                : 540
+# FlipFlops/Latches                : 541
 #      FD                          : 16
 #      FD_1                        : 10
 #      FDC_1                       : 7
 #      FDCE                        : 409
-#      FDE                         : 33
+#      FDE                         : 34
 #      FDE_1                       : 13
 #      FDP_1                       : 1
 #      FDPE                        : 5
@@ -1034,10 +1036,10 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      945  out of   5888    16%  
- Number of Slice Flip Flops:            540  out of  11776     4%  
- Number of 4 input LUTs:               1770  out of  11776    15%  
-    Number used as logic:              1754
+ Number of Slices:                      947  out of   5888    16%  
+ Number of Slice Flip Flops:            541  out of  11776     4%  
+ Number of 4 input LUTs:               1775  out of  11776    15%  
+    Number used as logic:              1759
     Number used as RAMs:                 16
  Number of IOs:                          50
  Number of bonded IOBs:                  26  out of    372     6%  
@@ -1065,7 +1067,7 @@ Clock Information:
 -------------------------------------------+------------------------+-------+
 Clock Signal                               | Clock buffer(FF name)  | Load  |
 -------------------------------------------+------------------------+-------+
-clk                                        | BUFGP                  | 547   |
+clk                                        | BUFGP                  | 548   |
 ALU_F/out_c_not0001(ALU_F/out_c_not00011:O)| NONE(*)(ALU_F/out_c)   | 1     |
 -------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -1097,7 +1099,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 83.003ns (frequency: 12.048MHz)
-  Total number of paths / destination ports: 116245557526207680000000000000000 / 1099
+  Total number of paths / destination ports: 116245557526207660000000000000000 / 1101
 -------------------------------------------------------------------------
 Delay:               83.003ns (Levels of Logic = 89)
   Source:            reg_a_F/a_15 (FF)
@@ -1226,14 +1228,14 @@ Offset:              5.558ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.32 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.61 secs
  
 --> 
 
 Total memory usage is 257424 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   81 (   0 filtered)
+Number of warnings :   80 (   0 filtered)
 Number of infos    :   10 (   0 filtered)
 

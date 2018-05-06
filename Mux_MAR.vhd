@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Mux_MAR is
 
-		port(	 PM : in std_logic_vector (4 downto 0);
+		port(	   regB : in std_logic_vector (4 downto 0);
 					SPTR: in std_logic_vector (4 downto 0);
 					sel: in std_logic;
 					output : out std_logic_vector (4 downto 0)
@@ -42,10 +42,10 @@ architecture Behavioral of Mux_MAR is
 
 begin
 
-process (sel,PM,SPTR)
+process (sel,regB,SPTR)
 	begin
 			if sel = '0' then
-			output <=PM;
+			output <=regB;
 			end if;
 
 			if sel = '1' then

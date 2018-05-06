@@ -134,7 +134,7 @@ component RAM_Memory
             clk            : in    STD_LOGIC;
             PC             : in  STD_LOGIC_VECTOR (6 downto 0);
             regA           : in  STD_LOGIC_VECTOR (7 downto 0);
-            PM             : in  STD_LOGIC_VECTOR (4 downto 0);
+            regB           : in  STD_LOGIC_VECTOR (4 downto 0);
             SPTR           : in  STD_LOGIC_VECTOR (4 downto 0);
             sel_mbr        : in  STD_LOGIC;
             sel_mar        : in  STD_LOGIC;
@@ -431,11 +431,11 @@ port map(
 
 RAM_Memory_F : RAM_Memory
 port map(
-               out_data          =>    RAM_OUT(7 DOWNTO 0),
+               out_data          =>    RAM_OUT  (7 DOWNTO 0),
                clk               =>    clk,
-               PC                =>    PC_OUT(6 DOWNTO 0),
-               regA              =>    A_OUT(7 DOWNTO 0), 
-               PM                =>    ADDR_PM (4 DOWNTO 0),
+               PC                =>    PC_OUT   (6 DOWNTO 0),
+               regA              =>    A_OUT    (7 DOWNTO 0), 
+               regB              =>    B_OUT    (4 DOWNTO 0),   --Auxiliar Register B is now used to address memory.
                SPTR              =>    ADDR_SPTR,
                sel_mbr           =>    MBR_MUX,
                sel_mar           =>    MAR_MUX,

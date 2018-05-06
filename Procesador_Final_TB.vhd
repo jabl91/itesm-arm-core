@@ -101,7 +101,7 @@ BEGIN
       
       wait for 100 ns;	
 		
-      wait for clk_period*10;
+      wait for clk_period*50;
       
       wait for clk_period*100;
       
