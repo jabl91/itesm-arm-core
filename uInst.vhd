@@ -299,12 +299,12 @@ begin
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0000";
 									SEL_BUS<= "00010";
-									LOAD_B <= '1';
+									LOAD_B <= '0';
 									when "01101" => 		-- OR
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0001";
 									SEL_BUS<= "00010";
-									LOAD_B <= '1';
+									LOAD_B <= '0';
 									when "01110" => 		-- NOT A
 									PC_INC	<='0';
 									ALU_SIGNAL <= "0011";

@@ -4,39 +4,39 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="15">
-<DesignStatistics TimeStamp="Sun May 06 09:31:45 2018"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="15">
+<DeviceUsageSummary rev="16">
+<DesignStatistics TimeStamp="Tue May 08 21:26:14 2018"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="16">
 <attrib name="value" value="26"/></item>
-<item name="AGG_IO" rev="15">
+<item name="AGG_IO" rev="16">
 <attrib name="value" value="26"/></item>
-<item name="AGG_SLICE" rev="15">
-<attrib name="value" value="1104"/></item>
-<item name="NUM_4_INPUT_LUT" rev="15">
-<attrib name="value" value="1797"/></item>
-<item name="NUM_BONDED_IBUF" rev="15">
+<item name="AGG_SLICE" rev="16">
+<attrib name="value" value="1103"/></item>
+<item name="NUM_4_INPUT_LUT" rev="16">
+<attrib name="value" value="1791"/></item>
+<item name="NUM_BONDED_IBUF" rev="16">
 <attrib name="value" value="2"/></item>
-<item name="NUM_BONDED_IOB" rev="15">
+<item name="NUM_BONDED_IOB" rev="16">
 <attrib name="value" value="24"/></item>
-<item name="NUM_BUFGMUX" rev="15">
+<item name="NUM_BUFGMUX" rev="16">
 <attrib name="value" value="1"/></item>
-<item name="NUM_CYMUX" rev="15">
+<item name="NUM_CYMUX" rev="16">
 <attrib name="value" value="561"/></item>
-<item name="NUM_LUT_RT" rev="15">
-<attrib name="value" value="19"/></item>
-<item name="NUM_MULT18X18SIO" rev="15">
+<item name="NUM_LUT_RT" rev="16">
+<attrib name="value" value="18"/></item>
+<item name="NUM_MULT18X18SIO" rev="16">
 <attrib name="value" value="1"/></item>
-<item name="NUM_RAM32" rev="15">
+<item name="NUM_RAM32" rev="16">
 <attrib name="value" value="16"/></item>
-<item name="NUM_SLICEL" rev="15">
-<attrib name="value" value="1096"/></item>
-<item name="NUM_SLICEM" rev="15">
+<item name="NUM_SLICEL" rev="16">
+<attrib name="value" value="1095"/></item>
+<item name="NUM_SLICEM" rev="16">
 <attrib name="value" value="8"/></item>
-<item name="NUM_SLICE_FF" rev="15">
+<item name="NUM_SLICE_FF" rev="16">
 <attrib name="value" value="540"/></item>
-<item name="NUM_SLICE_LATCH" rev="15">
+<item name="NUM_SLICE_LATCH" rev="16">
 <attrib name="value" value="1"/></item>
-<item name="NUM_XOR" rev="15">
+<item name="NUM_XOR" rev="16">
 <attrib name="value" value="563"/></item>
 </group>
 </DesignStatistics>

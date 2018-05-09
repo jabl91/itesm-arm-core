@@ -45,30 +45,30 @@ Clock clk to Pad
              | clk (edge) |                  | Clock  |
 Destination  |   to PAD   |Internal Clock(s) | Phase  |
 -------------+------------+------------------+--------+
-PORT_A_OUT<0>|    8.274(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<1>|    8.690(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<2>|    8.389(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<3>|    8.447(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<4>|    7.873(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<5>|    8.307(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<6>|    8.013(R)|clk_BUFGP         |   0.000|
-PORT_A_OUT<7>|    8.320(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<0>|    8.500(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<1>|    8.733(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<2>|    7.960(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<3>|    7.862(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<4>|    7.917(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<5>|    8.099(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<6>|    7.955(R)|clk_BUFGP         |   0.000|
-PORT_B_OUT<7>|    7.849(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<0>|    8.235(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<1>|    8.327(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<2>|    8.088(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<3>|    8.408(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<4>|    8.181(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<5>|    8.371(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<6>|    8.087(R)|clk_BUFGP         |   0.000|
-PORT_C_OUT<7>|    8.436(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<0>|    8.163(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<1>|    8.423(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<2>|    8.254(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<3>|    8.570(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<4>|    8.259(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<5>|    8.552(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<6>|    8.632(R)|clk_BUFGP         |   0.000|
+PORT_A_OUT<7>|    8.362(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<0>|    8.578(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<1>|    8.425(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<2>|    8.475(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<3>|    8.412(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<4>|    8.451(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<5>|    8.413(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<6>|    8.394(R)|clk_BUFGP         |   0.000|
+PORT_B_OUT<7>|    8.101(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<0>|    8.309(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<1>|    7.835(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<2>|    8.866(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<3>|    8.187(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<4>|    8.244(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<5>|    8.861(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<6>|    8.351(R)|clk_BUFGP         |   0.000|
+PORT_C_OUT<7>|    8.634(R)|clk_BUFGP         |   0.000|
 -------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -76,18 +76,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   93.487|   12.951|    9.219|    3.588|
+clk            |   92.760|    9.973|   11.102|    3.008|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun May 06 09:32:18 2018 
+Analysis completed Tue May 08 21:26:52 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 179 MB
+Peak Memory Usage: 178 MB
 
 
 

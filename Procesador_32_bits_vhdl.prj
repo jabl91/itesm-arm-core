@@ -16,7 +16,7 @@ vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\oc_reg.v
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\not_32.vhd"
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\Mux_MBR.vhd"
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\Mux_MAR.vhd"
-vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\MUL_DIV_32.vhd"
+vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\MUL_32.vhd"
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\MBR.vhd"
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\MAR.vhd"
 vhdl work "C:\Users\brj3mx\Desktop\Procesador 4 bits\ARM_Cortex_32_Bits\inst_reg.vhd"

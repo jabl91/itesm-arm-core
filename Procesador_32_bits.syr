@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Reading design: Procesador_32_bits.prj
 
@@ -104,6 +104,8 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+WARNING:HDLParsers:3607 - Unit work/MUL_32 is now defined in a different file.  It was defined in "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd", and is now defined in "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd".
+WARNING:HDLParsers:3607 - Unit work/MUL_32/Behavioral is now defined in a different file.  It was defined in "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd", and is now defined in "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd".
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_32.vhd" in Library work.
 Architecture behavioral of Entity sub_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/sub_deco_32.vhd" in Library work.
@@ -126,7 +128,7 @@ Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bit
 Architecture behavioral of Entity shift_r_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/swap_32.vhd" in Library work.
 Architecture behavioral of Entity swap_32 is up to date.
-Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd" in Library work.
+Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd" in Library work.
 Architecture behavioral of Entity mul_32 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/DIV_32.vhd" in Library work.
 Architecture behavioral of Entity div_32 is up to date.
@@ -152,8 +154,7 @@ Architecture behavioral of Entity mux_mbr is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MAR.vhd" in Library work.
 Architecture behavioral of Entity mar_mod is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Mux_MAR.vhd" in Library work.
-Entity <mux_mar> compiled.
-Entity <mux_mar> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity mux_mar is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/program_counter.vhd" in Library work.
 Architecture behavioral of Entity program_counter is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/reg_b.vhd" in Library work.
@@ -161,7 +162,8 @@ Architecture behavioral of Entity reg_b is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RegisterBank.vhd" in Library work.
 Architecture behavioral of Entity registerbank is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/uInst.vhd" in Library work.
-Architecture behavioral of Entity uinst is up to date.
+Entity <uinst> compiled.
+Entity <uinst> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/SPW.vhd" in Library work.
 Architecture behavioral of Entity spw is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/phase_gen.vhd" in Library work.
@@ -175,8 +177,7 @@ Architecture behavioral of Entity port_8 is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/PC_MODULE.vhd" in Library work.
 Architecture behavioral of Entity pc_module is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/RAM_Memory.vhd" in Library work.
-Entity <ram_memory> compiled.
-Entity <ram_memory> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity ram_memory is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/stkptr.vhd" in Library work.
 Architecture behavioral of Entity stkptr is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Program_Memory.vhd" in Library work.
@@ -188,8 +189,7 @@ Architecture behavioral of Entity reg_a is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Bus.vhd" in Library work.
 Architecture behavioral of Entity data_bus is up to date.
 Compiling vhdl file "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/Procesador_32_bits.vhd" in Library work.
-Entity <procesador_32_bits> compiled.
-Entity <procesador_32_bits> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity procesador_32_bits is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -641,7 +641,7 @@ Unit <swap_32> synthesized.
 
 
 Synthesizing Unit <MUL_32>.
-    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd".
+    Related source file is "C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd".
     Found 16x16-bit multiplier for signal <Q1>.
     Summary:
 	inferred   1 Multiplier(s).
@@ -996,20 +996,20 @@ Design Statistics
 # IOs                              : 50
 
 Cell Usage :
-# BELS                             : 2997
+# BELS                             : 2979
 #      GND                         : 1
 #      INV                         : 48
 #      LUT1                        : 1
-#      LUT2                        : 411
-#      LUT3                        : 340
-#      LUT4                        : 953
-#      LUT4_L                      : 6
+#      LUT2                        : 421
+#      LUT3                        : 325
+#      LUT4                        : 952
+#      LUT4_L                      : 4
 #      MUXCY                       : 561
-#      MUXF5                       : 112
+#      MUXF5                       : 102
 #      VCC                         : 1
 #      XORCY                       : 563
 # FlipFlops/Latches                : 541
-#      FD                          : 16
+#      FD                          : 12
 #      FD_1                        : 10
 #      FDC_1                       : 7
 #      FDCE                        : 409
@@ -1017,7 +1017,7 @@ Cell Usage :
 #      FDE_1                       : 13
 #      FDP_1                       : 1
 #      FDPE                        : 5
-#      FDS                         : 13
+#      FDS                         : 17
 #      FDS_1                       : 32
 #      LD                          : 1
 # RAMS                             : 8
@@ -1036,10 +1036,10 @@ Device utilization summary:
 
 Selected Device : 3s700afg484-4 
 
- Number of Slices:                      947  out of   5888    16%  
+ Number of Slices:                      945  out of   5888    16%  
  Number of Slice Flip Flops:            541  out of  11776     4%  
- Number of 4 input LUTs:               1775  out of  11776    15%  
-    Number used as logic:              1759
+ Number of 4 input LUTs:               1767  out of  11776    15%  
+    Number used as logic:              1751
     Number used as RAMs:                 16
  Number of IOs:                          50
  Number of bonded IOBs:                  26  out of    372     6%  
@@ -1099,7 +1099,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 83.003ns (frequency: 12.048MHz)
-  Total number of paths / destination ports: 116245557526207660000000000000000 / 1101
+  Total number of paths / destination ports: 116245557526207660000000000000000 / 1105
 -------------------------------------------------------------------------
 Delay:               83.003ns (Levels of Logic = 89)
   Source:            reg_a_F/a_15 (FF)
@@ -1228,14 +1228,14 @@ Offset:              5.558ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.61 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 14.59 secs
  
 --> 
 
-Total memory usage is 257424 kilobytes
+Total memory usage is 257680 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   80 (   0 filtered)
+Number of warnings :   82 (   0 filtered)
 Number of infos    :   10 (   0 filtered)
 
