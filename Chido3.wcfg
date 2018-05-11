@@ -12,7 +12,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="73" />
+   <WVObjectSize size="58" />
    <wvobject fp_name="/procesador_final_tb/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -267,69 +267,6 @@
    <wvobject fp_name="/procesador_final_tb/uut/uInst_F/wr_port" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">wr_port</obj_property>
       <obj_property name="ObjectShortName">wr_port</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/enable_port" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">enable_port[1:0]</obj_property>
-      <obj_property name="ObjectShortName">enable_port[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_bus" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sel_bus[4:0]</obj_property>
-      <obj_property name="ObjectShortName">sel_bus[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_port_or_bus" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">sel_port_or_bus</obj_property>
-      <obj_property name="ObjectShortName">sel_port_or_bus</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/sel_register_bank" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sel_register_bank[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sel_register_bank[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/uInst_F/load_en_register_bank" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">load_en_register_bank</obj_property>
-      <obj_property name="ObjectShortName">load_en_register_bank</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/out_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out_data[7:0]</obj_property>
-      <obj_property name="ObjectShortName">out_data[7:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="UseCustomSignalColor">true</obj_property>
-      <obj_property name="CustomSignalColor">#ff0000</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/clk" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/pc" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">pc[6:0]</obj_property>
-      <obj_property name="ObjectShortName">pc[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/rega" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">rega[7:0]</obj_property>
-      <obj_property name="ObjectShortName">rega[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/regb" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">regb[4:0]</obj_property>
-      <obj_property name="ObjectShortName">regb[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sptr" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">sptr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">sptr[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sel_mbr" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">sel_mbr</obj_property>
-      <obj_property name="ObjectShortName">sel_mbr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/sel_mar" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">sel_mar</obj_property>
-      <obj_property name="ObjectShortName">sel_mar</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/ce" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">ce</obj_property>
-      <obj_property name="ObjectShortName">ce</obj_property>
-   </wvobject>
-   <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/we" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">we</obj_property>
-      <obj_property name="ObjectShortName">we</obj_property>
    </wvobject>
    <wvobject fp_name="/procesador_final_tb/uut/RAM_Memory_F/in_mbr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">in_mbr[7:0]</obj_property>

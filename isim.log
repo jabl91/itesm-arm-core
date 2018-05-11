@@ -23,19 +23,3 @@ at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<"
 at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Finished circuit initialization process.
-# restart
-# run 50.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Finished circuit initialization process.
-# restart
-# run 50.00us
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /procesador_final_tb/uut/RAM_Memory_F/RAM/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-at 0 ps, Instance /procesador_final_tb/uut/ALU_F/G10/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Finished circuit initialization process.

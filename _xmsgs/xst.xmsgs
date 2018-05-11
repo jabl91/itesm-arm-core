@@ -5,12 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUL_32</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd</arg>&quot;.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/MUL_32/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_DIV_32.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/Users/brj3mx/Desktop/Procesador 4 bits/ARM_Cortex_32_Bits/MUL_32.vhd</arg>&quot;.
-</msg>
-
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">PM_BUS</arg>&gt; in unit &lt;<arg fmt="%s" index="2">uInst</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
@@ -55,6 +49,9 @@
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">spw_alu&lt;1:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">signox</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">q_not</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -259,7 +256,10 @@ This instance will be removed from the design along with all underlying logic
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">PM_F/COND_FLAGS/out_uc_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Procesador_32_bits</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">PM_F/DIR/out_pc_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Procesador_32_bits</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PM_F/DIR/out_pc_1&gt; &lt;PM_F/DIR/out_pc_2&gt; &lt;PM_F/DIR/out_pc_3&gt; &lt;PM_F/DIR/out_pc_4&gt; &lt;PM_F/DIR/out_pc_5&gt; &lt;PM_F/DIR/out_pc_6&gt; &lt;PM_F/INST/out_bus_1&gt; &lt;PM_F/INST/out_bus_3&gt; </arg>
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">PM_F/COND_FLAGS/out_uc_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Procesador_32_bits</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">PM_F/DIR/out_pc_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Procesador_32_bits</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;PM_F/DIR/out_pc_4&gt; &lt;PM_F/DIR/out_pc_6&gt; &lt;PM_F/INST/out_bus_3&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">SPW_F/out_SPW_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Procesador_32_bits</arg>&gt;.

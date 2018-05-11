@@ -2183,7 +2183,7 @@ LAB90:    xsi_set_current_line(299, ng0);
     t4 = *((char **)t3);
     t5 = (t4 + 40U);
     t7 = *((char **)t5);
-    *((unsigned char *)t7) = (unsigned char)3;
+    *((unsigned char *)t7) = (unsigned char)2;
     xsi_driver_first_trans_fast_port(t1);
     goto LAB77;
 
@@ -2219,7 +2219,7 @@ LAB91:    xsi_set_current_line(304, ng0);
     t4 = *((char **)t3);
     t5 = (t4 + 40U);
     t7 = *((char **)t5);
-    *((unsigned char *)t7) = (unsigned char)3;
+    *((unsigned char *)t7) = (unsigned char)2;
     xsi_driver_first_trans_fast_port(t1);
     goto LAB77;
 

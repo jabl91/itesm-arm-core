@@ -611,28 +611,38 @@ static void work_a_0832606739_3212880686_p_7(char *t0)
 {
     char *t1;
     char *t2;
-    unsigned char t3;
-    char *t4;
-    char *t5;
-    char *t6;
-    char *t7;
+    int t3;
+    unsigned int t4;
+    unsigned int t5;
+    unsigned int t6;
+    unsigned char t7;
     char *t8;
+    char *t9;
+    char *t10;
+    char *t11;
+    char *t12;
+    char *t13;
 
 LAB0:    xsi_set_current_line(206, ng0);
 
-LAB3:    t1 = (t0 + 2800U);
+LAB3:    t1 = (t0 + 2156U);
     t2 = *((char **)t1);
-    t3 = *((unsigned char *)t2);
-    t1 = (t0 + 5364);
-    t4 = (t1 + 32U);
-    t5 = *((char **)t4);
-    t6 = (t5 + 40U);
-    t7 = *((char **)t6);
-    *((unsigned char *)t7) = t3;
-    xsi_driver_first_trans_delta(t1, 4U, 1, 0LL);
+    t3 = (31 - 31);
+    t4 = (t3 * -1);
+    t5 = (1U * t4);
+    t6 = (0 + t5);
+    t1 = (t2 + t6);
+    t7 = *((unsigned char *)t1);
+    t8 = (t0 + 5364);
+    t9 = (t8 + 32U);
+    t10 = *((char **)t9);
+    t11 = (t10 + 40U);
+    t12 = *((char **)t11);
+    *((unsigned char *)t12) = t7;
+    xsi_driver_first_trans_delta(t8, 4U, 1, 0LL);
 
-LAB2:    t8 = (t0 + 4996);
-    *((int *)t8) = 1;
+LAB2:    t13 = (t0 + 4996);
+    *((int *)t13) = 1;
 
 LAB1:    return;
 LAB4:    goto LAB2;

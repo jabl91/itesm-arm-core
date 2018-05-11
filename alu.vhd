@@ -203,7 +203,7 @@ spw_out(4) <= zero;
 spw_out(3) <= out_q(31) or out_q(30) or out_q(29) or out_q(28);--antes 31 a 7 , 30 a 8 , 29 a 6, 28 a 5
 spw_out(2) <= out_c;
 spw_out(1) <= equal;
-spw_out(0) <= signox;
+spw_out(0) <= out_q(31);
 
 
 
